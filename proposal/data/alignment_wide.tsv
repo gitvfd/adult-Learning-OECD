@@ -815,71 +815,71 @@
 "Sweden"	"TWAR"	0.48484662
 "Turkey"	"TWAR"	0.720372517
 "United States"	"TWAR"	0.503892465
-"Australia"	"Total"	NA
-"Austria"	"Total"	0.482588165
-"Belgium"	"Total"	0.544139323
-"Canada"	"Total"	NA
-"Switzerland"	"Total"	NA
-"Chile"	"Total"	NA
-"Czech Republic"	"Total"	0.524176433
-"Germany"	"Total"	0.484177162
-"Denmark"	"Total"	0.816451226
-"Spain"	"Total"	0.538154293
-"Estonia"	"Total"	0.469129399
-"Finland"	"Total"	0.618074525
-"France"	"Total"	0.597475018
-"United Kingdom"	"Total"	0.696484637
-"Greece"	"Total"	0.477490006
-"Hungary"	"Total"	0.738898544
-"Ireland"	"Total"	0.644892774
-"Israel"	"Total"	NA
-"Italy"	"Total"	0.499097925
-"Japan"	"Total"	NA
-"Korea"	"Total"	NA
-"Lithuania"	"Total"	0.438783022
-"Luxembourg"	"Total"	0.666029333
-"Latvia"	"Total"	0.293794016
-"Netherlands"	"Total"	0.638156315
-"Norway"	"Total"	0.70673327
-"New Zealand"	"Total"	NA
-"Poland"	"Total"	0.239110568
-"Portugal"	"Total"	0.757493428
-"Slovak Republic"	"Total"	0.455426108
-"Slovenia"	"Total"	0.6470861
-"Sweden"	"Total"	0.481886895
-"Turkey"	"Total"	NA
-"United States"	"Total"	NA
-"Australia"	"Ranking"	NA
-"Austria"	"Ranking"	17
-"Belgium"	"Ranking"	12
-"Canada"	"Ranking"	NA
-"Switzerland"	"Ranking"	NA
-"Chile"	"Ranking"	NA
-"Czech Republic"	"Ranking"	14
-"Germany"	"Ranking"	16
-"Denmark"	"Ranking"	1
-"Spain"	"Ranking"	13
-"Estonia"	"Ranking"	20
-"Finland"	"Ranking"	10
-"France"	"Ranking"	11
-"United Kingdom"	"Ranking"	5
-"Greece"	"Ranking"	19
-"Hungary"	"Ranking"	3
-"Ireland"	"Ranking"	8
-"Israel"	"Ranking"	NA
-"Italy"	"Ranking"	15
-"Japan"	"Ranking"	NA
-"Korea"	"Ranking"	NA
-"Lithuania"	"Ranking"	22
-"Luxembourg"	"Ranking"	6
-"Latvia"	"Ranking"	23
-"Netherlands"	"Ranking"	9
-"Norway"	"Ranking"	4
-"New Zealand"	"Ranking"	NA
-"Poland"	"Ranking"	24
-"Portugal"	"Ranking"	2
-"Slovak Republic"	"Ranking"	21
-"Slovenia"	"Ranking"	7
-"Sweden"	"Ranking"	18
-"Turkey"	"Ranking"	NA
-"United States"	"Ranking"	NA
+"Australia"	"Alignment"	NA
+"Austria"	"Alignment"	0.482588165
+"Belgium"	"Alignment"	0.544139323
+"Canada"	"Alignment"	NA
+"Switzerland"	"Alignment"	NA
+"Chile"	"Alignment"	NA
+"Czech Republic"	"Alignment"	0.524176433
+"Germany"	"Alignment"	0.484177162
+"Denmark"	"Alignment"	0.816451226
+"Spain"	"Alignment"	0.538154293
+"Estonia"	"Alignment"	0.469129399
+"Finland"	"Alignment"	0.618074525
+"France"	"Alignment"	0.597475018
+"United Kingdom"	"Alignment"	0.696484637
+"Greece"	"Alignment"	0.477490006
+"Hungary"	"Alignment"	0.738898544
+"Ireland"	"Alignment"	0.644892774
+"Israel"	"Alignment"	NA
+"Italy"	"Alignment"	0.499097925
+"Japan"	"Alignment"	NA
+"Korea"	"Alignment"	NA
+"Lithuania"	"Alignment"	0.438783022
+"Luxembourg"	"Alignment"	0.666029333
+"Latvia"	"Alignment"	0.293794016
+"Netherlands"	"Alignment"	0.638156315
+"Norway"	"Alignment"	0.70673327
+"New Zealand"	"Alignment"	NA
+"Poland"	"Alignment"	0.239110568
+"Portugal"	"Alignment"	0.757493428
+"Slovak Republic"	"Alignment"	0.455426108
+"Slovenia"	"Alignment"	0.6470861
+"Sweden"	"Alignment"	0.481886895
+"Turkey"	"Alignment"	NA
+"United States"	"Alignment"	NA
+"Australia"	"Alignment_Ranking"	NA
+"Austria"	"Alignment_Ranking"	17
+"Belgium"	"Alignment_Ranking"	12
+"Canada"	"Alignment_Ranking"	NA
+"Switzerland"	"Alignment_Ranking"	NA
+"Chile"	"Alignment_Ranking"	NA
+"Czech Republic"	"Alignment_Ranking"	14
+"Germany"	"Alignment_Ranking"	16
+"Denmark"	"Alignment_Ranking"	1
+"Spain"	"Alignment_Ranking"	13
+"Estonia"	"Alignment_Ranking"	20
+"Finland"	"Alignment_Ranking"	10
+"France"	"Alignment_Ranking"	11
+"United Kingdom"	"Alignment_Ranking"	5
+"Greece"	"Alignment_Ranking"	19
+"Hungary"	"Alignment_Ranking"	3
+"Ireland"	"Alignment_Ranking"	8
+"Israel"	"Alignment_Ranking"	NA
+"Italy"	"Alignment_Ranking"	15
+"Japan"	"Alignment_Ranking"	NA
+"Korea"	"Alignment_Ranking"	NA
+"Lithuania"	"Alignment_Ranking"	22
+"Luxembourg"	"Alignment_Ranking"	6
+"Latvia"	"Alignment_Ranking"	23
+"Netherlands"	"Alignment_Ranking"	9
+"Norway"	"Alignment_Ranking"	4
+"New Zealand"	"Alignment_Ranking"	NA
+"Poland"	"Alignment_Ranking"	24
+"Portugal"	"Alignment_Ranking"	2
+"Slovak Republic"	"Alignment_Ranking"	21
+"Slovenia"	"Alignment_Ranking"	7
+"Sweden"	"Alignment_Ranking"	18
+"Turkey"	"Alignment_Ranking"	NA
+"United States"	"Alignment_Ranking"	NA
