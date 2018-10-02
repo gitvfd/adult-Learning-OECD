@@ -1,0 +1,783 @@
+"Country"	"variable"	"value"
+"Australia"	"5_1_1"	NA
+"Austria"	"5_1_1"	"35.9"
+"Belgium"	"5_1_1"	"48"
+"Canada"	"5_1_1"	NA
+"Switzerland"	"5_1_1"	NA
+"Chile"	"5_1_1"	NA
+"Czechia"	"5_1_1"	"46.3"
+"Germany"	"5_1_1"	"40.1"
+"Denmark"	"5_1_1"	"33.5"
+"Spain"	"5_1_1"	"51.8"
+"Estonia"	"5_1_1"	"45.7"
+"Finland"	"5_1_1"	"51.4"
+"France"	"5_1_1"	"94.8"
+"United Kingdom"	"5_1_1"	"66.3"
+"Greece"	"5_1_1"	"69.4"
+"Hungary"	"5_1_1"	"39.3"
+"Ireland"	"5_1_1"	"56.1"
+"Israel"	"5_1_1"	NA
+"Italy"	"5_1_1"	"52.5"
+"Japan"	"5_1_1"	NA
+"Republic of Korea"	"5_1_1"	NA
+"Lithuania"	"5_1_1"	"46.1"
+"Luxembourg"	"5_1_1"	"50"
+"Latvia"	"5_1_1"	"29.5"
+"Netherlands"	"5_1_1"	"87.4"
+"Norway"	"5_1_1"	"48.3"
+"New Zealand"	"5_1_1"	NA
+"Poland"	"5_1_1"	"32.3"
+"Portugal"	"5_1_1"	"57"
+"Slovakia"	"5_1_1"	"46.9"
+"Slovenia"	"5_1_1"	"39.7"
+"Sweden"	"5_1_1"	NA
+"Turkey"	"5_1_1"	NA
+"United States of America"	"5_1_1"	NA
+"Australia"	"5_1_2"	NA
+"Austria"	"5_1_2"	NA
+"Belgium"	"5_1_2"	NA
+"Canada"	"5_1_2"	NA
+"Switzerland"	"5_1_2"	NA
+"Chile"	"5_1_2"	NA
+"Czechia"	"5_1_2"	NA
+"Germany"	"5_1_2"	NA
+"Denmark"	"5_1_2"	NA
+"Spain"	"5_1_2"	NA
+"Estonia"	"5_1_2"	NA
+"Finland"	"5_1_2"	NA
+"France"	"5_1_2"	NA
+"United Kingdom"	"5_1_2"	NA
+"Greece"	"5_1_2"	NA
+"Hungary"	"5_1_2"	NA
+"Ireland"	"5_1_2"	NA
+"Israel"	"5_1_2"	NA
+"Italy"	"5_1_2"	NA
+"Japan"	"5_1_2"	NA
+"Republic of Korea"	"5_1_2"	NA
+"Lithuania"	"5_1_2"	NA
+"Luxembourg"	"5_1_2"	NA
+"Latvia"	"5_1_2"	NA
+"Netherlands"	"5_1_2"	NA
+"Norway"	"5_1_2"	NA
+"New Zealand"	"5_1_2"	NA
+"Poland"	"5_1_2"	NA
+"Portugal"	"5_1_2"	NA
+"Slovakia"	"5_1_2"	NA
+"Slovenia"	"5_1_2"	NA
+"Sweden"	"5_1_2"	NA
+"Turkey"	"5_1_2"	NA
+"United States of America"	"5_1_2"	NA
+"Australia"	"5_2_1"	"61.8"
+"Austria"	"5_2_1"	"55.5"
+"Belgium"	"5_2_1"	"59.4"
+"Canada"	"5_2_1"	"61.5"
+"Switzerland"	"5_2_1"	NA
+"Chile"	"5_2_1"	"64.4"
+"Czechia"	"5_2_1"	"53.7"
+"Germany"	"5_2_1"	"51.2"
+"Denmark"	"5_2_1"	"82.4"
+"Spain"	"5_2_1"	"48.1"
+"Estonia"	"5_2_1"	"34.3"
+"Finland"	"5_2_1"	"53.7"
+"France"	"5_2_1"	"48.8"
+"United Kingdom"	"5_2_1"	"62.2"
+"Greece"	"5_2_1"	"58.5"
+"Hungary"	"5_2_1"	NA
+"Ireland"	"5_2_1"	"62.9"
+"Israel"	"5_2_1"	"41.1"
+"Italy"	"5_2_1"	"42.1"
+"Japan"	"5_2_1"	"23.6"
+"Republic of Korea"	"5_2_1"	NA
+"Lithuania"	"5_2_1"	"42.3"
+"Luxembourg"	"5_2_1"	NA
+"Latvia"	"5_2_1"	NA
+"Netherlands"	"5_2_1"	"55.1"
+"Norway"	"5_2_1"	"60.5"
+"New Zealand"	"5_2_1"	"66.3"
+"Poland"	"5_2_1"	"55.1"
+"Portugal"	"5_2_1"	NA
+"Slovakia"	"5_2_1"	NA
+"Slovenia"	"5_2_1"	"36.7"
+"Sweden"	"5_2_1"	"40.9"
+"Turkey"	"5_2_1"	"47.3"
+"United States of America"	"5_2_1"	"61.2"
+"Australia"	"5_2_2"	NA
+"Austria"	"5_2_2"	NA
+"Belgium"	"5_2_2"	NA
+"Canada"	"5_2_2"	NA
+"Switzerland"	"5_2_2"	NA
+"Chile"	"5_2_2"	NA
+"Czechia"	"5_2_2"	NA
+"Germany"	"5_2_2"	NA
+"Denmark"	"5_2_2"	NA
+"Spain"	"5_2_2"	NA
+"Estonia"	"5_2_2"	NA
+"Finland"	"5_2_2"	NA
+"France"	"5_2_2"	NA
+"United Kingdom"	"5_2_2"	NA
+"Greece"	"5_2_2"	NA
+"Hungary"	"5_2_2"	NA
+"Ireland"	"5_2_2"	NA
+"Israel"	"5_2_2"	NA
+"Italy"	"5_2_2"	NA
+"Japan"	"5_2_2"	NA
+"Republic of Korea"	"5_2_2"	NA
+"Lithuania"	"5_2_2"	NA
+"Luxembourg"	"5_2_2"	NA
+"Latvia"	"5_2_2"	NA
+"Netherlands"	"5_2_2"	NA
+"Norway"	"5_2_2"	NA
+"New Zealand"	"5_2_2"	NA
+"Poland"	"5_2_2"	NA
+"Portugal"	"5_2_2"	NA
+"Slovakia"	"5_2_2"	NA
+"Slovenia"	"5_2_2"	NA
+"Sweden"	"5_2_2"	NA
+"Turkey"	"5_2_2"	NA
+"United States of America"	"5_2_2"	NA
+"Australia"	"5_2_3"	NA
+"Austria"	"5_2_3"	NA
+"Belgium"	"5_2_3"	NA
+"Canada"	"5_2_3"	NA
+"Switzerland"	"5_2_3"	NA
+"Chile"	"5_2_3"	NA
+"Czechia"	"5_2_3"	NA
+"Germany"	"5_2_3"	NA
+"Denmark"	"5_2_3"	NA
+"Spain"	"5_2_3"	NA
+"Estonia"	"5_2_3"	NA
+"Finland"	"5_2_3"	NA
+"France"	"5_2_3"	NA
+"United Kingdom"	"5_2_3"	NA
+"Greece"	"5_2_3"	NA
+"Hungary"	"5_2_3"	NA
+"Ireland"	"5_2_3"	NA
+"Israel"	"5_2_3"	NA
+"Italy"	"5_2_3"	NA
+"Japan"	"5_2_3"	NA
+"Republic of Korea"	"5_2_3"	NA
+"Lithuania"	"5_2_3"	NA
+"Luxembourg"	"5_2_3"	NA
+"Latvia"	"5_2_3"	NA
+"Netherlands"	"5_2_3"	NA
+"Norway"	"5_2_3"	NA
+"New Zealand"	"5_2_3"	NA
+"Poland"	"5_2_3"	NA
+"Portugal"	"5_2_3"	NA
+"Slovakia"	"5_2_3"	NA
+"Slovenia"	"5_2_3"	NA
+"Sweden"	"5_2_3"	NA
+"Turkey"	"5_2_3"	NA
+"United States of America"	"5_2_3"	NA
+"Australia"	"5_2_4"	NA
+"Austria"	"5_2_4"	NA
+"Belgium"	"5_2_4"	NA
+"Canada"	"5_2_4"	NA
+"Switzerland"	"5_2_4"	NA
+"Chile"	"5_2_4"	NA
+"Czechia"	"5_2_4"	NA
+"Germany"	"5_2_4"	NA
+"Denmark"	"5_2_4"	NA
+"Spain"	"5_2_4"	NA
+"Estonia"	"5_2_4"	NA
+"Finland"	"5_2_4"	NA
+"France"	"5_2_4"	NA
+"United Kingdom"	"5_2_4"	NA
+"Greece"	"5_2_4"	NA
+"Hungary"	"5_2_4"	NA
+"Ireland"	"5_2_4"	NA
+"Israel"	"5_2_4"	NA
+"Italy"	"5_2_4"	NA
+"Japan"	"5_2_4"	NA
+"Republic of Korea"	"5_2_4"	NA
+"Lithuania"	"5_2_4"	NA
+"Luxembourg"	"5_2_4"	NA
+"Latvia"	"5_2_4"	NA
+"Netherlands"	"5_2_4"	NA
+"Norway"	"5_2_4"	NA
+"New Zealand"	"5_2_4"	NA
+"Poland"	"5_2_4"	NA
+"Portugal"	"5_2_4"	NA
+"Slovakia"	"5_2_4"	NA
+"Slovenia"	"5_2_4"	NA
+"Sweden"	"5_2_4"	NA
+"Turkey"	"5_2_4"	NA
+"United States of America"	"5_2_4"	NA
+"Australia"	"5_1_1_outliers_adjusted"	NA
+"Austria"	"5_1_1_outliers_adjusted"	"35.9"
+"Belgium"	"5_1_1_outliers_adjusted"	"48"
+"Canada"	"5_1_1_outliers_adjusted"	NA
+"Switzerland"	"5_1_1_outliers_adjusted"	NA
+"Chile"	"5_1_1_outliers_adjusted"	NA
+"Czechia"	"5_1_1_outliers_adjusted"	"46.3"
+"Germany"	"5_1_1_outliers_adjusted"	"40.1"
+"Denmark"	"5_1_1_outliers_adjusted"	"33.5"
+"Spain"	"5_1_1_outliers_adjusted"	"51.8"
+"Estonia"	"5_1_1_outliers_adjusted"	"45.7"
+"Finland"	"5_1_1_outliers_adjusted"	"51.4"
+"France"	"5_1_1_outliers_adjusted"	"94.8"
+"United Kingdom"	"5_1_1_outliers_adjusted"	"66.3"
+"Greece"	"5_1_1_outliers_adjusted"	"69.4"
+"Hungary"	"5_1_1_outliers_adjusted"	"39.3"
+"Ireland"	"5_1_1_outliers_adjusted"	"56.1"
+"Israel"	"5_1_1_outliers_adjusted"	NA
+"Italy"	"5_1_1_outliers_adjusted"	"52.5"
+"Japan"	"5_1_1_outliers_adjusted"	NA
+"Republic of Korea"	"5_1_1_outliers_adjusted"	NA
+"Lithuania"	"5_1_1_outliers_adjusted"	"46.1"
+"Luxembourg"	"5_1_1_outliers_adjusted"	"50"
+"Latvia"	"5_1_1_outliers_adjusted"	"29.5"
+"Netherlands"	"5_1_1_outliers_adjusted"	"87.4"
+"Norway"	"5_1_1_outliers_adjusted"	"48.3"
+"New Zealand"	"5_1_1_outliers_adjusted"	NA
+"Poland"	"5_1_1_outliers_adjusted"	"32.3"
+"Portugal"	"5_1_1_outliers_adjusted"	"57"
+"Slovakia"	"5_1_1_outliers_adjusted"	"46.9"
+"Slovenia"	"5_1_1_outliers_adjusted"	"39.7"
+"Sweden"	"5_1_1_outliers_adjusted"	NA
+"Turkey"	"5_1_1_outliers_adjusted"	NA
+"United States of America"	"5_1_1_outliers_adjusted"	NA
+"Australia"	"5_1_2_outliers_adjusted"	"0"
+"Austria"	"5_1_2_outliers_adjusted"	"0"
+"Belgium"	"5_1_2_outliers_adjusted"	"0"
+"Canada"	"5_1_2_outliers_adjusted"	"0"
+"Switzerland"	"5_1_2_outliers_adjusted"	"0"
+"Chile"	"5_1_2_outliers_adjusted"	"0"
+"Czechia"	"5_1_2_outliers_adjusted"	"0"
+"Germany"	"5_1_2_outliers_adjusted"	"0"
+"Denmark"	"5_1_2_outliers_adjusted"	"0"
+"Spain"	"5_1_2_outliers_adjusted"	"0"
+"Estonia"	"5_1_2_outliers_adjusted"	"0"
+"Finland"	"5_1_2_outliers_adjusted"	"0"
+"France"	"5_1_2_outliers_adjusted"	"0"
+"United Kingdom"	"5_1_2_outliers_adjusted"	"0"
+"Greece"	"5_1_2_outliers_adjusted"	"0"
+"Hungary"	"5_1_2_outliers_adjusted"	"0"
+"Ireland"	"5_1_2_outliers_adjusted"	"0"
+"Israel"	"5_1_2_outliers_adjusted"	"0"
+"Italy"	"5_1_2_outliers_adjusted"	"0"
+"Japan"	"5_1_2_outliers_adjusted"	"0"
+"Republic of Korea"	"5_1_2_outliers_adjusted"	"0"
+"Lithuania"	"5_1_2_outliers_adjusted"	"0"
+"Luxembourg"	"5_1_2_outliers_adjusted"	"0"
+"Latvia"	"5_1_2_outliers_adjusted"	"0"
+"Netherlands"	"5_1_2_outliers_adjusted"	"0"
+"Norway"	"5_1_2_outliers_adjusted"	"0"
+"New Zealand"	"5_1_2_outliers_adjusted"	"0"
+"Poland"	"5_1_2_outliers_adjusted"	"0"
+"Portugal"	"5_1_2_outliers_adjusted"	"0"
+"Slovakia"	"5_1_2_outliers_adjusted"	"0"
+"Slovenia"	"5_1_2_outliers_adjusted"	"0"
+"Sweden"	"5_1_2_outliers_adjusted"	"0"
+"Turkey"	"5_1_2_outliers_adjusted"	"0"
+"United States of America"	"5_1_2_outliers_adjusted"	"0"
+"Australia"	"5_2_1_outliers_adjusted"	"61.8"
+"Austria"	"5_2_1_outliers_adjusted"	"55.5"
+"Belgium"	"5_2_1_outliers_adjusted"	"59.4"
+"Canada"	"5_2_1_outliers_adjusted"	"61.5"
+"Switzerland"	"5_2_1_outliers_adjusted"	NA
+"Chile"	"5_2_1_outliers_adjusted"	"64.4"
+"Czechia"	"5_2_1_outliers_adjusted"	"53.7"
+"Germany"	"5_2_1_outliers_adjusted"	"51.2"
+"Denmark"	"5_2_1_outliers_adjusted"	"82.4"
+"Spain"	"5_2_1_outliers_adjusted"	"48.1"
+"Estonia"	"5_2_1_outliers_adjusted"	"34.3"
+"Finland"	"5_2_1_outliers_adjusted"	"53.7"
+"France"	"5_2_1_outliers_adjusted"	"48.8"
+"United Kingdom"	"5_2_1_outliers_adjusted"	"62.2"
+"Greece"	"5_2_1_outliers_adjusted"	"58.5"
+"Hungary"	"5_2_1_outliers_adjusted"	NA
+"Ireland"	"5_2_1_outliers_adjusted"	"62.9"
+"Israel"	"5_2_1_outliers_adjusted"	"41.1"
+"Italy"	"5_2_1_outliers_adjusted"	"42.1"
+"Japan"	"5_2_1_outliers_adjusted"	"23.6"
+"Republic of Korea"	"5_2_1_outliers_adjusted"	NA
+"Lithuania"	"5_2_1_outliers_adjusted"	"42.3"
+"Luxembourg"	"5_2_1_outliers_adjusted"	NA
+"Latvia"	"5_2_1_outliers_adjusted"	NA
+"Netherlands"	"5_2_1_outliers_adjusted"	"55.1"
+"Norway"	"5_2_1_outliers_adjusted"	"60.5"
+"New Zealand"	"5_2_1_outliers_adjusted"	"66.3"
+"Poland"	"5_2_1_outliers_adjusted"	"55.1"
+"Portugal"	"5_2_1_outliers_adjusted"	NA
+"Slovakia"	"5_2_1_outliers_adjusted"	NA
+"Slovenia"	"5_2_1_outliers_adjusted"	"36.7"
+"Sweden"	"5_2_1_outliers_adjusted"	"40.9"
+"Turkey"	"5_2_1_outliers_adjusted"	"47.3"
+"United States of America"	"5_2_1_outliers_adjusted"	"61.2"
+"Australia"	"5_2_2_outliers_adjusted"	"0"
+"Austria"	"5_2_2_outliers_adjusted"	"0"
+"Belgium"	"5_2_2_outliers_adjusted"	"0"
+"Canada"	"5_2_2_outliers_adjusted"	"0"
+"Switzerland"	"5_2_2_outliers_adjusted"	"0"
+"Chile"	"5_2_2_outliers_adjusted"	"0"
+"Czechia"	"5_2_2_outliers_adjusted"	"0"
+"Germany"	"5_2_2_outliers_adjusted"	"0"
+"Denmark"	"5_2_2_outliers_adjusted"	"0"
+"Spain"	"5_2_2_outliers_adjusted"	"0"
+"Estonia"	"5_2_2_outliers_adjusted"	"0"
+"Finland"	"5_2_2_outliers_adjusted"	"0"
+"France"	"5_2_2_outliers_adjusted"	"0"
+"United Kingdom"	"5_2_2_outliers_adjusted"	"0"
+"Greece"	"5_2_2_outliers_adjusted"	"0"
+"Hungary"	"5_2_2_outliers_adjusted"	"0"
+"Ireland"	"5_2_2_outliers_adjusted"	"0"
+"Israel"	"5_2_2_outliers_adjusted"	"0"
+"Italy"	"5_2_2_outliers_adjusted"	"0"
+"Japan"	"5_2_2_outliers_adjusted"	"0"
+"Republic of Korea"	"5_2_2_outliers_adjusted"	"0"
+"Lithuania"	"5_2_2_outliers_adjusted"	"0"
+"Luxembourg"	"5_2_2_outliers_adjusted"	"0"
+"Latvia"	"5_2_2_outliers_adjusted"	"0"
+"Netherlands"	"5_2_2_outliers_adjusted"	"0"
+"Norway"	"5_2_2_outliers_adjusted"	"0"
+"New Zealand"	"5_2_2_outliers_adjusted"	"0"
+"Poland"	"5_2_2_outliers_adjusted"	"0"
+"Portugal"	"5_2_2_outliers_adjusted"	"0"
+"Slovakia"	"5_2_2_outliers_adjusted"	"0"
+"Slovenia"	"5_2_2_outliers_adjusted"	"0"
+"Sweden"	"5_2_2_outliers_adjusted"	"0"
+"Turkey"	"5_2_2_outliers_adjusted"	"0"
+"United States of America"	"5_2_2_outliers_adjusted"	"0"
+"Australia"	"5_2_3_outliers_adjusted"	"0"
+"Austria"	"5_2_3_outliers_adjusted"	"0"
+"Belgium"	"5_2_3_outliers_adjusted"	"0"
+"Canada"	"5_2_3_outliers_adjusted"	"0"
+"Switzerland"	"5_2_3_outliers_adjusted"	"0"
+"Chile"	"5_2_3_outliers_adjusted"	"0"
+"Czechia"	"5_2_3_outliers_adjusted"	"0"
+"Germany"	"5_2_3_outliers_adjusted"	"0"
+"Denmark"	"5_2_3_outliers_adjusted"	"0"
+"Spain"	"5_2_3_outliers_adjusted"	"0"
+"Estonia"	"5_2_3_outliers_adjusted"	"0"
+"Finland"	"5_2_3_outliers_adjusted"	"0"
+"France"	"5_2_3_outliers_adjusted"	"0"
+"United Kingdom"	"5_2_3_outliers_adjusted"	"0"
+"Greece"	"5_2_3_outliers_adjusted"	"0"
+"Hungary"	"5_2_3_outliers_adjusted"	"0"
+"Ireland"	"5_2_3_outliers_adjusted"	"0"
+"Israel"	"5_2_3_outliers_adjusted"	"0"
+"Italy"	"5_2_3_outliers_adjusted"	"0"
+"Japan"	"5_2_3_outliers_adjusted"	"0"
+"Republic of Korea"	"5_2_3_outliers_adjusted"	"0"
+"Lithuania"	"5_2_3_outliers_adjusted"	"0"
+"Luxembourg"	"5_2_3_outliers_adjusted"	"0"
+"Latvia"	"5_2_3_outliers_adjusted"	"0"
+"Netherlands"	"5_2_3_outliers_adjusted"	"0"
+"Norway"	"5_2_3_outliers_adjusted"	"0"
+"New Zealand"	"5_2_3_outliers_adjusted"	"0"
+"Poland"	"5_2_3_outliers_adjusted"	"0"
+"Portugal"	"5_2_3_outliers_adjusted"	"0"
+"Slovakia"	"5_2_3_outliers_adjusted"	"0"
+"Slovenia"	"5_2_3_outliers_adjusted"	"0"
+"Sweden"	"5_2_3_outliers_adjusted"	"0"
+"Turkey"	"5_2_3_outliers_adjusted"	"0"
+"United States of America"	"5_2_3_outliers_adjusted"	"0"
+"Australia"	"5_2_4_outliers_adjusted"	"0"
+"Austria"	"5_2_4_outliers_adjusted"	"0"
+"Belgium"	"5_2_4_outliers_adjusted"	"0"
+"Canada"	"5_2_4_outliers_adjusted"	"0"
+"Switzerland"	"5_2_4_outliers_adjusted"	"0"
+"Chile"	"5_2_4_outliers_adjusted"	"0"
+"Czechia"	"5_2_4_outliers_adjusted"	"0"
+"Germany"	"5_2_4_outliers_adjusted"	"0"
+"Denmark"	"5_2_4_outliers_adjusted"	"0"
+"Spain"	"5_2_4_outliers_adjusted"	"0"
+"Estonia"	"5_2_4_outliers_adjusted"	"0"
+"Finland"	"5_2_4_outliers_adjusted"	"0"
+"France"	"5_2_4_outliers_adjusted"	"0"
+"United Kingdom"	"5_2_4_outliers_adjusted"	"0"
+"Greece"	"5_2_4_outliers_adjusted"	"0"
+"Hungary"	"5_2_4_outliers_adjusted"	"0"
+"Ireland"	"5_2_4_outliers_adjusted"	"0"
+"Israel"	"5_2_4_outliers_adjusted"	"0"
+"Italy"	"5_2_4_outliers_adjusted"	"0"
+"Japan"	"5_2_4_outliers_adjusted"	"0"
+"Republic of Korea"	"5_2_4_outliers_adjusted"	"0"
+"Lithuania"	"5_2_4_outliers_adjusted"	"0"
+"Luxembourg"	"5_2_4_outliers_adjusted"	"0"
+"Latvia"	"5_2_4_outliers_adjusted"	"0"
+"Netherlands"	"5_2_4_outliers_adjusted"	"0"
+"Norway"	"5_2_4_outliers_adjusted"	"0"
+"New Zealand"	"5_2_4_outliers_adjusted"	"0"
+"Poland"	"5_2_4_outliers_adjusted"	"0"
+"Portugal"	"5_2_4_outliers_adjusted"	"0"
+"Slovakia"	"5_2_4_outliers_adjusted"	"0"
+"Slovenia"	"5_2_4_outliers_adjusted"	"0"
+"Sweden"	"5_2_4_outliers_adjusted"	"0"
+"Turkey"	"5_2_4_outliers_adjusted"	"0"
+"United States of America"	"5_2_4_outliers_adjusted"	"0"
+"Australia"	"5_1_1_normalised"	NA
+"Austria"	"5_1_1_normalised"	"0.098009188"
+"Belgium"	"5_1_1_normalised"	"0.28330781"
+"Canada"	"5_1_1_normalised"	NA
+"Switzerland"	"5_1_1_normalised"	NA
+"Chile"	"5_1_1_normalised"	NA
+"Czechia"	"5_1_1_normalised"	"0.257274119"
+"Germany"	"5_1_1_normalised"	"0.162327718"
+"Denmark"	"5_1_1_normalised"	"0.061255743"
+"Spain"	"5_1_1_normalised"	"0.341500766"
+"Estonia"	"5_1_1_normalised"	"0.248085758"
+"Finland"	"5_1_1_normalised"	"0.335375191"
+"France"	"5_1_1_normalised"	"1"
+"United Kingdom"	"5_1_1_normalised"	"0.563552833"
+"Greece"	"5_1_1_normalised"	"0.611026034"
+"Hungary"	"5_1_1_normalised"	"0.15007657"
+"Ireland"	"5_1_1_normalised"	"0.407350689"
+"Israel"	"5_1_1_normalised"	NA
+"Italy"	"5_1_1_normalised"	"0.352220521"
+"Japan"	"5_1_1_normalised"	NA
+"Republic of Korea"	"5_1_1_normalised"	NA
+"Lithuania"	"5_1_1_normalised"	"0.254211332"
+"Luxembourg"	"5_1_1_normalised"	"0.313935681"
+"Latvia"	"5_1_1_normalised"	"0"
+"Netherlands"	"5_1_1_normalised"	"0.886676876"
+"Norway"	"5_1_1_normalised"	"0.287901991"
+"New Zealand"	"5_1_1_normalised"	NA
+"Poland"	"5_1_1_normalised"	"0.04287902"
+"Portugal"	"5_1_1_normalised"	"0.421133231"
+"Slovakia"	"5_1_1_normalised"	"0.266462481"
+"Slovenia"	"5_1_1_normalised"	"0.156202144"
+"Sweden"	"5_1_1_normalised"	NA
+"Turkey"	"5_1_1_normalised"	NA
+"United States of America"	"5_1_1_normalised"	NA
+"Australia"	"5_1_2_normalised"	NA
+"Austria"	"5_1_2_normalised"	NA
+"Belgium"	"5_1_2_normalised"	NA
+"Canada"	"5_1_2_normalised"	NA
+"Switzerland"	"5_1_2_normalised"	NA
+"Chile"	"5_1_2_normalised"	NA
+"Czechia"	"5_1_2_normalised"	NA
+"Germany"	"5_1_2_normalised"	NA
+"Denmark"	"5_1_2_normalised"	NA
+"Spain"	"5_1_2_normalised"	NA
+"Estonia"	"5_1_2_normalised"	NA
+"Finland"	"5_1_2_normalised"	NA
+"France"	"5_1_2_normalised"	NA
+"United Kingdom"	"5_1_2_normalised"	NA
+"Greece"	"5_1_2_normalised"	NA
+"Hungary"	"5_1_2_normalised"	NA
+"Ireland"	"5_1_2_normalised"	NA
+"Israel"	"5_1_2_normalised"	NA
+"Italy"	"5_1_2_normalised"	NA
+"Japan"	"5_1_2_normalised"	NA
+"Republic of Korea"	"5_1_2_normalised"	NA
+"Lithuania"	"5_1_2_normalised"	NA
+"Luxembourg"	"5_1_2_normalised"	NA
+"Latvia"	"5_1_2_normalised"	NA
+"Netherlands"	"5_1_2_normalised"	NA
+"Norway"	"5_1_2_normalised"	NA
+"New Zealand"	"5_1_2_normalised"	NA
+"Poland"	"5_1_2_normalised"	NA
+"Portugal"	"5_1_2_normalised"	NA
+"Slovakia"	"5_1_2_normalised"	NA
+"Slovenia"	"5_1_2_normalised"	NA
+"Sweden"	"5_1_2_normalised"	NA
+"Turkey"	"5_1_2_normalised"	NA
+"United States of America"	"5_1_2_normalised"	NA
+"Australia"	"5_2_1_normalised"	"0.649959436"
+"Austria"	"5_2_1_normalised"	"0.542739961"
+"Belgium"	"5_2_1_normalised"	"0.608942426"
+"Canada"	"5_2_1_normalised"	"0.643474487"
+"Switzerland"	"5_2_1_normalised"	NA
+"Chile"	"5_2_1_normalised"	"0.694026232"
+"Czechia"	"5_2_1_normalised"	"0.511343393"
+"Germany"	"5_2_1_normalised"	"0.468373462"
+"Denmark"	"5_2_1_normalised"	"1"
+"Spain"	"5_2_1_normalised"	"0.415590958"
+"Estonia"	"5_2_1_normalised"	"0.181505535"
+"Finland"	"5_2_1_normalised"	"0.510799975"
+"France"	"5_2_1_normalised"	"0.42815152"
+"United Kingdom"	"5_2_1_normalised"	"0.655319559"
+"Greece"	"5_2_1_normalised"	"0.593489663"
+"Hungary"	"5_2_1_normalised"	NA
+"Ireland"	"5_2_1_normalised"	"0.667552844"
+"Israel"	"5_2_1_normalised"	"0.29788997"
+"Italy"	"5_2_1_normalised"	"0.315099116"
+"Japan"	"5_2_1_normalised"	"0"
+"Republic of Korea"	"5_2_1_normalised"	NA
+"Lithuania"	"5_2_1_normalised"	"0.317792196"
+"Luxembourg"	"5_2_1_normalised"	NA
+"Latvia"	"5_2_1_normalised"	NA
+"Netherlands"	"5_2_1_normalised"	"0.536138912"
+"Norway"	"5_2_1_normalised"	"0.627728335"
+"New Zealand"	"5_2_1_normalised"	"0.726298206"
+"Poland"	"5_2_1_normalised"	"0.534614425"
+"Portugal"	"5_2_1_normalised"	NA
+"Slovakia"	"5_2_1_normalised"	NA
+"Slovenia"	"5_2_1_normalised"	"0.222967187"
+"Sweden"	"5_2_1_normalised"	"0.294322397"
+"Turkey"	"5_2_1_normalised"	"0.403330218"
+"United States of America"	"5_2_1_normalised"	"0.639097258"
+"Australia"	"5_2_2_normalised"	NA
+"Austria"	"5_2_2_normalised"	NA
+"Belgium"	"5_2_2_normalised"	NA
+"Canada"	"5_2_2_normalised"	NA
+"Switzerland"	"5_2_2_normalised"	NA
+"Chile"	"5_2_2_normalised"	NA
+"Czechia"	"5_2_2_normalised"	NA
+"Germany"	"5_2_2_normalised"	NA
+"Denmark"	"5_2_2_normalised"	NA
+"Spain"	"5_2_2_normalised"	NA
+"Estonia"	"5_2_2_normalised"	NA
+"Finland"	"5_2_2_normalised"	NA
+"France"	"5_2_2_normalised"	NA
+"United Kingdom"	"5_2_2_normalised"	NA
+"Greece"	"5_2_2_normalised"	NA
+"Hungary"	"5_2_2_normalised"	NA
+"Ireland"	"5_2_2_normalised"	NA
+"Israel"	"5_2_2_normalised"	NA
+"Italy"	"5_2_2_normalised"	NA
+"Japan"	"5_2_2_normalised"	NA
+"Republic of Korea"	"5_2_2_normalised"	NA
+"Lithuania"	"5_2_2_normalised"	NA
+"Luxembourg"	"5_2_2_normalised"	NA
+"Latvia"	"5_2_2_normalised"	NA
+"Netherlands"	"5_2_2_normalised"	NA
+"Norway"	"5_2_2_normalised"	NA
+"New Zealand"	"5_2_2_normalised"	NA
+"Poland"	"5_2_2_normalised"	NA
+"Portugal"	"5_2_2_normalised"	NA
+"Slovakia"	"5_2_2_normalised"	NA
+"Slovenia"	"5_2_2_normalised"	NA
+"Sweden"	"5_2_2_normalised"	NA
+"Turkey"	"5_2_2_normalised"	NA
+"United States of America"	"5_2_2_normalised"	NA
+"Australia"	"5_2_3_normalised"	NA
+"Austria"	"5_2_3_normalised"	NA
+"Belgium"	"5_2_3_normalised"	NA
+"Canada"	"5_2_3_normalised"	NA
+"Switzerland"	"5_2_3_normalised"	NA
+"Chile"	"5_2_3_normalised"	NA
+"Czechia"	"5_2_3_normalised"	NA
+"Germany"	"5_2_3_normalised"	NA
+"Denmark"	"5_2_3_normalised"	NA
+"Spain"	"5_2_3_normalised"	NA
+"Estonia"	"5_2_3_normalised"	NA
+"Finland"	"5_2_3_normalised"	NA
+"France"	"5_2_3_normalised"	NA
+"United Kingdom"	"5_2_3_normalised"	NA
+"Greece"	"5_2_3_normalised"	NA
+"Hungary"	"5_2_3_normalised"	NA
+"Ireland"	"5_2_3_normalised"	NA
+"Israel"	"5_2_3_normalised"	NA
+"Italy"	"5_2_3_normalised"	NA
+"Japan"	"5_2_3_normalised"	NA
+"Republic of Korea"	"5_2_3_normalised"	NA
+"Lithuania"	"5_2_3_normalised"	NA
+"Luxembourg"	"5_2_3_normalised"	NA
+"Latvia"	"5_2_3_normalised"	NA
+"Netherlands"	"5_2_3_normalised"	NA
+"Norway"	"5_2_3_normalised"	NA
+"New Zealand"	"5_2_3_normalised"	NA
+"Poland"	"5_2_3_normalised"	NA
+"Portugal"	"5_2_3_normalised"	NA
+"Slovakia"	"5_2_3_normalised"	NA
+"Slovenia"	"5_2_3_normalised"	NA
+"Sweden"	"5_2_3_normalised"	NA
+"Turkey"	"5_2_3_normalised"	NA
+"United States of America"	"5_2_3_normalised"	NA
+"Australia"	"5_2_4_normalised"	NA
+"Austria"	"5_2_4_normalised"	NA
+"Belgium"	"5_2_4_normalised"	NA
+"Canada"	"5_2_4_normalised"	NA
+"Switzerland"	"5_2_4_normalised"	NA
+"Chile"	"5_2_4_normalised"	NA
+"Czechia"	"5_2_4_normalised"	NA
+"Germany"	"5_2_4_normalised"	NA
+"Denmark"	"5_2_4_normalised"	NA
+"Spain"	"5_2_4_normalised"	NA
+"Estonia"	"5_2_4_normalised"	NA
+"Finland"	"5_2_4_normalised"	NA
+"France"	"5_2_4_normalised"	NA
+"United Kingdom"	"5_2_4_normalised"	NA
+"Greece"	"5_2_4_normalised"	NA
+"Hungary"	"5_2_4_normalised"	NA
+"Ireland"	"5_2_4_normalised"	NA
+"Israel"	"5_2_4_normalised"	NA
+"Italy"	"5_2_4_normalised"	NA
+"Japan"	"5_2_4_normalised"	NA
+"Republic of Korea"	"5_2_4_normalised"	NA
+"Lithuania"	"5_2_4_normalised"	NA
+"Luxembourg"	"5_2_4_normalised"	NA
+"Latvia"	"5_2_4_normalised"	NA
+"Netherlands"	"5_2_4_normalised"	NA
+"Norway"	"5_2_4_normalised"	NA
+"New Zealand"	"5_2_4_normalised"	NA
+"Poland"	"5_2_4_normalised"	NA
+"Portugal"	"5_2_4_normalised"	NA
+"Slovakia"	"5_2_4_normalised"	NA
+"Slovenia"	"5_2_4_normalised"	NA
+"Sweden"	"5_2_4_normalised"	NA
+"Turkey"	"5_2_4_normalised"	NA
+"United States of America"	"5_2_4_normalised"	NA
+"Australia"	"MC"	NA
+"Austria"	"MC"	"0.098009188"
+"Belgium"	"MC"	"0.28330781"
+"Canada"	"MC"	NA
+"Switzerland"	"MC"	NA
+"Chile"	"MC"	NA
+"Czechia"	"MC"	"0.257274119"
+"Germany"	"MC"	"0.162327718"
+"Denmark"	"MC"	"0.061255743"
+"Spain"	"MC"	"0.341500766"
+"Estonia"	"MC"	"0.248085758"
+"Finland"	"MC"	"0.335375191"
+"France"	"MC"	"1"
+"United Kingdom"	"MC"	"0.563552833"
+"Greece"	"MC"	"0.611026034"
+"Hungary"	"MC"	"0.15007657"
+"Ireland"	"MC"	"0.407350689"
+"Israel"	"MC"	NA
+"Italy"	"MC"	"0.352220521"
+"Japan"	"MC"	NA
+"Republic of Korea"	"MC"	NA
+"Lithuania"	"MC"	"0.254211332"
+"Luxembourg"	"MC"	"0.313935681"
+"Latvia"	"MC"	"0"
+"Netherlands"	"MC"	"0.886676876"
+"Norway"	"MC"	"0.287901991"
+"New Zealand"	"MC"	NA
+"Poland"	"MC"	"0.04287902"
+"Portugal"	"MC"	"0.421133231"
+"Slovakia"	"MC"	"0.266462481"
+"Slovenia"	"MC"	"0.156202144"
+"Sweden"	"MC"	NA
+"Turkey"	"MC"	NA
+"United States of America"	"MC"	NA
+"Australia"	"UE"	NA
+"Austria"	"UE"	NA
+"Belgium"	"UE"	NA
+"Canada"	"UE"	NA
+"Switzerland"	"UE"	NA
+"Chile"	"UE"	NA
+"Czechia"	"UE"	NA
+"Germany"	"UE"	NA
+"Denmark"	"UE"	NA
+"Spain"	"UE"	NA
+"Estonia"	"UE"	NA
+"Finland"	"UE"	NA
+"France"	"UE"	NA
+"United Kingdom"	"UE"	NA
+"Greece"	"UE"	NA
+"Hungary"	"UE"	NA
+"Ireland"	"UE"	NA
+"Israel"	"UE"	NA
+"Italy"	"UE"	NA
+"Japan"	"UE"	NA
+"Republic of Korea"	"UE"	NA
+"Lithuania"	"UE"	NA
+"Luxembourg"	"UE"	NA
+"Latvia"	"UE"	NA
+"Netherlands"	"UE"	NA
+"Norway"	"UE"	NA
+"New Zealand"	"UE"	NA
+"Poland"	"UE"	NA
+"Portugal"	"UE"	NA
+"Slovakia"	"UE"	NA
+"Slovenia"	"UE"	NA
+"Sweden"	"UE"	NA
+"Turkey"	"UE"	NA
+"United States of America"	"UE"	NA
+"Australia"	"Total"	NA
+"Austria"	"Total"	"0.098009188"
+"Belgium"	"Total"	"0.28330781"
+"Canada"	"Total"	NA
+"Switzerland"	"Total"	NA
+"Chile"	"Total"	NA
+"Czechia"	"Total"	"0.257274119"
+"Germany"	"Total"	"0.162327718"
+"Denmark"	"Total"	"0.061255743"
+"Spain"	"Total"	"0.341500766"
+"Estonia"	"Total"	"0.248085758"
+"Finland"	"Total"	"0.335375191"
+"France"	"Total"	"1"
+"United Kingdom"	"Total"	"0.563552833"
+"Greece"	"Total"	"0.611026034"
+"Hungary"	"Total"	"0.15007657"
+"Ireland"	"Total"	"0.407350689"
+"Israel"	"Total"	NA
+"Italy"	"Total"	"0.352220521"
+"Japan"	"Total"	NA
+"Republic of Korea"	"Total"	NA
+"Lithuania"	"Total"	"0.254211332"
+"Luxembourg"	"Total"	"0.313935681"
+"Latvia"	"Total"	"0"
+"Netherlands"	"Total"	"0.886676876"
+"Norway"	"Total"	"0.287901991"
+"New Zealand"	"Total"	NA
+"Poland"	"Total"	"0.04287902"
+"Portugal"	"Total"	"0.421133231"
+"Slovakia"	"Total"	"0.266462481"
+"Slovenia"	"Total"	"0.156202144"
+"Sweden"	"Total"	NA
+"Turkey"	"Total"	NA
+"United States of America"	"Total"	NA
+"Australia"	"Ranking"	NA
+"Austria"	"Ranking"	"20"
+"Belgium"	"Ranking"	"12"
+"Canada"	"Ranking"	NA
+"Switzerland"	"Ranking"	NA
+"Chile"	"Ranking"	NA
+"Czechia"	"Ranking"	"14"
+"Germany"	"Ranking"	"17"
+"Denmark"	"Ranking"	"21"
+"Spain"	"Ranking"	"8"
+"Estonia"	"Ranking"	"16"
+"Finland"	"Ranking"	"9"
+"France"	"Ranking"	"1"
+"United Kingdom"	"Ranking"	"4"
+"Greece"	"Ranking"	"3"
+"Hungary"	"Ranking"	"19"
+"Ireland"	"Ranking"	"6"
+"Israel"	"Ranking"	NA
+"Italy"	"Ranking"	"7"
+"Japan"	"Ranking"	NA
+"Republic of Korea"	"Ranking"	NA
+"Lithuania"	"Ranking"	"15"
+"Luxembourg"	"Ranking"	"10"
+"Latvia"	"Ranking"	"23"
+"Netherlands"	"Ranking"	"2"
+"Norway"	"Ranking"	"11"
+"New Zealand"	"Ranking"	NA
+"Poland"	"Ranking"	"22"
+"Portugal"	"Ranking"	"5"
+"Slovakia"	"Ranking"	"13"
+"Slovenia"	"Ranking"	"18"
+"Sweden"	"Ranking"	NA
+"Turkey"	"Ranking"	NA
+"United States of America"	"Ranking"	NA
+"Australia"	"X24"	NA
+"Austria"	"X24"	"Ranking: 1 - best position"
+"Belgium"	"X24"	"Ranking: 39 - worst position"
+"Canada"	"X24"	NA
+"Switzerland"	"X24"	NA
+"Chile"	"X24"	NA
+"Czechia"	"X24"	NA
+"Germany"	"X24"	NA
+"Denmark"	"X24"	NA
+"Spain"	"X24"	NA
+"Estonia"	"X24"	NA
+"Finland"	"X24"	NA
+"France"	"X24"	NA
+"United Kingdom"	"X24"	NA
+"Greece"	"X24"	NA
+"Hungary"	"X24"	NA
+"Ireland"	"X24"	NA
+"Israel"	"X24"	NA
+"Italy"	"X24"	NA
+"Japan"	"X24"	NA
+"Republic of Korea"	"X24"	NA
+"Lithuania"	"X24"	NA
+"Luxembourg"	"X24"	NA
+"Latvia"	"X24"	NA
+"Netherlands"	"X24"	NA
+"Norway"	"X24"	NA
+"New Zealand"	"X24"	NA
+"Poland"	"X24"	NA
+"Portugal"	"X24"	NA
+"Slovakia"	"X24"	NA
+"Slovenia"	"X24"	NA
+"Sweden"	"X24"	NA
+"Turkey"	"X24"	NA
+"United States of America"	"X24"	NA

@@ -1,0 +1,536 @@
+
+/* minimal css reset */
+html, body, div, h1, h2, h3, a, p, img, dl, dt, dd, ul, li {
+	padding: 0; margin: 0; border: 0; outline: 0;
+}
+
+/** TABS ***/
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #006FB3;
+    background-color: #f6f6f6;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #494444;
+    font-size:16px;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #DDE9EF;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    /**padding: 6px 12px;
+    /**border: 1px solid #006FB3;
+    border-top: none;**/
+}
+
+/** END TABS ***/
+
+h1{
+	max-width:700px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:10px;
+	font-family: Caecilia, Georgia, serif;
+	color:#ffffff;
+	background: #8EA4B1;
+	font-size:3.75em;
+	text-align:center;
+	letter-spacing: normal;
+}
+
+h2{
+	max-width:700px;
+	margin:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#0297C9;
+	font-size:3em;
+	text-align:center;
+}
+h3{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size:1.5em;
+    text-decoration: underline;
+}
+
+.paragraph{
+	max-width:1100px;
+	margin:auto;
+	padding-left:1.5%;
+	padding-right:1.5%;
+	font-family: Caecilia, Georgia;
+	color:#979797;
+		font-size:2vw;
+	line-height: 1.2;
+	text-align:center;
+	letter-spacing: normal;
+}
+
+.def{
+  	font-family: Caecilia, Georgia, serif;
+	  color:#979797;
+    font-size:2vw;
+    line-height: 1.25;
+}
+
+
+#wrapper {
+	width: 100%;
+	/**margin: 0 auto;**/
+    display: flex;
+    /**flex-wrap: wrap;**/
+}
+
+#legend {
+	padding: 20px;
+	float: left;
+	width: 10%;
+	min-width: 230px;
+	height: 100%;
+
+	background: #8EA4B1;
+	flex-grow: 1;
+    flex-basis: 20%;
+}
+
+#legend h1 {
+
+	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#f1f1f1;;
+		font-size:22px;
+	text-align:center;
+	letter-spacing: normal;
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+
+#legend p {
+	margin-bottom: 10px;
+	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #f1f1f1;
+	font-size: 11pt;
+}
+
+
+#legend {
+	/**margin: 40px auto 0 auto;**/
+	display: block
+}
+
+
+#Country_sel{
+	  max-width:1100px;
+	  margin:auto;
+  	border-style: solid;
+  	border-width: 1px;
+  	border-color:  #006FB3;
+  	background-color: #0b71b0;
+  	padding-left:5px;
+  	color:#fff;
+  	text-rendering: optimizeLegibility;
+  	-webkit-font-smoothing: antialiased;
+}
+
+#country_dropdown{
+  font-family:Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  font-size:22px;
+  text-align:center;
+  letter-spacing:normal;
+  color:#ffffff;
+  padding: 0 1%;
+  vertical-align: baseline;
+  color: white;
+  cursor: pointer;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
+  background-color: #0b71b0;
+  border:none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 5px;
+}
+.dropdown_text{
+	max-width:1100px;
+	margin:auto;
+  font-family:Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#ffffff;
+  
+  font-size:24px;
+  text-align:start;
+}
+
+
+/*****************************/
+/**..........CHARTS........ **/
+/*****************************/
+
+#chart{
+	float: right;
+	/**width:80%;**/
+	min-height: 100%;
+	background: #ffffff;
+	flex-grow: 1;
+  flex-basis: 80%;
+}
+
+svg {
+	background: #DDE9EF;
+	margin-right: 2px;
+	margin-left:2px;
+}
+
+
+#challengesChart{
+	width: 70%;
+	margin-left: 0px;
+	float: right;
+  	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0px;
+}
+
+#responsesChart{
+	width: 70%;
+	margin-left: 0px;
+	float: right;
+  	position: -webkit-sticky;
+  	position: sticky;
+  	top: 0px;
+}
+
+#chartGuideChallenges,#chartGuideResponses{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:12px;
+  font-style: italic;
+  fill:#7A7A7A;
+}
+.axis path{
+	stroke:none;
+}
+
+.axis line{
+	stroke:#7A7A7A;
+}
+
+.axis text{
+	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	fill:#7A7A7A;
+}
+
+.lollipopText{
+	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+}
+
+.titles{
+
+	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:15px;
+	fill:#575757;
+  cursor: pointer;
+}
+
+.urgencyLabel{
+
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  fill:#ff899c;
+}
+
+.bartext{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:12px;
+  font-style:italic;
+  fill:#DDE9EF;
+}
+
+
+/*****************************/
+/**......INDIC SECTIONS.... **/
+/*****************************/
+
+#Challenges,#Responses{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.indicatorPres{
+  margin-top:15px;
+}
+
+.dimTitle{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:20px;
+  color:#0297C9;
+  margin-right: 5%;
+  margin-top:30px;
+  border-bottom:1px solid #0297C9;
+}
+
+.indicTitle{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:15px;
+  color:#7A7A7A;
+  padding-right: 5%;
+}
+
+.introChart{
+  padding-bottom: 40px;
+}
+
+#UrgencyTitle{
+  color:#ff899c;
+  cursor: pointer;
+}
+#CoverageTitle{
+  color:#B35F57;
+  cursor: pointer;
+}
+#InclusivenessTitle{
+  color:#F68676;
+  cursor: pointer;
+}
+#AlignmentTitle{
+  color:#52FBF9;
+  cursor: pointer;
+}
+#FinancingTitle{
+  color:#36AFA9;
+  cursor: pointer;
+}
+#FlexiguidanceTitle{
+  color:#1D6962;
+  cursor: pointer;
+}
+#QualityTitle{
+  color:#072A25;
+  cursor: pointer;
+}
+
+.hint{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:11px;
+  font-style:italic;
+  color:#7A7A7A;
+}
+/*****************************/
+/** Scrolly telling feature **/
+/*****************************/
+
+
+#container{
+  position: relative;
+}
+#container2{
+  position: relative;
+}
+
+
+#sections{
+  	/**border-top: 1px solid #006FB3;
+  	border-bottom: 1px solid #006FB3;
+  	margin: 0px auto;**/
+  	margin-bottom: 200px;
+    padding-left: 1%;
+  	width: 29%;
+  	font-family: Caecilia, Georgia, serif;
+	  color:#979797;
+    font-size:1.4vw;
+    line-height: 1.25;
+}
+
+#sections2{
+  	/**border-top: 1px solid #006FB3;
+  	border-bottom: 1px solid #006FB3;
+  	margin: 0px auto;**/
+  	margin-bottom: 200px;
+    padding-left: 1%;
+  	width: 29%;
+  	font-family: Caecilia, Georgia, serif;
+	color:#979797;
+    font-size:1.4vw;
+    line-height: 1.25;
+}
+
+
+#sections > div{
+  background: white;
+  /**background:#f6f6f6;**/
+  opacity: 0.2;
+  padding: 5px;
+  margin-bottom: 200px;
+}
+#sections > div:last-child{
+  margin-bottom: 200px;
+}
+#sections > div.graph-scroll-active{
+  opacity: 0.9;
+}
+
+#sections2 > div{
+  background: white;
+  /**background:#f6f6f6;**/
+  opacity: 0.2;
+  padding: 5px;
+  margin-bottom: 200px;
+}
+  pre{
+    overflow: hidden;
+  }
+
+#sections2 > div:last-child{
+  margin-bottom: 200px;
+}
+#sections2 > div.graph-scroll-active{
+  opacity: 0.9;
+}
+
+
+pre{
+  overflow: hidden;
+}
+
+
+@media (max-width: 600px)  {
+  
+  #challengesChart{
+  width: 100%;
+}
+
+  #responsesChart{
+    width: 100%;
+  }
+
+  #graph{
+    width: 100%;
+    margin-left: 0px;
+    float: none;
+  }
+  #sections{
+    width: 80%;
+    margin: 0px auto;
+    position: relative;
+    font-size:12px;
+  }
+  #sections div{
+    /**background: rgba(246,246,246,.8);**/
+    padding: 10px;
+    margin-bottom: 80vh;
+  }
+   #sections2{
+    margin: 0px auto;
+    width: 80%;
+    position: relative;
+    font-size:12px;
+  }
+  #sections2 div{
+    /**background: rgba(246,246,246,.8);**/
+    padding: 10px;
+    margin-bottom: 80vh;
+  }
+  pre{
+    overflow: hidden;
+  }
+
+	.axis text{
+		font-size:11px;
+	}
+
+	.lollipopText{
+		font-size:11px;
+	}
+
+	.titles{
+		font-size:11px;
+	}
+
+	h1{
+		font-size:24px;
+	}
+
+	h2{
+		
+		font-size:18px;
+	}
+
+	.paragraph{
+			font-size:14px;
+	}
+
+	.def{
+	    font-size:14px;
+	}
+
+  .tab button {
+    font-size:14px;
+  }
+  .dropdown_text{
+    font-size:14px;
+  }
+  #country_dropdown {
+    font-size:14px;
+  }
+}
+
+
+/** Tooltip **/
+#indicTooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(252,252,252);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#indicTooltip.hidden {
+  display: none;
+}
+
+#indicTooltip p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+
+
+
+
+
+
