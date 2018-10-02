@@ -1053,71 +1053,71 @@
 "Sweden"	"LMI"	0.337537358
 "Turkey"	"LMI"	0.391630421
 "United States"	"LMI"	0.246279711
-"Australia"	"Total"	0.201778025
-"Austria"	"Total"	0.384839391
-"Belgium"	"Total"	0.317702843
-"Canada"	"Total"	0.274044245
-"Switzerland"	"Total"	NA
-"Chile"	"Total"	0.5626426
-"Czech Republic"	"Total"	0.368892878
-"Germany"	"Total"	0.450273703
-"Denmark"	"Total"	0.200411552
-"Spain"	"Total"	0.582543011
-"Estonia"	"Total"	0.438258902
-"Finland"	"Total"	0.250581573
-"France"	"Total"	0.362588203
-"United Kingdom"	"Total"	0.248872912
-"Greece"	"Total"	0.558619818
-"Hungary"	"Total"	0.506679544
-"Ireland"	"Total"	0.320493355
-"Israel"	"Total"	0.347540327
-"Italy"	"Total"	0.505206007
-"Japan"	"Total"	0.661605528
-"Korea"	"Total"	0.50267552
-"Lithuania"	"Total"	0.566715445
-"Luxembourg"	"Total"	0.331937801
-"Latvia"	"Total"	0.597682047
-"Netherlands"	"Total"	0.20326549
-"Norway"	"Total"	0.157064077
-"New Zealand"	"Total"	0.181378488
-"Poland"	"Total"	0.528180374
-"Portugal"	"Total"	0.598086693
-"Slovak Republic"	"Total"	0.44193651
-"Slovenia"	"Total"	0.472175882
-"Sweden"	"Total"	0.26599598
-"Turkey"	"Total"	0.538927537
-"United States"	"Total"	0.206743657
-"Australia"	"Ranking"	30
-"Austria"	"Ranking"	17
-"Belgium"	"Ranking"	23
-"Canada"	"Ranking"	24
-"Switzerland"	"Ranking"	NA
-"Chile"	"Ranking"	6
-"Czech Republic"	"Ranking"	18
-"Germany"	"Ranking"	14
-"Denmark"	"Ranking"	31
-"Spain"	"Ranking"	4
-"Estonia"	"Ranking"	16
-"Finland"	"Ranking"	26
-"France"	"Ranking"	19
-"United Kingdom"	"Ranking"	27
-"Greece"	"Ranking"	7
-"Hungary"	"Ranking"	10
-"Ireland"	"Ranking"	22
-"Israel"	"Ranking"	20
-"Italy"	"Ranking"	11
-"Japan"	"Ranking"	1
-"Korea"	"Ranking"	12
-"Lithuania"	"Ranking"	5
-"Luxembourg"	"Ranking"	21
-"Latvia"	"Ranking"	3
-"Netherlands"	"Ranking"	29
-"Norway"	"Ranking"	33
-"New Zealand"	"Ranking"	32
-"Poland"	"Ranking"	9
-"Portugal"	"Ranking"	2
-"Slovak Republic"	"Ranking"	15
-"Slovenia"	"Ranking"	13
-"Sweden"	"Ranking"	25
-"Turkey"	"Ranking"	8
-"United States"	"Ranking"	28
+"Australia"	"Urgency"	0.201778025
+"Austria"	"Urgency"	0.384839391
+"Belgium"	"Urgency"	0.317702843
+"Canada"	"Urgency"	0.274044245
+"Switzerland"	"Urgency"	NA
+"Chile"	"Urgency"	0.5626426
+"Czech Republic"	"Urgency"	0.368892878
+"Germany"	"Urgency"	0.450273703
+"Denmark"	"Urgency"	0.200411552
+"Spain"	"Urgency"	0.582543011
+"Estonia"	"Urgency"	0.438258902
+"Finland"	"Urgency"	0.250581573
+"France"	"Urgency"	0.362588203
+"United Kingdom"	"Urgency"	0.248872912
+"Greece"	"Urgency"	0.558619818
+"Hungary"	"Urgency"	0.506679544
+"Ireland"	"Urgency"	0.320493355
+"Israel"	"Urgency"	0.347540327
+"Italy"	"Urgency"	0.505206007
+"Japan"	"Urgency"	0.661605528
+"Korea"	"Urgency"	0.50267552
+"Lithuania"	"Urgency"	0.566715445
+"Luxembourg"	"Urgency"	0.331937801
+"Latvia"	"Urgency"	0.597682047
+"Netherlands"	"Urgency"	0.20326549
+"Norway"	"Urgency"	0.157064077
+"New Zealand"	"Urgency"	0.181378488
+"Poland"	"Urgency"	0.528180374
+"Portugal"	"Urgency"	0.598086693
+"Slovak Republic"	"Urgency"	0.44193651
+"Slovenia"	"Urgency"	0.472175882
+"Sweden"	"Urgency"	0.26599598
+"Turkey"	"Urgency"	0.538927537
+"United States"	"Urgency"	0.206743657
+"Australia"	"Urgency_Ranking"	30
+"Austria"	"Urgency_Ranking"	17
+"Belgium"	"Urgency_Ranking"	23
+"Canada"	"Urgency_Ranking"	24
+"Switzerland"	"Urgency_Ranking"	NA
+"Chile"	"Urgency_Ranking"	6
+"Czech Republic"	"Urgency_Ranking"	18
+"Germany"	"Urgency_Ranking"	14
+"Denmark"	"Urgency_Ranking"	31
+"Spain"	"Urgency_Ranking"	4
+"Estonia"	"Urgency_Ranking"	16
+"Finland"	"Urgency_Ranking"	26
+"France"	"Urgency_Ranking"	19
+"United Kingdom"	"Urgency_Ranking"	27
+"Greece"	"Urgency_Ranking"	7
+"Hungary"	"Urgency_Ranking"	10
+"Ireland"	"Urgency_Ranking"	22
+"Israel"	"Urgency_Ranking"	20
+"Italy"	"Urgency_Ranking"	11
+"Japan"	"Urgency_Ranking"	1
+"Korea"	"Urgency_Ranking"	12
+"Lithuania"	"Urgency_Ranking"	5
+"Luxembourg"	"Urgency_Ranking"	21
+"Latvia"	"Urgency_Ranking"	3
+"Netherlands"	"Urgency_Ranking"	29
+"Norway"	"Urgency_Ranking"	33
+"New Zealand"	"Urgency_Ranking"	32
+"Poland"	"Urgency_Ranking"	9
+"Portugal"	"Urgency_Ranking"	2
+"Slovak Republic"	"Urgency_Ranking"	15
+"Slovenia"	"Urgency_Ranking"	13
+"Sweden"	"Urgency_Ranking"	25
+"Turkey"	"Urgency_Ranking"	8
+"United States"	"Urgency_Ranking"	28

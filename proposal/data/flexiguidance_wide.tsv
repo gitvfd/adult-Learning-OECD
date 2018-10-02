@@ -475,71 +475,71 @@
 "Sweden"	"CG"	0.90625
 "Turkey"	"CG"	0
 "United States"	"CG"	NA
-"Australia"	"Total"	0.365486604
-"Austria"	"Total"	0.564946919
-"Belgium"	"Total"	0.29718483
-"Canada"	"Total"	0.428947324
-"Switzerland"	"Total"	0.514617916
-"Chile"	"Total"	0.573088603
-"Czech Republic"	"Total"	0.374925275
-"Germany"	"Total"	0.309212269
-"Denmark"	"Total"	0.689891739
-"Spain"	"Total"	0.640706857
-"Estonia"	"Total"	0.453746773
-"Finland"	"Total"	0.502926906
-"France"	"Total"	0.508500679
-"United Kingdom"	"Total"	0.493640998
-"Greece"	"Total"	0.231590428
-"Hungary"	"Total"	0.092832228
-"Ireland"	"Total"	0.372997052
-"Israel"	"Total"	0.454323752
-"Italy"	"Total"	0.450077876
-"Japan"	"Total"	0.098936728
-"Korea"	"Total"	0.591067313
-"Lithuania"	"Total"	0.4113271
-"Luxembourg"	"Total"	0.782811447
-"Latvia"	"Total"	0.390742409
-"Netherlands"	"Total"	0.706375251
-"Norway"	"Total"	0.519453379
-"New Zealand"	"Total"	0.443000979
-"Poland"	"Total"	0.458208588
-"Portugal"	"Total"	0.424169997
-"Slovak Republic"	"Total"	0.354391364
-"Slovenia"	"Total"	0.402990189
-"Sweden"	"Total"	0.705879899
-"Turkey"	"Total"	0.147946962
-"United States"	"Total"	0.571291718
-"Australia"	"Ranking"	27
-"Austria"	"Ranking"	9
-"Belgium"	"Ranking"	30
-"Canada"	"Ranking"	20
-"Switzerland"	"Ranking"	11
-"Chile"	"Ranking"	7
-"Czech Republic"	"Ranking"	25
-"Germany"	"Ranking"	29
-"Denmark"	"Ranking"	4
-"Spain"	"Ranking"	5
-"Estonia"	"Ranking"	17
-"Finland"	"Ranking"	13
-"France"	"Ranking"	12
-"United Kingdom"	"Ranking"	14
-"Greece"	"Ranking"	31
-"Hungary"	"Ranking"	34
-"Ireland"	"Ranking"	26
-"Israel"	"Ranking"	16
-"Italy"	"Ranking"	18
-"Japan"	"Ranking"	33
-"Korea"	"Ranking"	6
-"Lithuania"	"Ranking"	22
-"Luxembourg"	"Ranking"	1
-"Latvia"	"Ranking"	24
-"Netherlands"	"Ranking"	2
-"Norway"	"Ranking"	10
-"New Zealand"	"Ranking"	19
-"Poland"	"Ranking"	15
-"Portugal"	"Ranking"	21
-"Slovak Republic"	"Ranking"	28
-"Slovenia"	"Ranking"	23
-"Sweden"	"Ranking"	3
-"Turkey"	"Ranking"	32
-"United States"	"Ranking"	8
+"Australia"	"Flexiguidance"	0.365486604
+"Austria"	"Flexiguidance"	0.564946919
+"Belgium"	"Flexiguidance"	0.29718483
+"Canada"	"Flexiguidance"	0.428947324
+"Switzerland"	"Flexiguidance"	0.514617916
+"Chile"	"Flexiguidance"	0.573088603
+"Czech Republic"	"Flexiguidance"	0.374925275
+"Germany"	"Flexiguidance"	0.309212269
+"Denmark"	"Flexiguidance"	0.689891739
+"Spain"	"Flexiguidance"	0.640706857
+"Estonia"	"Flexiguidance"	0.453746773
+"Finland"	"Flexiguidance"	0.502926906
+"France"	"Flexiguidance"	0.508500679
+"United Kingdom"	"Flexiguidance"	0.493640998
+"Greece"	"Flexiguidance"	0.231590428
+"Hungary"	"Flexiguidance"	0.092832228
+"Ireland"	"Flexiguidance"	0.372997052
+"Israel"	"Flexiguidance"	0.454323752
+"Italy"	"Flexiguidance"	0.450077876
+"Japan"	"Flexiguidance"	0.098936728
+"Korea"	"Flexiguidance"	0.591067313
+"Lithuania"	"Flexiguidance"	0.4113271
+"Luxembourg"	"Flexiguidance"	0.782811447
+"Latvia"	"Flexiguidance"	0.390742409
+"Netherlands"	"Flexiguidance"	0.706375251
+"Norway"	"Flexiguidance"	0.519453379
+"New Zealand"	"Flexiguidance"	0.443000979
+"Poland"	"Flexiguidance"	0.458208588
+"Portugal"	"Flexiguidance"	0.424169997
+"Slovak Republic"	"Flexiguidance"	0.354391364
+"Slovenia"	"Flexiguidance"	0.402990189
+"Sweden"	"Flexiguidance"	0.705879899
+"Turkey"	"Flexiguidance"	0.147946962
+"United States"	"Flexiguidance"	0.571291718
+"Australia"	"Flexiguidance_Ranking"	27
+"Austria"	"Flexiguidance_Ranking"	9
+"Belgium"	"Flexiguidance_Ranking"	30
+"Canada"	"Flexiguidance_Ranking"	20
+"Switzerland"	"Flexiguidance_Ranking"	11
+"Chile"	"Flexiguidance_Ranking"	7
+"Czech Republic"	"Flexiguidance_Ranking"	25
+"Germany"	"Flexiguidance_Ranking"	29
+"Denmark"	"Flexiguidance_Ranking"	4
+"Spain"	"Flexiguidance_Ranking"	5
+"Estonia"	"Flexiguidance_Ranking"	17
+"Finland"	"Flexiguidance_Ranking"	13
+"France"	"Flexiguidance_Ranking"	12
+"United Kingdom"	"Flexiguidance_Ranking"	14
+"Greece"	"Flexiguidance_Ranking"	31
+"Hungary"	"Flexiguidance_Ranking"	34
+"Ireland"	"Flexiguidance_Ranking"	26
+"Israel"	"Flexiguidance_Ranking"	16
+"Italy"	"Flexiguidance_Ranking"	18
+"Japan"	"Flexiguidance_Ranking"	33
+"Korea"	"Flexiguidance_Ranking"	6
+"Lithuania"	"Flexiguidance_Ranking"	22
+"Luxembourg"	"Flexiguidance_Ranking"	1
+"Latvia"	"Flexiguidance_Ranking"	24
+"Netherlands"	"Flexiguidance_Ranking"	2
+"Norway"	"Flexiguidance_Ranking"	10
+"New Zealand"	"Flexiguidance_Ranking"	19
+"Poland"	"Flexiguidance_Ranking"	15
+"Portugal"	"Flexiguidance_Ranking"	21
+"Slovak Republic"	"Flexiguidance_Ranking"	28
+"Slovenia"	"Flexiguidance_Ranking"	23
+"Sweden"	"Flexiguidance_Ranking"	3
+"Turkey"	"Flexiguidance_Ranking"	32
+"United States"	"Flexiguidance_Ranking"	8
