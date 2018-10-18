@@ -153,6 +153,7 @@ ul li {
     *zoom: 1;
 }
 .scroll {
+    overflow:hidden;
   height: 450px;
   overflow: scroll;
   /**background-color: #e7ebef;**/
