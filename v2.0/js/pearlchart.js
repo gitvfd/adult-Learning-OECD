@@ -7,7 +7,7 @@ dimensionList.forEach(function(z){
 	indicators_metadata.filter(function(d){return d.Dimension==z.dimName;}).forEach(function(v){
 		
 		var selectedCou = document.getElementById("country_dropdown").options[document.getElementById("country_dropdown").selectedIndex].value;
-		pearlchart(v.Indicator_code,selectedCou,eval(z.dimName.toLowerCase()).filter(function(k){return k.variable==v.Indicator_code}))
+		barchart(v.Indicator_code,selectedCou,eval(z.dimName.toLowerCase()).filter(function(k){return k.variable==v.Indicator_code}))
 		
 	})
 })
@@ -44,7 +44,7 @@ function pearlchart(nameIndic,selectedCou,indicData){
 	    	.attr("id",nameIndic)
 	    	.attr("width", overallwidth)
 	    	.attr("height",heightPearl)
-	    	.style("background","rgba(247,247,247,0.5)")
+	    	//.style("background","rgba(247,247,247,0.5)")
 	  		.append("g")
 	    	.attr("class","compChart")
 	    	.attr("transform", "translate(" + 0 + "," + 0 + ")");
@@ -63,7 +63,7 @@ function pearlchart(nameIndic,selectedCou,indicData){
 			.attr("y1",heightPearl/2)
 			.attr("x2",xPearl(maxValue))
 			.attr("y2",heightPearl/2)
-	      	.style("stroke", "#00B7B5")
+	      	.style("stroke", "#b19b8e")
 	      	.style("stroke-width","1px");
 
 		var circleGroup = compChart.selectAll("g")
@@ -115,93 +115,90 @@ function pearlchart(nameIndic,selectedCou,indicData){
 	            else if  (nameIndic=="EmplGap")
 	              return  d.Country+ " (" + format(d.value) + "%"+")";
 	            else
-	              return  d.Country+ " (" + format(d.value) + "%"+")";
+	              return  d.Country+ " (" + format(d.value) + ""+")";
 	      })
 
 
 
 		compChart.selectAll("circle")
-			.on("mouseover",function(d){
-			d3.select(this)
-				.attr("r",10);
-
-			var xPosition = event.pageX-20;
-			var yPosition = event.pageY+15;
-			if (yPosition>window.innerHeight-200)
-				yPosition=yPosition-160;
-
-			//Update the tooltip position and value
-
-
-		     d3.select("#indicTooltip")
-		        .text(function(){
-	            	if (nameIndic=="Emp")
-	            		return "Employment rate (" + d.yearData +")";
-	            	if (nameIndic=="EmpFTI")
-	            		return "Full-time equivalent employment rate (" + d.yearData  +")";
-	            	if (nameIndic=="Unemp")
-	            		return "Unemployment rate (" + d.yearData  +")";
-	            	if (nameIndic=="EarnQual")
-	            		return "Earnings quality (" + d.yearData  +")";
-	            	if (nameIndic=="LabMarkSec")
-	            		return "Labour market insecurity (" + d.yearData  +")" ;
-	            	if (nameIndic=="JobStrain")
-	            		return "Job strain (" + d.yearData  +")" ;
-	            	if (nameIndic=="LongHours")
-	            		return "Very long-hours of work (" + d.yearData  +")" ;
-	            	if (nameIndic=="LowIncome")
-	            		return "Low income rate (" + d.yearData  +")" ;
-	            	if (nameIndic=="GenderIneq")
-	            		return "Gender Labour Income Gap (" + d.yearData  +")" ;
-	            	if (nameIndic=="EmplGap")
-	            		return "Employment gap for disadvantaged groups (" + d.yearData  +")" ;
-
-	            });
-
-		     d3.select("#valueTooltip")
-		        .text(function(){
-	            if (nameIndic=="EarnQual")
-	              return format(d.value) + " USD";
-	            else if  (nameIndic=="EmplGap")
-	              return format(d.value) + "%";
-	            else
-	              return format(d.value) + "%";
-        	});
-
-		     
+			.on("mouseover", function(d) {
+		              tooltip.html(d.Country + "<br><br> score: " + d3.format(".2")(d.value));
+		              tooltip.style("visibility", "visible");
+		      })
+		    .on("mousemove", mousemove)
+		   	.on("mouseout", mouseout);
 
 
 
-			d3.select("#indicTooltip")
-		        .style("left", xPosition + "px")
-		        .style("top", yPosition + "px") 
-		        .select("#countryTooltip")
-		        .text(d.Country);
+}
 
-			d3.select("#indicTooltip").classed("hidden", false);
 
+function barchart(nameIndic,selectedCou,indicData){
+
+	var data=(indicData.filter(function(d){return d.value!="NA"})).sort(function(a,b){return parseFloat(a.value)-parseFloat(b.value); })
+
+	var currentChart="#chart_"+nameIndic;
+	d3.selectAll(currentChart)
+		.selectAll("*")
+		.remove();
+
+	var idTopic="title_"+nameIndic;
+	var IDChart="#chart_"+nameIndic;
+
+	if(nameIndic!="Alignment" && nameIndic!="Financing" && nameIndic!="Flexiguidance" && nameIndic!="Inclusiveness" && nameIndic!="Coverage" && nameIndic!="Quality" && nameIndic!="Urgency")
+	document.getElementById(idTopic).innerHTML=returnName(nameIndic);
+
+	var compChart=d3.select(IDChart)
+	    	.append("svg")
+	    	.attr("id",nameIndic)
+	    	.attr("width", widthBar)
+	    	.attr("height",heightBar)
+	    	//.style("background","rgba(247,247,247,0.5)")
+	  		.append("g")
+	    	.attr("class","compChart")
+	    	.attr("transform", "translate(" + 0 + "," + 0 + ")");
+
+
+		var minValue = d3.min(data, function(d) { return parseFloat(d.value); });
+		var maxValue = d3.max(data, function(d) { return parseFloat(d.value); });
+
+
+  		xBar.domain(data.map(function(d) { return d.Country; }));
+
+		if(nameIndic=="???" || nameIndic=="???" )
+			yBar.domain([minValue,maxValue]) ;
+		else
+			yBar.domain([minValue,maxValue]) ;
+
+
+      compChart.selectAll(".bar")
+      	.data(data)
+    	.enter().append("rect")
+      	.attr("class", "bar")
+      	.attr("x", function(d) { return xBar(d.Country); })
+      	.attr("width", xBar.bandwidth())
+      	.attr("y", function(d) { return yBar(d.value); })
+      	.attr("height", function(d) { return heightBar-marginBar - yBar(d.value); })
+      	.attr("fill",function(d){
+      		if(d.Country==selectedCou)
+      		return "#993484"
+      		else
+      		return"#8EA4B1"
+      	});
 
 		
 
-		})
-		.on("mouseout",function(d){
 
-			var sel = document.getElementById("country_dropdown");
+		compChart.selectAll(".bar")
+		.on("mouseover", function(d) {
+		              tooltip.html(d.Country + "<br><br>" + d3.format(".2")(d.value));
+		              tooltip.style("visibility", "visible");
+		      })
+		    .on("mousemove", mousemove)
+		   	.on("mouseout", mouseout);
 
-				
-				d3.select(this)
-				.attr("r",  function(d){
-				if(d.ISO==sel.options[sel.selectedIndex].value)
-					return 8;
+		     
 
-				else
-					return 8;
-			})
-	            
-	            //Hide the tooltip
-				d3.select("#indicTooltip").classed("hidden", true);	            
-
-		});
 
 
 
