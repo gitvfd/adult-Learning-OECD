@@ -20,15 +20,24 @@ var padding = 0;
 
 var colorDim = d3.scaleOrdinal()
 	.domain([ "urgency", "participation", "inclusiveness","alignment","financing","flexiguidance","quality"])
-//.range(['#ff899c','#ff605b','#ff0000','#1fcdf1','#16b7db','#0ba1c5','#008baf'])
-.range(["#ff899c","#B35F57","#F68676","#52FBF9","#36AFA9","#1D6962","#072A25"])
+	.range(["#AB3A2C","#DE6736","#D16647","#51628E","#2B5275","#1D6962","#d0a039"])
+
+
+
+
+
+
 
 //Settings pearlCharts
 var overallwidth=0.9*screenWidth;
+var widthBar=0.55*screenWidth;
 var heightPearl=60;
+var heightBar=90;
 var sideMargin=overallwidth/5;
 var marginLeft=sideMargin;
 var marginRight=sideMargin;
+
+var marginBar=5;
 var formatNumber = d3.format(".0f");
 var format= d3.format(",.1f");
 
@@ -60,6 +69,14 @@ function returnName(topicSelected){
 var xPearl = d3.scaleLinear()
     .rangeRound([marginLeft, overallwidth-marginRight]);
 // end settings pearl charts
+
+
+var xBar = d3.scaleBand()
+    .range([marginBar, widthBar-marginBar])
+    .padding(0.1);;
+
+var yBar = d3.scaleLinear()
+    .range([heightBar-marginBar, marginBar]);
 
 
 var tooltip = d3.select("body")
@@ -247,7 +264,7 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 	dimension.forEach(function(d){
 
 	/// Adding SVG	
-		
+
 		var svg = d3.select("#chart")
 			.append("svg")
 			.attr("height", height)
@@ -260,28 +277,6 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 		var data2display=[{"dim":"alignment","value":d.alignment},{"dim":"financing","value":d.financing},{"dim":"flexiguidance","value":d.flexiguidance},{"dim":"inclusiveness","value":d.inclusiveness},{"dim":"participation","value":d.participation},{"dim":"quality","value":d.quality}] //no urgency
 
 
-		//Creating a gradient
-		var defs = svg.append("defs");
-
-		var gradient = defs.append("linearGradient")
-		   .attr("id", "svgGradient")
-		   .attr("x1", "100%")
-		   .attr("x2", "0%")
-		   .attr("y1", "50%")
-		   .attr("y2", "50%");
-
-		gradient.append("stop")
-		   .attr('class', 'start')
-		   .attr("offset", "0%")
-		   .attr("stop-color", "#DDE9EF")
-		   .attr("stop-opacity", 1);
-
-		gradient.append("stop")
-		   .attr('class', 'end')
-		   .attr("offset", "100%")
-		   .attr("stop-color", "#39617D")
-		   .attr("stop-opacity", 1);
-
 
 		// Urgency Bar
 		if(d.urgency!="NA"){
@@ -290,7 +285,8 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 		      .attr("class", "urgencyBcgd")
 		      .attr("x", 0)
 		      .attr("y", 0)
-		      .attr("width", 0.325*width  )
+		      .attr("width", width  )
+		      /**.attr("width", 0.325*width  )**/
 		      .attr("height", 	10/10*height)
 		      //.attr("fill","#39617D")
 		      .attr("fill", "url(#svgGradient)")
@@ -304,28 +300,24 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 		      .attr("width", 1.75*width/20)
 		      .attr("y", 0)
 		      .attr("height", function(d) { return y(d); })
-		      .attr("fill","#ff899c")
-			
-			/**svg.selectAll(".bartext")
-				.data([d.urgency])
-				.enter()
-				.append("text")
-				.attr("class", "bartext")
-				.attr("text-anchor", "middle")
-				.attr("x", 0.10 * width)
-				.attr("y", function(d,i) {
-	   				return y(d) + 15;
-				})
-				.text(function(d){
-	     			return Math.round(d*100)/100 ;
-				});	**/
+		      .attr("fill","#AB3A2C")
+				.on("mouseover", function(d) {
 
-			/**svg.append("text")
-		      .attr("class", "urgencyLabel")
-		      .attr("x", 5  )
-		      .attr("y", -0.2 * width)
-		      .attr("transform","rotate(90)")
-		      .text("Urgency");**/
+					var explanation
+					if (d.value<1/3)
+						explanation= country2display + " is among the countries facing the lowest <b>" + "urgency" + "</b>";
+					else if((d.value>=2/3))
+						explanation= country2display + " is among the countries facing the highest <b>" + "urgency" + "</b>";
+					else
+						explanation= country2display + " is among the countries facing an average level of <b>" + "urgency" + "</b>";
+
+			              tooltip.html("<br>"+explanation+"<br><br> score: " + d3.format(".2")(d));
+			              tooltip.style("visibility", "visible");
+			      })
+			    .on("mousemove", mousemove)
+			   	.on("mouseout", mouseout);
+			
+
 		}
 
 		/// Force settings	
@@ -345,51 +337,7 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 			//.force("center", d3.forceCenter(width / 2, height / 2))
 			.force("collide", forceCollide);
 
-		/// Adding Toggle Switches	
 		
-		/**var onClick = function(){
-			simulation 
-	    		.force("x", atRight ? forceXSplit : forceXCombine)  
-	    		.alpha(0.7)                                          
-	    		.restart();                                         
-	   		setAtRight(!atRight);
-		}
-
-		var atRight = true
-
-		var rect = svg.append("rect")
-	            .attr("x", 3)
-	            .attr("y", 3)
-	            .attr("rx", 11)
-	            .attr("ry", 11)
-	            .style("fill", "lightgray")
-	            .attr("width", 32)
-	            .attr("height", 20)
-	            .on("click", onClick)
-
-	    var circle = svg.append("circle")
-	            .attr("cx", 13)
-	            .attr("cy", 13)
-	            .attr("r", 8)
-	            .style("fill", "white")
-				.on("click", onClick)
-					
-
-	    var setAtRight = function(newValue) {
-	        atRight = newValue;
-	        circle.transition().duration(250)
-	                .attr("cx", (atRight? (13) : (25)))
-	                .style("fill", "white");
-	        rect.transition().duration(250)
-	        		.style("fill", atRight? "lightgray" : "#006FB3");  
-	    };
-
-
-	    var res = {
-	        'getValue': function() { return atRight; },
-	        'setValue': setAtRight,
-	        'remove': function() { circle.remove(); }
-	    };**/
 
 		/// Node Creation	
 		var circles = svg.selectAll(".dim")
@@ -404,13 +352,22 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 		})
 		.style("fill", d => colorDim(d.dim))
 		.on("mouseover", function(d) {
+			var dimensionSet=d.dim;
+
+
+			if(d.dim=="participation")
+				dimensionSet="coverage"
+
+			if(d.dim=="flexiguidance")
+				dimensionSet="flexibility and guidance"
+
 			var explanation
 			if (d.value>=2/3)
-				explanation= country2display + " is performing really well for <b>" + d.dim + "</b>";
+				explanation= country2display + " is among the top performers in the area of <b>" + dimensionSet + "</b>";
 			else if((d.value<1/3))
-				explanation= country2display + " is not performing really well for <b>" + d.dim + "</b>";
+				explanation= country2display + " is among the bottom performers in the area of <b>" + dimensionSet + "</b>";
 			else
-				explanation= country2display + " has an average performance for <b>" + d.dim + "</b>";
+				explanation= country2display + " is among the middle performers in the area of <b>" + dimensionSet + "</b>";
 
 	              tooltip.html("<br>"+explanation+"<br><br> score: " + d3.format(".2")(d.value));
 	              tooltip.style("visibility", "visible");
