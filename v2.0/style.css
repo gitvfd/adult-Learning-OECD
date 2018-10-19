@@ -168,18 +168,18 @@ ul li {
 .style-3::-webkit-scrollbar-track
 {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: #71838d;
+  background-color: #8ea4b1;
 }
 
 .style-3::-webkit-scrollbar
 {
   width: 6px;
-  background-color: #71838d;
+  background-color: #8ea4b1;
 }
 
 .style-3::-webkit-scrollbar-thumb
 {
-  background-color: #8ea4b1;
+  background-color: #7f939f;
 }
 
 /* Let's get this party started */
