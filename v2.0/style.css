@@ -138,7 +138,7 @@ ul li {
 .cf:before,
 .cf:after {
     content: " "; /* 1 */
-    /*display: table;  2 */
+    display: table; /* 2 */
 }
 
 .cf:after {
@@ -155,6 +155,8 @@ ul li {
 .scroll {
   height: 450px;
   overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
   /**background-color: #e7ebef;**/
   padding: 0 10px;
   margin-top: 2%;
