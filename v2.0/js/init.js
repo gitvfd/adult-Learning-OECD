@@ -288,8 +288,8 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 		      .attr("width", width  )
 		      /**.attr("width", 0.325*width  )**/
 		      .attr("height", 	10/10*height)
-		      //.attr("fill","#39617D")
-		      .attr("fill", "url(#svgGradient)")
+		      .attr("fill","#a4b6c0")
+		      //.attr("fill", "url(#svgGradient)")
 		      .attr("opacity",0.75);
 		    
 		    svg.selectAll(".bar")
