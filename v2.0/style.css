@@ -109,19 +109,20 @@ ul {
 }
 ul li {
     /**background: #cce5ff;**/
-    margin: 30px;
+    margin:10px;
+    margin-left: 30px;
     font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color:#d1dadf;
+  /**color:#d1dadf;**/color:#fff;
     font-size:18px;
-    line-height: 1.75;
+    line-height: 1.1;
 
 }
 .dimDef{
     font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style:italic;
-    color:#d1dadf;
+  /**color:#d1dadf;**/color:#fff;
     font-size:16px;
-    line-height: 1.8;
+    line-height: 1.1;
     opacity:0.9;
     margin-left: 15px
 
@@ -135,28 +136,29 @@ ul li {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.cf:before,
+/**.cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " "; 
+    display: table; 
 }
 
 .cf:after {
     clear: both;
-}
+}**/
 
 /**
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
-.cf {
+/**.cf {
     *zoom: 1;
-}
+}**/
 .scroll {
-  height: 450px;
+  /**height: 450px;
   overflow: scroll;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: hidden;**/ /** previous more mini scrolling**/
+  overflow:hidden;
   /**background-color: #e7ebef;**/
   padding: 0 10px;
   margin-top: 2%;
@@ -164,7 +166,7 @@ ul li {
   padding-right: 20%;
   padding-left: 20%;
 }
-
+/**
 .style-3::-webkit-scrollbar-track
 {
   -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0);
@@ -180,33 +182,11 @@ ul li {
 .style-3::-webkit-scrollbar-thumb
 {
   background-color: #7f939f;
-}
-
-/* Let's get this party started */
-/**.scroll ::-webkit-scrollbar {
-    width: 12px;
-}
- 
-
-.scroll ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
- 
-
-.scroll ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgba(255,0,0,0.8); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-.scroll ::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(255,0,0,0.4); 
 }**/
 
+
 .wrapper {
-  margin-top: 200px;
+  /**margin-top: 200px;**/
 }
 .content {
   margin-left: 2%;
@@ -218,16 +198,16 @@ ul li {
 }
 .content p{
   font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#d1dadf;
+  /**color:#d1dadf;**/color:#fff;
   font-size:18px;
   line-height: 1;
-  margin-bottom:100px;
+  /**margin-bottom:100px;**/
   
 }
 .sidebar p{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 900;
-  color:#d1dadf;
+  /**color:#d1dadf;**/color:#fff;
   font-size:3.5vw;
   line-height: 0.8;
   
