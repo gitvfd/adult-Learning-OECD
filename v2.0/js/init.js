@@ -20,7 +20,7 @@ var padding = 0;
 
 var colorDim = d3.scaleOrdinal()
 	.domain([ "urgency", "participation", "inclusiveness","alignment","financing","flexiguidance","quality"])
-	.range(["#AB3A2C","#DE6736","#D16647","#51628E","#2B5275","#1D6962","#d0a039"])
+	.range(["#AB3A2C","#DE6736","#DB8870","#51628E","#2B5275","#1D6962","#d0a039"])
 
 
 
