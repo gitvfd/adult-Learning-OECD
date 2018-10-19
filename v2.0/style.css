@@ -155,8 +155,8 @@ ul li {
 .scroll {
   height: 450px;
   overflow: scroll;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
   /**background-color: #e7ebef;**/
   padding: 0 10px;
   margin-top: 2%;
