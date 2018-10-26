@@ -1,0 +1,584 @@
+<!doctype html>
+<html>
+	<head>
+		<!--The browser can use non-English-language characters (...kind of) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="libs/d3.v4.min.js"></script>
+		<script src="libs/d3.v4.jetpack.min.js"></script>
+		<script src="libs/d3-scale-chromatic.v1.min.js"></script>
+		<script src="libs/d3-queue.v3.min.js"></script>
+		<script src="libs/graph-scroll.js"></script>
+		<script src="js/wrapText.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" rel="stylesheet">  
+		<meta charset="utf-8">
+		<style></style>
+	</head>
+	<body>
+		<h1>Priorities of adult learning dashboard</h1>
+	   <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks"  id="defaultOpen" onclick="openTabs(event, 'scrollView')">Home</button>
+      <button class="tablinks" id="countryStatsView" onclick="openTabs(event, 'countryView')">Countries</button>
+    </div>
+    <br/>
+
+
+
+    <div id="scrollView"  class="tabcontent">
+      <div class="paragraph">The world of work is changing. Digitalisation, deepening globalisation and population ageing are having a profound impact on the type and quality of jobs that are available, as well as on the kinds of skills needed to perform them.</div><div class="paragraph"> To what extent individuals, firms and economies can benefits from these changes critically depends on how ready its programmes for continuing training and education - its “adult learning systems”,- are to help people develop relevant skills for the changing world of work. What should the priorities be? 
+      </div>
+      <div class="scroll style-3">
+        <div class="wrapper cf">
+            <div class="sidebar">
+              <p>The 7 dimensions of the dashboard</p>
+            </div>
+            <div class="content">
+              <p>The “Priorities of Adult Learning Systems” (or “PAL”) dashboard allows you to compare how ready adult learning systems are in different countries for the new realities of digitalisation and globalisation.. It presents a set of internationally comparable indicators along seven dimensions. 
+                <ul>
+                  <li> urgency<br/><span class="dimDef">How pressing is the need for a country to update its adult learning systems?</span></li>
+                  <li> coverage<br/><span class="dimDef">To what extent are people and firms engaged in learning?</span></li>
+                  <li> inclusiveness<br/><span class="dimDef">Do different groups have the same access to adult training and education? </span> </li>
+                  <li> flexibility and guidance<br/><span class="dimDef">How do countries provide training information and guidance to adults and how flexible are their learning systems?</span> </li>
+                  <li> alignment with skill needs<br/><span class="dimDef">Does the training and education offered provide adults with the skills needed by employers?</span> </li>
+                  <li> training quality<br/><span class="dimDef">Does the country measure the quality of its adult learning system and does it evaluate how effective it is?</span> </li>
+                  <li> financing<br/><span class="dimDef">How well is the adult learning system funded by governments, firms and individuals? </span> </li>
+              </ul>
+              <p>
+            </div> 
+        </div>
+      </div>
+
+      
+      <br/>
+
+  		<div id="wrapper">
+  			<div id="legend">
+  				<h1>Adult learning systems</h1>
+  				<p>The values range between <b>zero</b> (lowest value) and <b>one</b> (highest value). For all dimensions except urgency, higher values correspond to better performance. This the bigger the bubble the higher the performance in that dimension.   </p>
+          <p> For the <b>urgency</b> dimension, higher values mean stronger urgency. Thus, the longer the bar, the more urgently a country needs to act.</p> 
+          <p><i>If a country lacks a bubble, this means there was not enough data available for that dimension.</i></p>
+  				<img id="imgLegend" src="Legend.png" height="384px" width="224px" />
+          <br/>	
+          <p><a href="https://www.oecd.org" target="_blank">More info</a></p>
+  			</div>
+  			<div id="chart"></div>
+  		</div>
+  		<br/>	
+  		<h2>Challenges</h2>
+  		<div class="paragraph">All countries will have to step up efforts to make their adult learning systems ready for the future. Some countries are facing greater pressure to do so than others, due to factors such as low adult skill levels, population ageing and structural changes in their economies, all of which can lead to a lack of critical skills. In many countries, few adults participate learning activities, in particular those who most need to improve their skills or acquire new ones.   
+      </div>
+      <br/>
+   		<div id='container' class='container-1'>
+        <div id="challengesChart"></div>
+        <div id='sections'>
+          <!--<div>
+            <h3>&nbsp;</h3>
+            <span class="def">&nbsp;
+          </div>-->
+      		<div>
+        			<h3>Urgency</h3>
+        			<span class="def">New technologies, globalisation and population ageing are influencing the quantity and quality of jobs that are available and the skills workers need to do them  yet many adults lack strong basic skills to help them access these new opportunities.. The urgency dimension assesses how pressing the need for up- and reskilling is in different countries.
+        			</span>
+       			
+      		</div>
+      		<div>
+        			<h3>Coverage</h3>
+        			<span class="def">In a changing world of work, increasing everyone’s engagement in adult learning is vital for social and economic inclusion. It is also critical to ensure that firms have access to the skilled workers they need to stay competitive. The coverage dimension assesses the extent to which individuals and employers are engaged in adult learning.
+        			</span>
+      		</div>
+      		<div>
+        			<h3>Inclusiveness</h3>
+        			<span class="def">Providing inclusive learning opportunities for all , especially for those whose most need to refresh their skills or develop new ones, is vital. In many cases, certain groups, such as low-skilled or older adults, have difficulty accessing training opportunities. The inclusiveness dimension looks at how equitable participation in adult learning is across countries. 
+        			</span>
+        		</div>
+          </div>
+        </div>
+        <br/>
+  		  <h2>Responses</h2>
+          <div class="paragraph">To make sure their adult learning systems are ready for the future, countries will need to  adequately fund their PALS and ensure that training opportunities are flexible, of high quality and correspond to skill needs in the job market. </div>
+          <br/>
+  		    <div id='container2' class='container-2'>
+        		<div id="responsesChart"></div>
+        		<div id='sections2'>
+              <!--<div>
+                  <h3>&nbsp;</h3>
+                  <span class="def">&nbsp;
+              </div>-->
+          		<div>
+            			<h3>Financing</h3>
+            			<span class="def">Adult learning systems need adequately financing in order to function. A healthy mix of funding sources, including contributions from government, employers and individuals themselves, is essential for their sustainability. The financing dimension assesses the extent to which adult learning systems are adequately financed by different actors.
+            			</span>
+          		</div>
+          		<div>
+            			<h3>Alignement</h3>
+            			<span class="def">Training opportunities must be aligned with skill needs in the job market, if people are to find work. This is vital for those whose current skills are highly likely to become obsolete. The alignment dimension looks at how well adult learning systems take into account the changing skill needs of the labour market.
+            			</span>
+            		</div>
+          		<div>
+            			<h3>Quality</h3>
+            			<span class="def">Training must be high quality if it is to serve its purpose. While quality is difficult to measure, quality assurance of adult learning providers and programmes is possible through certification, monitoring and evaluation. The quality dimension measures these aspects of quality. 
+            			</span>
+            		</div>
+          		<div>
+            			<h3>Flexibility and guidance</h3>
+            			<span class="def">Adults need easy access to information about training opportunities, but such opportunities must be flexible and responsive to their particular needs as adults. The flexibility and guidance dimension looks at how well countries do in providing information and guidance to adults on training opportunities and reducing barriers to their participation through flexible provision. 
+            			</span>
+            		</div>
+              </div>
+            </div>
+            <div class="paragraph">
+            To find out more, consult the accompanying report, “Getting Skills Right: Future-ready Adult Learning Systems”, which provides in-depth analysis of these dimensions.
+            </div>
+    </div>
+    <div id="countryView"  class="tabcontent">
+      <div id="Country_sel">
+        <div class="dropdown_text">Select a country to see how it performs across the different dimensions: </div>
+        <select id="country_dropdown" onchange="loopOverIndicators(alignment,financing,flexiguidance,inclusiveness,participation,quality,urgency)">
+             <option value="-"> - </option>
+             <option value="Australia" selected="selected">Australia</option>
+             <option value="Austria" >Austria</option>
+             <option value="Belgium" >Belgium</option>
+             <option value="Canada" >Canada</option>
+             <option value="Chile" >Chile</option>
+             <option value="Czech Republic" >Czech Republic</option>
+             <option value="Denmark" >Denmark</option>
+             <option value="Estonia" >Estonia</option>
+             <option value="Finland" >Finland</option>
+             <option value="France" >France</option>
+             <option value="Germany" >Germany</option>
+             <option value="Greece" >Greece</option>
+             <option value="Hungary" >Hungary</option>
+             <option value="Ireland" >Ireland</option>
+             <option value="Israel" >Israel</option>
+             <option value="Italy" >Italy</option>
+             <option value="Japan" >Japan</option>
+             <option value="Korea" >Korea</option>
+             <option value="Latvia" >Latvia</option>
+             <option value="Lithuania" >Lithuania</option>
+             <option value="Luxembourg" >Luxembourg</option>
+             <option value="Netherlands" >Netherlands</option>
+             <option value="New Zealand"" >New Zealand</option>
+             <option value="Norway" >Norway</option>
+             <option value="Poland" >Poland</option>
+             <option value="Portugal" >Portugal</option>
+             <option value="Slovak Republic" >Slovak Republic</option>
+             <option value="Slovenia" >Slovenia</option>
+             <option value="Spain" >Spain</option>
+             <option value="Sweden" >Sweden</option>
+             <option value="Switzerland" >Switzerland</option>
+             <option value="Turkey" >Turkey</option>
+             <option value="United Kingdom" >United Kingdom</option>
+             <option value="United States" >United States</option>
+        <!--</optgroup>-->
+        </select>
+      </div>
+    
+      <!--
+        *******************************************************
+        ************Indicators' List*********************
+        *******************************************************
+      -->
+    
+      <!--*******************************************    
+        ************ Challenges *********************
+        *********************************************
+      -->
+      <div id="Challenges">
+        <!------------->
+        <!-- Urgency -->
+        <!------------->
+        <div class="dimTitle" id="UrgencyTitle" data-toggle="collapse"  href="#collapseUrgency">Urgency <span class="hint">Click to expand/collapse</span></div>
+        <div class="introChart">
+          <div id="title_Urgency" class="indicTitle">
+          </div>
+          <div id="chart_Urgency" class="indicChart">
+          </div>
+        </div>
+        <div id="collapseUrgency" class="panel-collapse collapse">
+          <div class="indicatorPres">
+            <div id="title_1_1_1" class="indicTitle">
+            </div>
+            <div id="chart_1_1_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_1_1_2" class="indicTitle">
+            </div>
+            <div id="chart_1_1_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_1_2_1" class="indicTitle">
+            </div>
+            <div id="chart_1_2_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_1_2_2" class="indicTitle">
+            </div>
+            <div id="chart_1_2_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_1_3_1" class="indicTitle">
+            </div>
+            <div id="chart_1_3_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_1_3_2" class="indicTitle">
+            </div>
+            <div id="chart_1_3_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_1_4_1" class="indicTitle">
+            </div>
+            <div id="chart_1_4_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_1_4_2" class="indicTitle">
+            </div>
+            <div id="chart_1_4_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_1_4_3" class="indicTitle">
+            </div>
+            <div id="chart_1_4_3" class="indicChart">
+            </div>
+          </div>
+        </div>
+
+
+        <!------------------->
+        <!-- Participation -->
+        <!------------------->
+        <div class="dimTitle" id="CoverageTitle" data-toggle="collapse"  href="#collapseCoverage">Coverage <span class="hint">Click to expand/collapse</span></div>
+        <div class="introChart">
+          <div id="title_Coverage" class="indicTitle">
+          </div>
+          <div id="chart_Coverage" class="indicChart">
+          </div>
+        </div>
+        <div id="collapseCoverage" class="panel-collapse collapse">
+          <div class="indicatorPres">
+            <div id="title_3_1_1" class="indicTitle">
+            </div>
+            <div id="chart_3_1_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_3_1_2" class="indicTitle">
+            </div>
+            <div id="chart_3_1_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_3_1_3" class="indicTitle">
+            </div>
+            <div id="chart_3_1_3" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_3_2_1" class="indicTitle">
+            </div>
+            <div id="chart_3_2_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_3_2_2" class="indicTitle">
+            </div>
+            <div id="chart_3_2_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_3_3_3" class="indicTitle">
+            </div>
+            <div id="chart_3_3_3" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_3_4_3" class="indicTitle">
+            </div>
+            <div id="chart_3_4_3" class="indicChart">
+            </div>
+          </div>
+        </div>
+        <!------------------->
+        <!-- Inclusiveness -->
+        <!------------------->
+        <div class="dimTitle" id="InclusivenessTitle" data-toggle="collapse"  href="#collapseInclusiveness">Inclusiveness <span class="hint">Click to expand/collapse</span></div>
+        <div class="introChart">
+          <div id="title_Inclusiveness" class="indicTitle">
+          </div>
+          <div id="chart_Inclusiveness" class="indicChart">
+          </div>
+        </div>
+        <div id="collapseInclusiveness" class="panel-collapse collapse">
+          <div class="indicatorPres">
+            <div id="title_4_1_1" class="indicTitle">
+            </div>
+            <div id="chart_4_1_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_4_1_2" class="indicTitle">
+            </div>
+            <div id="chart_4_1_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_4_1_3" class="indicTitle">
+            </div>
+            <div id="chart_4_1_3" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_4_1_4" class="indicTitle">
+            </div>
+            <div id="chart_4_1_4" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_4_2_1" class="indicTitle">
+            </div>
+            <div id="chart_4_2_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_4_2_2" class="indicTitle">
+            </div>
+            <div id="chart_4_2_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_4_2_3" class="indicTitle">
+            </div>
+            <div id="chart_4_2_3" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_4_2_4" class="indicTitle">
+            </div>
+            <div id="chart_4_2_4" class="indicChart">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--*******************************************    
+        ************ Responses *********************
+        *********************************************
+      -->
+      <div id="Responses">
+
+        <!------------->
+        <!-- Financing -->
+        <!------------->
+        <div class="dimTitle" id="FinancingTitle" data-toggle="collapse"  href="#collapseFinancing">Financing <span class="hint">Click to expand/collapse</span></div>
+        <div class="introChart">
+          <div id="title_Financing" class="indicTitle">
+          </div>
+          <div id="chart_Financing" class="indicChart">
+          </div>
+        </div>
+        <div id="collapseFinancing" class="panel-collapse collapse">
+          <div class="indicatorPres">
+            <div id="title_2_1_1" class="indicTitle">
+            </div>
+            <div id="chart_2_1_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_2_1_2" class="indicTitle">
+            </div>
+            <div id="chart_2_1_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_2_2_1" class="indicTitle">
+            </div>
+            <div id="chart_2_2_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_2_2_2" class="indicTitle">
+            </div>
+            <div id="chart_2_2_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_2_2_3" class="indicTitle">
+            </div>
+            <div id="chart_2_2_3" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_2_3_1" class="indicTitle">
+            </div>
+            <div id="chart_2_3_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_2_3_2" class="indicTitle">
+            </div>
+            <div id="chart_2_3_2" class="indicChart">
+            </div>
+          </div>
+        </div>
+        <!------------->
+        <!-- Quality -->
+        <!------------->
+        <div class="dimTitle" id="QualityTitle" data-toggle="collapse"  href="#collapseQuality">Quality <span class="hint">Click to expand/collapse</span></div>
+        <div class="introChart">
+          <div id="title_Quality" class="indicTitle">
+          </div>
+          <div id="chart_Quality" class="indicChart">
+          </div>
+        </div>
+        <div id="collapseQuality" class="panel-collapse collapse">
+          <div class="indicatorPres">
+            <div id="title_5_1_1" class="indicTitle">
+            </div>
+            <div id="chart_5_1_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_5_1_2" class="indicTitle">
+            </div>
+            <div id="chart_5_1_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_5_2_1" class="indicTitle">
+            </div>
+            <div id="chart_5_2_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_5_2_2" class="indicTitle">
+            </div>
+            <div id="chart_5_2_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_5_2_3" class="indicTitle">
+            </div>
+            <div id="chart_5_2_3" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_5_2_4" class="indicTitle">
+            </div>
+            <div id="chart_5_2_4" class="indicChart">
+            </div>
+          </div>
+        </div>
+        <!------------->
+        <!-- Alignment -->
+        <!------------->
+        <div class="dimTitle" id="AlignmentTitle" data-toggle="collapse"  href="#collapseAlignment">Alignment <span class="hint">Click to expand/collapse</span></div>
+        <div class="introChart">
+          <div id="title_Alignment" class="indicTitle">
+          </div>
+          <div id="chart_Alignment" class="indicChart">
+          </div>
+        </div>
+        <div id="collapseAlignment" class="panel-collapse collapse">
+          <div class="indicatorPres">
+            <div id="title_6_1_1" class="indicTitle">
+            </div>
+            <div id="chart_6_1_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_6_2_1" class="indicTitle">
+            </div>
+            <div id="chart_6_2_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_6_2_2" class="indicTitle">
+            </div>
+            <div id="chart_6_2_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_6_2_3" class="indicTitle">
+            </div>
+            <div id="chart_6_2_3" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_6_3_1" class="indicTitle">
+            </div>
+            <div id="chart_6_3_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_6_3_2" class="indicTitle">
+            </div>
+            <div id="chart_6_3_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_6_3_3" class="indicTitle">
+            </div>
+            <div id="chart_6_3_3" class="indicChart">
+            </div>
+          </div>
+        </div>
+        <!------------------->
+        <!-- Participation -->
+        <!------------------->
+        <div class="dimTitle" id="FlexiguidanceTitle" data-toggle="collapse"  href="#collapseFlexiquidance">Flexiguidance <span class="hint">Click to expand/collapse</span></div>
+        <div class="introChart">
+          <div id="title_Flexiguidance" class="indicTitle">
+          </div>
+          <div id="chart_Flexiguidance" class="indicChart">
+          </div>
+        </div>
+        <div id="collapseFlexiquidance" class="panel-collapse collapse">
+          <div class="indicatorPres">
+            <div id="title_7_1_1" class="indicTitle">
+            </div>
+            <div id="chart_7_1_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_7_1_2" class="indicTitle">
+            </div>
+            <div id="chart_7_1_2" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_7_2_1" class="indicTitle">
+            </div>
+            <div id="chart_7_2_1" class="indicChart">
+            </div>
+          </div>
+          <div class="indicatorPres">
+            <div id="title_7_2_2" class="indicTitle">
+            </div>
+            <div id="chart_7_2_2" class="indicChart">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+	</body>
+
+  <script src="js/openTabs.js"></script>
+  <script src="js/scrollytelling.js"></script>
+  <script src="js/pearlchart.js"></script>
+  <script src="js/init.js"></script>
+</html>
