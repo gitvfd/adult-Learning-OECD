@@ -1,0 +1,544 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"list",
+				"listSDG"
+			],
+			[
+				"data",
+				"dataValidated"
+			],
+			[
+				"dis",
+				"dispLinks"
+			],
+			[
+				"max",
+				"maxIteration"
+			],
+			[
+				"chart",
+				"chartIndic"
+			],
+			[
+				"links",
+				"linksIndic"
+			],
+			[
+				"indic",
+				"indicData"
+			],
+			[
+				"mar",
+				"margin\tproperty"
+			],
+			[
+				"marin",
+				"margin-left\tproperty"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"fon",
+				"font-weight\tproperty"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"heigh",
+				"heightBar"
+			],
+			[
+				"paddi",
+				"padding-right\tproperty"
+			],
+			[
+				"padd",
+				"padding\tproperty"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"mouse",
+				"mouseout"
+			],
+			[
+				"background",
+				"background-color\tproperty"
+			],
+			[
+				"colr",
+				"color2return"
+			],
+			[
+				"color",
+				"color2return"
+			],
+			[
+				"colo",
+				"colorSDGList"
+			],
+			[
+				"font",
+				"font-style\tproperty"
+			],
+			[
+				"nodes",
+				"nodesTrans"
+			],
+			[
+				"link",
+				"linksTrans"
+			],
+			[
+				"sdg",
+				"sdgsOnly"
+			],
+			[
+				"sd",
+				"sdgConcept"
+			],
+			[
+				"p",
+				"padding-right\tproperty"
+			],
+			[
+				"in",
+				"indicData"
+			],
+			[
+				"min",
+				"minValue"
+			],
+			[
+				"indico",
+				"indicators_metadata"
+			],
+			[
+				"sele",
+				"selectedConcept"
+			],
+			[
+				"con",
+				"connectedNode"
+			],
+			[
+				"class_concept_",
+				"class_concept_check"
+			],
+			[
+				"all",
+				"allConcepts"
+			],
+			[
+				"node",
+				"nodeLabelLength"
+			],
+			[
+				"slid",
+				"sliderRanger"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"load",
+				"loadedConcept"
+			],
+			[
+				"bor",
+				"border-color\tproperty"
+			],
+			[
+				"border",
+				"border-width\tproperty"
+			],
+			[
+				"pu",
+				"Pub_title"
+			],
+			[
+				"Pub",
+				"Pub_concept"
+			],
+			[
+				"class",
+				"class_concept"
+			],
+			[
+				"paddin",
+				"padding-left\tproperty"
+			],
+			[
+				"c",
+				"concept"
+			],
+			[
+				"select",
+				"selectAll"
+			],
+			[
+				"wid",
+				"screenWidth"
+			],
+			[
+				"he",
+				"heightChart"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"marg",
+				"margin-right\tproperty"
+			],
+			[
+				"cou",
+				"countryOECD"
+			],
+			[
+				"Annot",
+				"annotationLayer"
+			],
+			[
+				"lae",
+				"labels"
+			],
+			[
+				"b",
+				"buildLabel"
+			],
+			[
+				"colors",
+				"colorsIncome"
+			],
+			[
+				"mobi",
+				"mobiCou"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"Worl",
+				"worldMap"
+			],
+			[
+				"mo",
+				"mobiData"
+			],
+			[
+				"fill",
+				"fillCou"
+			],
+			[
+				"fil",
+				"fillCou"
+			],
+			[
+				"wo",
+				"worldMap"
+			],
+			[
+				"map",
+				"mapRatio"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/index_quality.html",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/index_factors.html",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/index_expenditure.html",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/index.html",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/index_access.html",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version6/index.html",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version6/style.css",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version4.2/style.css",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version4.2/index.html",
+		"/Users/vfduclos/GitHub/digi-network-oecd/index.html",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version5/index.html",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version6/data/data.tsv",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version5/data/class_concept.tsv",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version5/style.css",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version5/css/rSlider.min.css",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version2/index.html",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version2/style.css",
+		"/Users/vfduclos/Documents/Work/Better Life Index/K4K/description icon",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version5/data/indic_data.tsv",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version5/data/data.tsv",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version5/data/SDG_colors.tsv",
+		"/Users/vfduclos/GitHub/POC_FoW_Pub_Concepts/index.html",
+		"/Users/vfduclos/GitHub/POC_FoW_Pub_Concepts/data/data.tsv",
+		"/Users/vfduclos/GitHub/POC_FoW_Pub_Concepts/data/Class_colors.tsv",
+		"/Users/vfduclos/GitHub/POC_FoW_Pub_Concepts/data/class_concept.tsv",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version4/index.html",
+		"/Users/vfduclos/GitHub/POC_FoW_Pub_Concepts/data/SDG_colors.tsv",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/data/careRessources.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/v2.0/style.css",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/style.css",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/js/setupButtons.js",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/data/qualitycare_key.tsv",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/data/risks_key.tsv",
+		"/Users/vfduclos/Desktop/BLIdata/indicators_data_2018-rounded.csv",
+		"/Users/vfduclos/Desktop/BLIdata/indicators_data_2017-rounded.csv",
+		"/Users/vfduclos/Desktop/BLIdata/inequality_score_gender_2017.csv",
+		"/Users/vfduclos/Desktop/BLIdata/indicators_men_2017.csv",
+		"/Users/vfduclos/Desktop/BLIdata/indicators_women_2017.csv",
+		"/Users/vfduclos/Desktop/BLIdata/indicators_women_2018.csv",
+		"/Users/vfduclos/Desktop/BLIdata/indicators_men_2018.csv",
+		"/Users/vfduclos/Desktop/BLIdata/indicators_normalised_2017v2.csv",
+		"/Users/vfduclos/Desktop/BLIdata/indicators_normalised_2018.csv",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version4/style.css",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/v2.0/index.html",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/js/embed.js",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/data/status_key.tsv",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/data/accesscare_key.tsv",
+		"/Users/vfduclos/GitHub/Health-At-a-Glance-Europe-2018/index_resources.html",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/v2.0/js/init.js",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version4/data/class_concept.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/v2.0/js/pearlchart.js",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/index.html",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/style.css",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version4/data/data.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/js/scrollytelling.js",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/js/init.js",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/js/pearlchart.js",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version4/no velocity \t17:12",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version4/data/SDG_colors.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/data/alignment_wide.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/proposal/data/urgency.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/proposal/data/quality.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/proposal/data/participation.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/proposal/data/inclusiveness.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/proposal/data/flexiguidance.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/proposal/data/financing.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/proposal/data/alignment.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/data/urgency_wide.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/data/quality_wide.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/data/participation_wide.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/data/inclusiveness_wide.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/data/flexiguidance_wide.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/data/financing_wide.tsv",
+		"/Users/vfduclos/GitHub/adult-Learning-OECD/data/dimension.tsv",
+		"/Users/vfduclos/GitHub/adult_Learning/data/inclusiveness_wide.tsv",
+		"/Users/vfduclos/GitHub/oecd-risks-that-matters/.gitignore",
+		"/Users/vfduclos/GitHub/adult_Learning/.gitignore",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/js/pearlchart.js",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/index.html",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/style.css",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/js/scrollytelling.js",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/js/init.js",
+		"/Users/vfduclos/GitHub/migrants_integration_in_regions/js/scrollytelling.js",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/js/launch.js",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/js/openTabs.js",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version3/style.css",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version3/index.html",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version3/data/data.tsv",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version2/legend.js",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version3/legend.js",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version3/data/class_concept.tsv",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/data/indicator_guide.tsv",
+		"/Users/vfduclos/GitHub/dash-oecd-emp-outlook/index.html",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/data/alignment_wide.tsv",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/data/urgency_wide.tsv",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/js/pearchart.js",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version2/data/data.tsv",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version2/data/class_concept.tsv",
+		"/Users/vfduclos/Dropbox/Work/SDGs/text.txt",
+		"/Users/vfduclos/Dropbox/Work/audience/OneData_Val/ONE_MP.csv",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/.gitignore",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version2/css/rSlider.min.css",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/data/alignment.tsv",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version2/libs/d3v4-jetpack.js",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version2/setupbuttonsfilters.js",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/version2/functions.js",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/index.html",
+		"/Users/vfduclos/GitHub/POC_SDGpubConcept/data/data.tsv",
+		"/Users/vfduclos/GitHub/migrants_integration_in_regions/site.css",
+		"/Users/vfduclos/Dropbox/Work/index.html",
+		"/Users/vfduclos/Dropbox/Work/test_SDGs/functions.js",
+		"/Users/vfduclos/Dropbox/Work/test_SDGs/index.html",
+		"/Users/vfduclos/Dropbox/Work/test_SDGs/data/data.tsv",
+		"/Users/vfduclos/Dropbox/Work/test_SDGs/style.css",
+		"/Users/vfduclos/Dropbox/Work/test_SDGs/data/data_tot.tsv",
+		"/Users/vfduclos/GitHub/digi-network-oecd/data/data_tot.tsv",
+		"/Users/vfduclos/Dropbox/Work/audience/Audience 20180518/themesXnewsletters.svg",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/exemple/movie_bubbles2.js",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/exemple/style.css",
+		"/Users/vfduclos/GitHub/migrants_integration_in_regions/js/countryCardFunct.js",
+		"/Users/vfduclos/GitHub/migrants_integration_in_regions/index.html",
+		"/Users/vfduclos/GitHub/migrants_integration_in_regions/js/wrapText.js",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/js/wrapText.js",
+		"/Users/vfduclos/Dropbox/Work/adult_skills/exemple/index.html",
+		"/Users/vfduclos/GitHub/social-mobility-map/index.html",
+		"/Users/vfduclos/Dropbox/Work/viz_gender_budgeting/index.html",
+		"/Users/vfduclos/Dropbox/Work/inclusive_growth_feedback/q6.tsv",
+		"/Users/vfduclos/Dropbox/Work/inclusive_growth_feedback/q5.tsv"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 318.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
