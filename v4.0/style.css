@@ -102,6 +102,20 @@ h3{
 	letter-spacing: normal;
 }
 
+#help{
+	width:80%;
+	margin:auto;
+	padding-left:1.5%;
+	padding-right:1.5%;
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#0297C9;
+	font-size:18px;
+	line-height: 1.75;
+  text-align:right;
+  text-decoration: underline;
+  letter-spacing: normal;
+  cursor: help;
+}
 ul {
     /**list-style-type: none;**/
     margin: 0;
@@ -290,52 +304,6 @@ ul li {
 }
 
 
-#Country_sel{
-    display: block;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;/**Allows to leave the tab on top of the page at all time**/
-	  max-width:1100px;
-	  margin:auto;
-  	border-style: solid;
-  	border-width: 1px;
-  	border-color:  #afbfc8;
-  	background-color: #afbfc8;
-  	padding-left:5px;
-  	color:#575757;
-  	text-rendering: optimizeLegibility;
-  	-webkit-font-smoothing: antialiased;
-}
-
-#country_dropdown{
-  font-family:Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  
-  font-size:22px;
-  text-align:center;
-  letter-spacing:normal;
-  color:#575757;
-  padding: 0 1%;
-  vertical-align: baseline;
-  color: white;
-  cursor: pointer;
-  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
-  background-color: #afbfc8;
-  border:none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  padding-bottom: 5px;
-}
-.dropdown_text{
-	max-width:1100px;
-	margin:auto;
-  font-family:Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#575757;
-  
-  font-size:24px;
-  text-align:start;
-}
-
-
 /*****************************/
 /**..........CHARTS........ **/
 /*****************************/
@@ -419,7 +387,6 @@ svg {
 }
 
 .titles{
-
 	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size:15px;
 	fill:#575757;
@@ -441,6 +408,65 @@ svg {
 }
 
 
+
+.noDataAvailable{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:12px;
+  font-style:italic;
+	fill:#575757;
+}
+/*****************************/
+/** Dropdown                **/
+/*****************************/
+
+#Country_sel{
+    /**display: block;**/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;/**Allows to leave the tab on top of the page at all time**/
+	  /**max-width:1100px;**/
+	  margin:auto;
+  	border-style: solid;
+  	border-width: 1px;
+  	border-color:  #afbfc8;
+  	background-color: #afbfc8;
+  	padding-left:5px;
+  	color:#575757;
+  	text-rendering: optimizeLegibility;
+  	-webkit-font-smoothing: antialiased;
+}
+
+#country_dropdown{
+  font-family:Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  font-size:16px;
+  text-align:center;
+  letter-spacing:normal;
+  color:#575757;
+  padding: 0 1%;
+  vertical-align: baseline;
+  color: white;
+  cursor: pointer;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
+  background-color: #afbfc8;
+  border:none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 5px;
+}
+.dropdown_text{
+	/**max-width:1100px;**/
+	margin:auto;
+  font-family:Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#575757;
+  
+  font-size:18px;
+  text-align:start;
+}
+
+
+
+
 /*****************************/
 /**......INDIC SECTIONS.... **/
 /*****************************/
@@ -457,14 +483,61 @@ svg {
   margin-top:10px;
   display: flex;
 }
-
+:root {
+  --default-padding: 16px;
+  --header-height: 52px;
+  --sticky-pos: 52px;
+}
 .dimTitle{
+  position: sticky;
+  top: var(--sticky-pos); /* Sentinels adjust based on this position. */
+  display: flex;
+  height: var(--header-height);
   font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:20px;
   color:#0297C9;
   margin-right: 5%;
-  margin-top:30px;
+  margin-top:5px;
   border-bottom:1px solid #b18ea4;
+}
+
+.hint{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:11px;
+  font-style:italic;
+  color:#575757;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.sticky_sentinel {
+  background: yellow;
+  position: absolute;
+  left: 0;
+  right: 0; /* needs dimensions */
+  visibility: hidden;
+}
+.sticky_sentinel--top {
+  /* Adjust the height and top values based on your on your sticky top position.
+  e.g. make the height bigger and adjust the top so observeHeaders()'s
+  IntersectionObserver fires as soon as the bottom of the sentinel crosses the
+  top of the intersection container. */
+  height: 40px;
+  top: -24px;
+}
+.sticky_sentinel--bottom {
+  bottom: 0;
+  /* Height should match the top of the header when it's at the bottom of the
+  intersection container. */
+  height: calc(var(--header-height) + var(--default-padding));
+}
+
+[data-lorem] {
+  margin-bottom: 0;
+  text-align: justify;
+  padding: 0;
+  position: block; /* contain the sentinels */
+  background-color:#d1dadf;
 }
 
 .indicTitle{
@@ -475,7 +548,6 @@ svg {
   color:#494444;
   padding-left: 5%;
   padding-right: 5%;
-
   padding-top: 10px;
 }
 
@@ -485,44 +557,60 @@ svg {
 }
 
 .introChart{
-  padding-bottom: 40px;
+  padding-bottom: 15px;
 }
 
 #UrgencyTitle{
   color:#AB3A2C;
+  background:#d1dadf;
   cursor: pointer;
 }
 #CoverageTitle{
   color:#DE6736;
+  background:#d1dadf;
   cursor: pointer;
 }
 #InclusivenessTitle{
   color:#DB8870;
+  background:#d1dadf;
   cursor: pointer;
 }
 #AlignmentTitle{
   color:#51628E;
+  background:#d1dadf;
   cursor: pointer;
 }
 #FinancingTitle{
   color:#2B5275;
+  background:#d1dadf;
   cursor: pointer;
 }
 #FlexiguidanceTitle{
   color:#1D6962;
+  background:#d1dadf;
   cursor: pointer;
 }
 #QualityTitle{
   color:#d0a039;
+  background:#d1dadf;
   cursor: pointer;
 }
 
-.hint{
-  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size:11px;
-  font-style:italic;
-  color:#575757;
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
 }
+
+
 /*****************************/
 /** Scrolly telling feature **/
 /*****************************/
@@ -548,6 +636,7 @@ svg {
 	  color:#979797;
     font-size:18px;
     line-height: 1.25;
+    text-align: justify;
 }
 
 #sections2{
@@ -558,9 +647,10 @@ svg {
     padding-left: 1%;
   	width: 29%;
   	font-family: Caecilia, Georgia, serif;
-	color:#979797;
+	  color:#979797;
     font-size:18px;
     line-height: 1.25;
+    text-align: justify;
 }
 
 
@@ -698,10 +788,10 @@ pre{
     font-size:14px;
   }
   .dropdown_text{
-    font-size:14px;
+    font-size:12px;
   }
   #country_dropdown {
-    font-size:14px;
+    font-size:12px;
   }
 }
 
