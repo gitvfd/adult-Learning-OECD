@@ -28,6 +28,15 @@ function pearlchart(nameIndic,selectedCou,indicData){
 
 	var data=indicData.filter(function(d){return d.value!="NA"})
 
+	var rankArray = []
+	data.filter(function (k) { return k.variable == "Total" }).forEach(function (k) {
+		if (k.value != "NA")
+			rankArray.push(k.value);
+	})
+	data.forEach(function(k){
+		k.ranking = rankArray.sort().reverse().indexOf(k.value) + 1;
+	})
+
 	var currentChart="#chart_"+nameIndic;
 	d3.selectAll(currentChart)
 		.selectAll("*")
@@ -44,7 +53,7 @@ function pearlchart(nameIndic,selectedCou,indicData){
 	    	.attr("id",nameIndic)
 	    	.attr("width", overallwidth)
 	    	.attr("height",heightPearl)
-	    	//.style("background","rgba(247,247,247,0.5)")
+	    	.style("background","none")
 	  		.append("g")
 	    	.attr("class","compChart")
 	    	.attr("transform", "translate(" + 0 + "," + 0 + ")");
@@ -103,9 +112,9 @@ function pearlchart(nameIndic,selectedCou,indicData){
 				    		return xPearl(parseFloat(d.value));})
 			.attr("dy",function(d){
 				if(d.Country==selectedCou)
-					return heightPearl/2+18;
+					return heightPearl/2+20;
 				else
-					return heightPearl/2-10;
+					return heightPearl/2-12;
 			})
 			.style("text-anchor","middle")
 			.text(function(d){
@@ -122,7 +131,7 @@ function pearlchart(nameIndic,selectedCou,indicData){
 
 		compChart.selectAll("circle")
 			.on("mouseover", function(d) {
-		              tooltip.html(d.Country + "<br><br> score: " + d3.format(".2")(d.value));
+				tooltip.html(d.Country + "<br> score: " + d3.format(".2")(d.value)+"<br> rank: " + d.ranking + "/" + rankArray.length);
 		              tooltip.style("visibility", "visible");
 		      })
 		    .on("mousemove", mousemove)
@@ -134,19 +143,36 @@ function pearlchart(nameIndic,selectedCou,indicData){
 
 
 function barchart(nameIndic,selectedCou,indicData){
-
+console.log(nameIndic)
 	var data=(indicData.filter(function(d){return d.value!="NA"})).sort(function(a,b){return parseFloat(a.value)-parseFloat(b.value); })
-
 	var currentChart="#chart_"+nameIndic;
+	
+	var dispCou=false;
+	data.forEach(function(k){
+		if(k.Country==selectedCou)
+			dispCou=true;
+	})
+
 	d3.selectAll(currentChart)
 		.selectAll("*")
 		.remove();
+
 
 	var idTopic="title_"+nameIndic;
 	var IDChart="#chart_"+nameIndic;
 
 	if(nameIndic!="Alignment" && nameIndic!="Financing" && nameIndic!="Flexiguidance" && nameIndic!="Inclusiveness" && nameIndic!="Coverage" && nameIndic!="Quality" && nameIndic!="Urgency")
 	document.getElementById(idTopic).innerHTML=returnName(nameIndic);
+
+
+	var idHashtag = "#" + idTopic;
+	d3.select(idHashtag)
+		.on("mouseover", function (d) {
+			tooltip.html("Source:" + returnSource(nameIndic));
+			tooltip.style("visibility", "visible");
+		})
+		.on("mousemove", mousemove)
+		.on("mouseout", mouseout);
 
 	var compChart=d3.select(IDChart)
 	    	.append("svg")
@@ -188,10 +214,16 @@ function barchart(nameIndic,selectedCou,indicData){
 
 		
 
-
+		if (!dispCou){
+			compChart.append("text")
+			.attr("class","noDataAvailable")
+			.attr('x',15)
+			.attr('y',15)
+			.text('unavailable data  for the selected country ')
+		}
 		compChart.selectAll(".bar")
 		.on("mouseover", function(d) {
-		              tooltip.html(d.Country + "<br><br>" + d3.format(".2")(d.value));
+		              tooltip.html(d.Country + "<br>" + d3.format(".2")(d.value));
 		              tooltip.style("visibility", "visible");
 		      })
 		    .on("mousemove", mousemove)

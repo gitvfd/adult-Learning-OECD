@@ -66,6 +66,15 @@ function returnName(topicSelected){
 	return name;
 };
 
+function returnSource(topicSelected) {
+	var name;
+	indicators_metadata.forEach(function (d) {
+		if (d.Indicator_code == topicSelected) {
+			name = d.source;
+		}
+	})
+	return name;
+};
 var xPearl = d3.scaleLinear()
     .rangeRound([marginLeft, overallwidth-marginRight]);
 // end settings pearl charts
@@ -192,7 +201,47 @@ var dimension=[];
 //document.getElementById("country_dropdown").addEventListener("change",loopOverIndicators(alignment,financing,flexiguidance,inclusiveness,participation,quality,urgency));
 
 function render(err,alignment,financing,flexiguidance,inclusiveness,participation,quality,urgency){
+	var alignmentRank=[]
+	alignment.filter(function (k) { return k.variable == "Total" }).forEach(function(k){
+		if(k.value!="NA")
+			alignmentRank.push(k.value);
+	})
 
+	var financingRank = []
+	financing.filter(function (k) { return k.variable == "Total" }).forEach(function (k) {
+		if (k.value != "NA")
+			financingRank.push(k.value);
+	})
+
+	var flexiguidanceRank = []
+	flexiguidance.filter(function (k) { return k.variable == "Total" }).forEach(function (k) {
+		if (k.value != "NA")
+			flexiguidanceRank.push(k.value);
+	})
+
+	var inclusivenessRank = []
+	inclusiveness.filter(function (k) { return k.variable == "Total" }).forEach(function (k) {
+		if (k.value != "NA")
+			inclusivenessRank.push(k.value);
+	})
+
+	var participationRank = []
+	participation.filter(function (k) { return k.variable == "Total" }).forEach(function (k) {
+		if (k.value != "NA")
+			participationRank.push(k.value);
+	})
+
+	var qualityRank = []
+	quality.filter(function (k) { return k.variable == "Total" }).forEach(function (k) {
+		if (k.value != "NA")
+			qualityRank.push(k.value);
+	})
+
+	var urgencyRank = []
+	urgency.filter(function (k) { return k.variable == "Total" }).forEach(function (k) {
+		if (k.value != "NA")
+			urgencyRank.push(k.value);
+	})
 
 	d3.map(alignment, function(d){return d.Country;}).keys().forEach(function(d){dimension.push({'Country':d});})
 
@@ -201,15 +250,18 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 			dimension.forEach(function(k){
 				if(k.Country==d.Country){
 					k.alignment=d.value;
+					k.alignmentRanking = alignmentRank.sort().reverse().indexOf(d.value) + 1;
 				}
 			})
 		}
 	})
+
 	financing.forEach(function (d){
 		if(d.variable=="Total"){
 			dimension.forEach(function(k){
 				if(k.Country==d.Country){
-					k.financing=d.value;
+					k.financing = d.value;
+					k.financingRanking = financingRank.sort().reverse().indexOf(d.value) + 1;
 				}
 			})
 		}
@@ -218,7 +270,8 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 		if(d.variable=="Total"){
 			dimension.forEach(function(k){
 				if(k.Country==d.Country){
-					k.flexiguidance=d.value;
+					k.flexiguidance = d.value;
+					k.flexiguidanceRanking = flexiguidanceRank.sort().reverse().indexOf(d.value) + 1;
 				}
 			})
 		}
@@ -227,7 +280,8 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 		if(d.variable=="Total"){
 			dimension.forEach(function(k){
 				if(k.Country==d.Country){
-					k.inclusiveness=d.value;
+					k.inclusiveness = d.value;
+					k.inclusivenessRanking = inclusivenessRank.sort().reverse().indexOf(d.value) + 1;
 				}
 			})
 		}
@@ -236,7 +290,8 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 		if(d.variable=="Total"){
 			dimension.forEach(function(k){
 				if(k.Country==d.Country){
-					k.participation=d.value;
+					k.participation = d.value;
+					k.participationRanking = participationRank.sort().reverse().indexOf(d.value) + 1;
 				}
 			})
 		}
@@ -245,7 +300,8 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 		if(d.variable=="Total"){
 			dimension.forEach(function(k){
 				if(k.Country==d.Country){
-					k.quality=d.value;
+					k.quality = d.value;
+					k.qualityRanking = qualityRank.sort().reverse().indexOf(d.value) + 1;
 				}
 			})
 		}
@@ -254,7 +310,8 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 		if(d.variable=="Total"){
 			dimension.forEach(function(k){
 				if(k.Country==d.Country){
-					k.urgency=d.value;
+					k.urgency = d.value;
+					k.urgencyRanking = urgencyRank.sort().indexOf(d.value) + 1;
 				}
 			})
 		}
@@ -262,7 +319,6 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 
 
 	dimension.forEach(function(d){
-
 	/// Adding SVG	
 
 		var svg = d3.select("#chart")
@@ -274,7 +330,7 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 
 		var country2display= d.Country
 		//var data2display=[{"dim":"alignment","value":d.alignment},{"dim":"financing","value":d.financing},{"dim":"flexiguidance","value":d.flexiguidance},{"dim":"inclusiveness","value":d.inclusiveness},{"dim":"participation","value":d.participation},{"dim":"quality","value":d.quality},{"dim":"urgency","value":d.urgency}]
-		var data2display=[{"dim":"alignment","value":d.alignment},{"dim":"financing","value":d.financing},{"dim":"flexiguidance","value":d.flexiguidance},{"dim":"inclusiveness","value":d.inclusiveness},{"dim":"participation","value":d.participation},{"dim":"quality","value":d.quality}] //no urgency
+		var data2display = [{ "dim": "alignment", "value": d.alignment, "rank": d.alignmentRanking}, { "dim": "financing", "value": d.financing, "rank": d.financingRanking}, { "dim": "flexiguidance", "value": d.flexiguidance, "rank": d.flexiguidanceRanking}, { "dim": "inclusiveness", "value": d.inclusiveness, "rank": d.inclusivenessRanking}, { "dim": "participation", "value": d.participation, "rank": d.participationRanking}, { "dim": "quality", "value": d.quality, "rank": d.qualityRanking}] //no urgency
 
 
 
@@ -290,28 +346,29 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 		      .attr("height", 	10/10*height)
 		      .attr("fill","#afbfc8")
 		      //.attr("fill", "url(#svgGradient)")
-		      .attr("opacity",0.75);
-		    
+			  .attr("opacity",0.75);
+
+			
 		    svg.selectAll(".bar")
-		      .data([d.urgency]	)
+		      .data([d])
 		    	.enter().append("rect")
 		      .attr("class", "bar")
 		      .attr("x", 0.05 * width )
 		      .attr("width", 1.75*width/20)
 		      .attr("y", 0)
-		      .attr("height", function(d) { return y(d); })
+				.attr("height", function (d) { return y(d.urgency); })
 		      .attr("fill","#AB3A2C")
-				.on("mouseover", function(d) {
+				.on("mouseover", function (d) {
 
 					var explanation
-					if (d.value<1/3)
+					if (d.urgency<1/3)
 						explanation= country2display + " is among the countries facing the lowest <b>" + "urgency" + "</b>";
-					else if((d.value>=2/3))
+					else if ((d.urgency>=2/3))
 						explanation= country2display + " is among the countries facing the highest <b>" + "urgency" + "</b>";
 					else
 						explanation= country2display + " is among the countries facing an average level of <b>" + "urgency" + "</b>";
 
-			              tooltip.html("<br>"+explanation+"<br><br> score: " + d3.format(".2")(d));
+					tooltip.html("<br>" + explanation + "<br> score: " + d3.format(".2")(d.urgency) + "<br> rank: " + d.urgencyRanking+ "/"+urgencyRank.length);
 			              tooltip.style("visibility", "visible");
 			      })
 			    .on("mousemove", mousemove)
@@ -354,12 +411,25 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 		.on("mouseover", function(d) {
 			var dimensionSet=d.dim;
 
-
-			if(d.dim=="participation")
+			var rankTot;
+			if (d.dim =="alignment")
+				rankTot = alignmentRank.length;
+			if (d.dim == "financing")
+				rankTot = financingRank.length;
+			if (d.dim == "inclusiveness")
+				rankTot = inclusivenessRank.length;
+			if (d.dim == "quality")
+				rankTot = qualityRank.length;
+			if (d.dim == "urgency")
+				rankTot = urgencyRank.length;
+			if(d.dim=="participation"){
 				dimensionSet="coverage"
-
-			if(d.dim=="flexiguidance")
-				dimensionSet="flexibility and guidance"
+				rankTot = participationRank.length;
+			}
+			if(d.dim=="flexiguidance"){
+				dimensionSet = "flexibility and guidance"
+				rankTot = flexiguidanceRank.length;
+			}
 
 			var explanation
 			if (d.value>=2/3)
@@ -369,7 +439,7 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 			else
 				explanation= country2display + " is among the middle performers in the area of <b>" + dimensionSet + "</b>";
 
-	              tooltip.html("<br>"+explanation+"<br><br> score: " + d3.format(".2")(d.value));
+			tooltip.html("<br>" + explanation + "<br> score: " + d3.format(".2")(d.value) + "<br> rank: " + d.rank + "/" + rankTot);
 	              tooltip.style("visibility", "visible");
 	      })
 	    .on("mousemove", mousemove)
