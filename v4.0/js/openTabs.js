@@ -21,4 +21,9 @@ function openTabs(evt, tabName) {
 
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+// to avoid scrollytelling bug, I open first the scrolly page and once all is loaded go to first page
+document.getElementById("dimensionsView").click();
+
+$(window).bind('load', function newtab(){
+    document.getElementById("defaultOpen").click();
+})
