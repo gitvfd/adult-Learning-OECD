@@ -14,7 +14,7 @@
         graph = d3.select('null'),
         isFixed = null,
         isBelow = null,
-        container = d3.select('body'),
+      container = d3.select('#scrollView'),
         containerStart = 0,
         belowStart,
         eventId = Math.random(),

@@ -143,7 +143,7 @@ function pearlchart(nameIndic,selectedCou,indicData){
 
 
 function barchart(nameIndic,selectedCou,indicData){
-console.log(nameIndic)
+	
 	var data=(indicData.filter(function(d){return d.value!="NA"})).sort(function(a,b){return parseFloat(a.value)-parseFloat(b.value); })
 	var currentChart="#chart_"+nameIndic;
 	
