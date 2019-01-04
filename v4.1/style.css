@@ -1,0 +1,831 @@
+body{
+  background:#d1dadf;
+}
+/* minimal css reset */
+html, body, div, h1, h2, h3, a, p, img, dl, dt, dd, ul, li {
+	padding: 0; margin: 0; border: 0; outline: 0;
+}
+
+/** TABS ***/
+/* Style the tab */
+.tab {
+    overflow: hidden;
+   /** display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;**/ /**Allows to leave the tab on top of the page at all time**/
+    margin-left:10%;
+    /**border: 1px solid #006FB3;
+    background-color: #f6f6f6;
+    /**max-width:1100px;
+    margin:auto;**/
+
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #494444;
+    font-size:16px;
+    background-color: #bbc8d0;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #a4b6c0;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #b18ea4;
+    color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    /**padding: 6px 12px;
+    /**border: 1px solid #006FB3;
+    border-top: none;**/
+}
+
+/** END TABS ***/
+
+h1{
+	width:100%;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:10px;
+	font-family: Caecilia, Georgia, serif;
+	color:#575757;
+	background: #d1dadf;
+	font-size:3.75em;
+	text-align:center;
+	letter-spacing: normal;
+}
+
+h2{
+	max-width:700px;
+	margin:auto;
+	margin-top:30px;
+	margin-bottom:30px;
+	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#575757;
+	font-size:48px;
+  text-align:center;
+}
+h3{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#575757;
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size:24px;
+    text-decoration: underline;
+}
+
+.paragraph{
+	width:80%;
+	margin:auto;
+	padding-left:1.5%;
+	padding-right:1.5%;
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#575757;
+	font-size:18px;
+	line-height: 1.75;
+	text-align:left;
+	letter-spacing: normal;
+}
+
+#help{
+	width:80%;
+	margin:auto;
+	padding-left:1.5%;
+	padding-right:1.5%;
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#0297C9;
+	font-size:18px;
+	line-height: 1.75;
+  text-align:right;
+  text-decoration: underline;
+  letter-spacing: normal;
+  cursor: help;
+}
+ul {
+    /**list-style-type: none;**/
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    /**background: #cce5ff;**/
+    margin:10px;
+    margin-left: 30px;
+    font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /**color:#d1dadf;**/color:#575757;
+    font-size:18px;
+    line-height: 1.1;
+
+}
+.dimDef{
+    font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style:italic;
+  /**color:#d1dadf;**/color:#575757;
+    font-size:16px;
+    line-height: 1.1;
+    opacity:0.9;
+    margin-left: 15px
+
+}
+/** https://webdesign.tutsplus.com/tutorials/sticky-positioning-with-nothing-but-css--cms-24042
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/**.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}**/
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/**.cf {
+    *zoom: 1;
+}**/
+.scroll {
+  /**height: 450px;
+  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;**/ /** previous more mini scrolling**/
+  overflow:hidden;
+  /**background-color: #e7ebef;**/
+  padding: 0 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+/**
+.style-3::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0);
+  background-color: #d1dadf;
+}
+
+.style-3::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #d1dadf;
+}
+
+.style-3::-webkit-scrollbar-thumb
+{
+  background-color: #7f939f;
+}
+
+.wrapper {
+  margin-top: 200px;
+}
+**/
+
+.content {
+  margin-left: 2%;
+  padding: 0px 15px;
+  width: 68%;
+}
+.content h1 {
+  margin-top: 0;
+}
+.content p{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /**color:#d1dadf;**/color:#575757;
+  font-size:18px;
+  line-height: 1;
+  /**margin-bottom:100px;**/
+  
+}
+.sidebar p{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  /**color:#d1dadf;**/color:#575757;
+  font-size:3vw;
+  line-height: 0.8;
+  
+}
+.sidebar {
+  /**padding: 20px;**/
+  width: 30%;
+  /**background-color: #434A54;**/
+  color: #575757;
+}
+.sidebar h3 {
+  margin: 0;
+}
+.content,
+.sidebar {
+  float: left;
+}
+
+
+/* The sticky */
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+}
+
+
+
+.def{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  color:#575757;
+    font-size:18px;
+    line-height: 1.75;
+}
+
+
+#wrapper {
+	width: 100%;
+	/**margin: 0 auto;**/
+    display: flex;
+    /**flex-wrap: wrap;**/
+}
+
+#legend {
+	padding: 20px;
+	float: left;
+	width: 10%;
+	min-width: 230px;
+	height: 100%;
+
+	background: #d1dadf;
+	flex-grow: 1;
+    flex-basis: 20%;
+}
+
+#legend h1 {
+
+	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#575757;;
+		font-size:22px;
+	text-align:center;
+	letter-spacing: normal;
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+
+#legend p {
+	margin-bottom: 10px;
+	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #575757;
+	font-size: 11pt;
+}
+
+
+#legend {
+	/**margin: 40px auto 0 auto;**/
+	display: block
+}
+
+
+/*****************************/
+/**..........CHARTS........ **/
+/*****************************/
+
+#chart{
+	float: right;
+	/**width:80%;**/
+	min-height: 100%;
+	/**background: #ffffff;*/
+	flex-grow: 1;
+  flex-basis: 80%;
+}
+
+svg {
+	background: #afbfc8;
+	margin-right: 2px;
+	margin-left:2px;
+}
+
+
+#challengesTitle{
+	font-family: Caecilia, Georgia, serif;
+	color:#0297C9;
+  font-size:22px;
+  margin:0% 0% 0% 30%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1%;
+}
+
+#challengesChart{
+	width: 70%;
+	margin-left: 0px;
+	float: right;
+  	position: -webkit-sticky;
+  	position: sticky;
+  	top: 10%;
+}
+
+#responsesTitle{
+	font-family: Caecilia, Georgia, serif;
+	color:#0297C9;
+  font-size:22px;
+  margin:0% 0% 0% 30%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1%;
+}
+#responsesChart{
+	width: 70%;
+	margin-left: 0px;
+	float: right;
+  	position: -webkit-sticky;
+  	position: sticky;
+  	top: 10%;
+}
+
+#chartGuideChallenges,#chartGuideResponses,#chartGuideChallengesEnd,#chartGuideResponsesEnd{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-style: italic;
+  fill:#7A7A7A;
+}
+.axis path{
+	stroke:none;
+}
+
+.axis line{
+	stroke:#7A7A7A;
+}
+
+.axis text{
+	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+	fill:#7A7A7A;
+}
+
+.lollipopText{
+	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:14px;
+}
+
+.titles{
+	font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:15px;
+	fill:#575757;
+  cursor: pointer;
+}
+
+.urgencyLabel{
+
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:13px;
+  fill:rgb(89,89,89);
+}
+
+.bartext{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:12px;
+  font-style:italic;
+  fill:#DDE9EF;
+}
+
+
+
+.noDataAvailable{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:12px;
+  font-style:italic;
+	fill:#575757;
+}
+/*****************************/
+/** Dropdown                **/
+/*****************************/
+
+#Country_sel{
+    /**display: block;**/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;/**Allows to leave the tab on top of the page at all time**/
+	  /**max-width:1100px;**/
+	  margin:auto;
+  	border-style: solid;
+  	border-width: 1px;
+  	border-color:  #afbfc8;
+  	background-color: #afbfc8;
+  	padding-left:5px;
+  	color:#575757;
+  	text-rendering: optimizeLegibility;
+  	-webkit-font-smoothing: antialiased;
+}
+
+#country_dropdown{
+  font-family:Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  
+  font-size:16px;
+  text-align:center;
+  letter-spacing:normal;
+  color:#575757;
+  padding: 0 1%;
+  vertical-align: baseline;
+  color: white;
+  cursor: pointer;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
+  background-color: #afbfc8;
+  border:none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 5px;
+}
+.dropdown_text{
+	/**max-width:1100px;**/
+	margin:auto;
+  font-family:Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#575757;
+  
+  font-size:18px;
+  text-align:start;
+}
+
+
+
+
+/*****************************/
+/**......INDIC SECTIONS.... **/
+/*****************************/
+
+#Challenges,#Responses{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.indicatorPres{
+  background-color: #dde3e7;
+  margin-top:10px;
+  display: flex;
+}
+:root {
+  --default-padding: 16px;
+  --header-height: 52px;
+  --sticky-pos: 52px;
+}
+.dimTitle{
+  position: sticky;
+  top: var(--sticky-pos); /* Sentinels adjust based on this position. */
+  display: flex;
+  height: var(--header-height);
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:20px;
+  color:#0297C9;
+  margin-right: 5%;
+  margin-top:5px;
+  border-bottom:1px solid #b18ea4;
+}
+
+.hint{
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:11px;
+  font-style:italic;
+  color:#575757;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.sticky_sentinel {
+  background: yellow;
+  position: absolute;
+  left: 0;
+  right: 0; /* needs dimensions */
+  visibility: hidden;
+}
+.sticky_sentinel--top {
+  /* Adjust the height and top values based on your on your sticky top position.
+  e.g. make the height bigger and adjust the top so observeHeaders()'s
+  IntersectionObserver fires as soon as the bottom of the sentinel crosses the
+  top of the intersection container. */
+  height: 40px;
+  top: -24px;
+}
+.sticky_sentinel--bottom {
+  bottom: 0;
+  /* Height should match the top of the header when it's at the bottom of the
+  intersection container. */
+  height: calc(var(--header-height) + var(--default-padding));
+}
+
+[data-lorem] {
+  margin-bottom: 0;
+  text-align: justify;
+  padding: 0;
+  position: block; /* contain the sentinels */
+  background-color:#d1dadf;
+}
+
+.indicTitle{
+  width:45%;
+  font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:15px;
+  font-style:italic;
+  color:#494444;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 10px;
+}
+
+.indicChart{
+    flex-grow: 1;
+
+}
+
+.introChart{
+  padding-bottom: 15px;
+}
+
+#UrgencyTitle{
+  color: rgb(89,89,89);
+  background:#d1dadf;
+  cursor: pointer;
+}
+#CoverageTitle{
+  color:rgb(102,45,145);
+  background:#d1dadf;
+  cursor: pointer;
+}
+#InclusivenessTitle{
+  color:rgb(161,138,186);
+  background:#d1dadf;
+  cursor: pointer;
+}
+#AlignmentTitle{
+  color:rgb(57,181,74);
+  background:#d1dadf;
+  cursor: pointer;
+}
+#FinancingTitle{
+  color:rgb(0, 104, 56);
+  background:#d1dadf;
+  cursor: pointer;
+}
+#FlexiguidanceTitle{
+  color:rgb(0,167,157);
+  background:#d1dadf;
+  cursor: pointer;
+}
+#QualityTitle{
+  color:rgb(43,182,115);
+  background:#d1dadf;
+  cursor: pointer;
+}
+
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+
+/*****************************/
+/** Scrolly telling feature **/
+/*****************************/
+
+
+#container{
+  position: relative;
+}
+
+#container2{
+  position: relative;
+}
+
+
+#sections{
+  	/**border-top: 1px solid #006FB3;
+  	border-bottom: 1px solid #006FB3;
+  	margin: 0px auto;**/
+  	margin-bottom: 200px;
+    padding-left: 1%;
+  	width: 29%;
+  	font-family: Caecilia, Georgia, serif;
+	  color:#979797;
+    font-size:18px;
+    line-height: 1.25;
+    text-align: justify;
+}
+
+#sections2{
+  	/**border-top: 1px solid #006FB3;
+  	border-bottom: 1px solid #006FB3;
+  	margin: 0px auto;**/
+  	margin-bottom: 200px;
+    padding-left: 1%;
+  	width: 29%;
+  	font-family: Caecilia, Georgia, serif;
+	  color:#979797;
+    font-size:18px;
+    line-height: 1.25;
+    text-align: justify;
+}
+
+
+#sections > div{
+  /**background: white;**/
+  /**background:#f6f6f6;**/
+  opacity: 0.2;
+  padding: 5px;
+  margin-bottom: 200px;
+}
+#sections > div:last-child{
+  margin-bottom: 400px;
+}
+#sections > div.graph-scroll-active{
+  opacity: 0.9;
+}
+
+#sections2 > div{
+  /**background: white;**/
+  /**background:#f6f6f6;**/
+  opacity: 0.2;
+  padding: 5px;
+  margin-bottom: 400px;
+}
+  pre{
+    overflow: hidden;
+  }
+
+#sections2 > div:last-child{
+  margin-bottom: 400px;
+}
+#sections2 > div.graph-scroll-active{
+  opacity: 0.9;
+}
+
+
+pre{
+  overflow: hidden;
+}
+
+
+@media (max-width: 600px)  {
+  
+  #challengesChart{
+  width: 100%;
+}
+
+  #responsesChart{
+    width: 100%;
+  }
+
+
+#chartGuideChallenges,#chartGuideResponses,#chartGuideChallengesEnd,#chartGuideResponsesEnd{
+  font-size:12px;
+}
+
+  #graph{
+    width: 100%;
+    margin-left: 0px;
+    float: none;
+  }
+  #sections{
+    width: 80%;
+    margin: 0px auto;
+    position: relative;
+    font-size:12px;
+  }
+  #sections div{
+    /**background: rgba(246,246,246,.8);**/
+    padding: 10px;
+    margin-bottom: 80vh;
+  }
+   #sections2{
+    margin: 0px auto;
+    width: 80%;
+    position: relative;
+    font-size:12px;
+  }
+  #sections2 div{
+    /**background: rgba(246,246,246,.8);**/
+    padding: 10px;
+    margin-bottom: 80vh;
+  }
+  pre{
+    overflow: hidden;
+  }
+
+	.axis text{
+		font-size:11px;
+	}
+
+	.lollipopText{
+		font-size:11px;
+	}
+
+	.titles{
+		font-size:11px;
+	}
+
+	h1{
+		font-size:24px;
+	}
+
+	h2{
+		
+		font-size:18px;
+	}
+
+	.paragraph{
+			font-size:14px;
+	}
+
+  ul li {
+    margin: 15px;
+    font-size:14px;
+    line-height: 1;
+  }
+  .dimDef{
+      font-size:13px;
+      line-height: 1;
+
+  }
+  .content p{
+
+      font-size:14px;
+  }
+	.def{
+	    font-size:14px;
+	}
+
+  .indicTitle{
+    font-size:14px;
+  }
+  .tab button {
+    font-size:14px;
+  }
+  .dropdown_text{
+    font-size:12px;
+  }
+  #country_dropdown {
+    font-size:12px;
+  }
+}
+
+
+/** Tooltip **/
+#indicTooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(252,252,252);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#indicTooltip.hidden {
+  display: none;
+}
+
+#indicTooltip p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+
+
+
+
+
+
