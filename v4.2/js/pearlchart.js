@@ -14,8 +14,7 @@ dimensionList.forEach(function(z){
 		
 	})
 })
-
-	pearlchart("Urgency", document.getElementById("country_dropdown").options[document.getElementById("country_dropdown").selectedIndex].value, document.getElementById("country_dropdown_comp").options[document.getElementById("country_dropdown_comp").selectedIndex].value,urgency.filter(function(d){return d.variable=="Total"}))
+	pearlchart("Urgency", document.getElementById("country_dropdown").options[document.getElementById("country_dropdown").selectedIndex].value, document.getElementById("country_dropdown_comp").options[document.getElementById("country_dropdown_comp").selectedIndex].value, urgency.filter(function (d) { return d.variable == "Total" }))
 	pearlchart("Coverage", document.getElementById("country_dropdown").options[document.getElementById("country_dropdown").selectedIndex].value, document.getElementById("country_dropdown_comp").options[document.getElementById("country_dropdown_comp").selectedIndex].value,participation.filter(function(d){return d.variable=="Total"}))
 	pearlchart("Inclusiveness", document.getElementById("country_dropdown").options[document.getElementById("country_dropdown").selectedIndex].value, document.getElementById("country_dropdown_comp").options[document.getElementById("country_dropdown_comp").selectedIndex].value,inclusiveness.filter(function(d){return d.variable=="Total"}))
 	pearlchart("Financing", document.getElementById("country_dropdown").options[document.getElementById("country_dropdown").selectedIndex].value, document.getElementById("country_dropdown_comp").options[document.getElementById("country_dropdown_comp").selectedIndex].value,financing.filter(function(d){return d.variable=="Total"}))
@@ -28,8 +27,9 @@ dimensionList.forEach(function(z){
 
 function pearlchart(nameIndic, selectedCou,compCou,indicData){
 
-	var data=indicData.filter(function(d){return d.value!="NA"})
+		var data = indicData.filter(function (d) { return d.value != "NA" })
 
+	//console.log(data)
 	var rankArray = []
 	data.filter(function (k) { return k.variable == "Total" }).forEach(function (k) {
 		if (k.value != "NA")
