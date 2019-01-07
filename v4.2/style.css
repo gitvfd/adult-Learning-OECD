@@ -531,10 +531,10 @@ svg {
   --sticky-pos: 52px;
 }
 .dimTitle{
-  position: sticky;
-  top: var(--sticky-pos); /* Sentinels adjust based on this position. */
-  display: flex;
-  height: var(--header-height);
+  /**position: sticky;
+  top: var(--sticky-pos); 
+  /**display: flex;
+  height: var(--header-height);**/
   font-family: Bernini, "Bernini Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size:20px;
   color:#0297C9;

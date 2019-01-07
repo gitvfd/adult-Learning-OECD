@@ -103,7 +103,7 @@ function  renderStory(alignment,financing,flexiguidance,inclusiveness,participat
 	    	.data(urgency)
 	    	.enter().append("circle")
 	    	.attr("class", "lollipopCircle")
-	        .attr("r", 10)
+			.attr("r", lollipopRadius)
 	        .attr("cx", function(d) {
 	         	if(d.value==="NA")
 	            	return "-10";
@@ -198,7 +198,7 @@ function  renderStory(alignment,financing,flexiguidance,inclusiveness,participat
 	    	.data(financing)
 	    	.enter().append("circle")
 	    	.attr("class", "lollipopCircle")
-	        .attr("r", 10)
+			.attr("r", lollipopRadius)
 	        .attr("cx", function(d) {
 	         	if(d.value==="NA")
 	            	return "-10";
@@ -565,7 +565,7 @@ function  renderStory(alignment,financing,flexiguidance,inclusiveness,participat
 	    	.data(urgency)
 	    	.enter().append("circle")
 	    	.attr("class", "lollipopCircle")
-	        .attr("r", 6)
+			.attr("r", lollipopRadius)
 	        .attr("cy", function(d) {
 	         	if(d.value==="NA")
 	            	return "-10";
@@ -659,7 +659,7 @@ function  renderStory(alignment,financing,flexiguidance,inclusiveness,participat
 	    	.data(financing)
 	    	.enter().append("circle")
 	    	.attr("class", "lollipopCircle")
-	        .attr("r", 6)
+			.attr("r", lollipopRadius)
 	        .attr("cy", function(d) {
 	         	if(d.value==="NA")
 	            	return "-10";

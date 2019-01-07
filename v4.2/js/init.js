@@ -14,6 +14,8 @@ while(width==""){
 }
 
 var height = 150;
+var lollipopRadius;
+if (width > 1200) lollipopRadius = 10; else if (width > 700) lollipopRadius = 8; else lollipopRadius = 5; 
 
 var margin=100;
 var padding = 0;
