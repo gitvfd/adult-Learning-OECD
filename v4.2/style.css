@@ -1,5 +1,5 @@
 body{
-  background:#d1dadf;
+  background:#ffffff;
 }
 /* minimal css reset */
 html, body, div, h1, h2, h3, a, p, img, dl, dt, dd, ul, li {
@@ -64,7 +64,7 @@ h1{
 	margin-top:10px;
 	font-family: Caecilia, Georgia, serif;
 	color:#575757;
-	background: #d1dadf;
+	/**background: #d1dadf;**/
 	font-size:3.75em;
 	text-align:center;
 	letter-spacing: normal;
@@ -274,7 +274,7 @@ ul li {
 	min-width: 230px;
 	height: 100%;
 
-	background: #d1dadf;
+	/**background: #d1dadf;**/
 	flex-grow: 1;
     flex-basis: 20%;
 }
@@ -318,7 +318,7 @@ ul li {
 }
 
 svg {
-	background: #afbfc8;
+	background: #dce2e7;
 	margin-right: 2px;
 	margin-left:2px;
 }
@@ -425,21 +425,31 @@ svg {
     position: sticky;
     top: 0px;/**Allows to leave the tab on top of the page at all time**/
 	  /**max-width:1100px;**/
-	  margin:auto;
-  	border-style: solid;
+    width:90%;
+	  margin-right:auto;
+	  margin-left:auto;
+  	/**border-style: solid;
   	border-width: 1px;
-  	border-color:  #afbfc8;
-  	background-color: #afbfc8;
-  	padding-left:5px;
+  	border-color:  #dce2e7;**/
+  	background-color: #dce2e7;
+  	/**padding-left:5px;**/
   	color:#575757;
   	text-rendering: optimizeLegibility;
-  	-webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+
+    
 }
 #selCountry,#compCountry{
-width:50%;
-float:left;
-  	border-color:  #afbfc8;
-  	background-color: #afbfc8;
+  float:left;
+  width:50%;
+  padding:1px;
+  margin-bottom:7px;
+  border:solid;
+  border-width: 0.5px;
+  border-color:  #575757;
+  background-color: #dce2e7;
+    
+
 }
 
 #country_dropdown{
@@ -451,10 +461,10 @@ float:left;
   color:#575757;
   padding: 0 1%;
   vertical-align: baseline;
-  color: white;
+  /*color: white;*/
   cursor: pointer;
   text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
-  background-color: #afbfc8;
+  background-color: #dce2e7;
   border:none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -480,10 +490,10 @@ float:left;
   color:#575757;
   padding: 0 1%;
   vertical-align: baseline;
-  color: white;
+  /*color: white;*/
   cursor: pointer;
   text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
-  background-color: #afbfc8;
+  background-color: #dce2e7;
   border:none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -565,11 +575,12 @@ float:left;
 }
 
 [data-lorem] {
+  clear: both;
   margin-bottom: 0;
   text-align: justify;
   padding: 0;
   position: block; /* contain the sentinels */
-  background-color:#d1dadf;
+  background-color:#dce2e7;
 }
 
 .indicTitle{
@@ -594,37 +605,37 @@ float:left;
 
 #UrgencyTitle{
   color: rgb(89,89,89);
-  background:#d1dadf;
+  background:#dce2e7;
   cursor: pointer;
 }
 #CoverageTitle{
   color:rgb(102,45,145);
-  background:#d1dadf;
+  background:#dce2e7;
   cursor: pointer;
 }
 #InclusivenessTitle{
   color:rgb(161,138,186);
-  background:#d1dadf;
+  background:#dce2e7;
   cursor: pointer;
 }
 #AlignmentTitle{
   color:rgb(57,181,74);
-  background:#d1dadf;
+  background:#dce2e7;
   cursor: pointer;
 }
 #FinancingTitle{
   color:rgb(0, 104, 56);
-  background:#d1dadf;
+  background:#dce2e7;
   cursor: pointer;
 }
 #FlexiguidanceTitle{
   color:rgb(0,167,157);
-  background:#d1dadf;
+  background:#dce2e7;
   cursor: pointer;
 }
 #QualityTitle{
   color:rgb(43,182,115);
-  background:#d1dadf;
+  background:#dce2e7;
   cursor: pointer;
 }
 
@@ -819,10 +830,10 @@ pre{
   .tab button {
     font-size:14px;
   }
-  .dropdown_text{
+  .dropdown_text,.dropdown_text_comp{
     font-size:12px;
   }
-  #country_dropdown {
+  #country_dropdown,#country_dropdown_comp {
     font-size:12px;
   }
 }
