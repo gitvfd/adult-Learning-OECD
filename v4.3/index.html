@@ -1,0 +1,570 @@
+<!doctype html>
+<html>
+	<head>
+		<!--The browser can use non-English-language characters (...kind of) -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="libs/d3.v4.min.js"></script>
+		<script src="libs/d3.v4.jetpack.min.js"></script>
+		<script src="libs/d3-scale-chromatic.v1.min.js"></script>
+    <script src="libs/d3-queue.v3.min.js"></script>
+    <script src="libs/modernizr.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" rel="stylesheet">  
+		<meta charset="utf-8">
+		<style></style>
+	</head>
+	<body>
+    <!-- Tab links -->
+    <div class="tab">
+      <button class="tablinks" id="countryStatsView" onclick="openTabs(event, 'countryView')">Country results</button>
+      <button class="tablinks" id="dimensionsView" onclick="openTabs(event, 'dimensionView')">Dimensions</button>
+      <button class="tablinks" id="defaultOpen" onclick="openTabs(event, 'dashboardView')">Dashboard</button>
+    </div>
+    <br />
+    <div id="countryView" class="tabcontent">
+      <div id="Country_sel">
+        <div id="selCountry">
+          <div class="dropdown_text">Select a country to see how it performs across the different dimensions: </div>
+          <select id="country_dropdown" onchange="loopOverIndicators(alignment,financing,flexiguidance,inclusiveness,participation,quality,urgency)">
+            <option value="-"> - </option>
+            <option value="Australia" selected="selected">Australia</option>
+            <option value="Austria" >Austria</option>
+            <option value="Belgium" >Belgium</option>
+            <option value="Canada" >Canada</option>
+            <option value="Chile" >Chile</option>
+            <option value="Czech Republic" >Czech Republic</option>
+            <option value="Denmark" >Denmark</option>
+            <option value="Estonia" >Estonia</option>
+            <option value="Finland" >Finland</option>
+            <option value="France" >France</option>
+            <option value="Germany" >Germany</option>
+            <option value="Greece" >Greece</option>
+            <option value="Hungary" >Hungary</option>
+            <option value="Ireland" >Ireland</option>
+            <option value="Israel" >Israel</option>
+            <option value="Italy" >Italy</option>
+            <option value="Japan" >Japan</option>
+            <option value="Korea" >Korea</option>
+            <option value="Latvia" >Latvia</option>
+            <option value="Lithuania" >Lithuania</option>
+            <option value="Luxembourg" >Luxembourg</option>
+            <option value="Netherlands" >Netherlands</option>
+            <option value="New Zealand"" >New Zealand</option>
+            <option value="Norway" >Norway</option>
+            <option value="Poland" >Poland</option>
+            <option value="Portugal" >Portugal</option>
+            <option value="Slovak Republic" >Slovak Republic</option>
+            <option value="Slovenia" >Slovenia</option>
+            <option value="Spain" >Spain</option>
+            <option value="Sweden" >Sweden</option>
+            <option value="Switzerland" >Switzerland</option>
+            <option value="Turkey" >Turkey</option>
+            <option value="United Kingdom" >United Kingdom</option>
+            <option value="United States" >United States</option>
+          <!--</optgroup>-->
+          </select>
+        </div>
+
+        <div id="compCountry">
+          <div class="dropdown_text_comp">Compare the performance to this country: </div>
+          <select id="country_dropdown_comp" onchange="loopOverIndicators(alignment,financing,flexiguidance,inclusiveness,participation,quality,urgency)">
+            <option value="-" selected="selected"> - </option>
+            <option value="Australia" >Australia</option>
+            <option value="Austria">Austria</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Canada">Canada</option>
+            <option value="Chile">Chile</option>
+            <option value="Czech Republic">Czech Republic</option>
+            <option value="Denmark">Denmark</option>
+            <option value="Estonia">Estonia</option>
+            <option value="Finland">Finland</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+            <option value="Greece">Greece</option>
+            <option value="Hungary">Hungary</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Israel">Israel</option>
+            <option value="Italy">Italy</option>
+            <option value="Japan">Japan</option>
+            <option value="Korea">Korea</option>
+            <option value="Latvia">Latvia</option>
+            <option value="Lithuania">Lithuania</option>
+            <option value="Luxembourg">Luxembourg</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="New Zealand"" >New Zealand</option>
+            <option value=" Norway">Norway</option>
+            <option value="Poland">Poland</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Slovak Republic">Slovak Republic</option>
+            <option value="Slovenia">Slovenia</option>
+            <option value="Spain">Spain</option>
+            <option value="Sweden">Sweden</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Turkey">Turkey</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="United States">United States</option>
+            <!--</optgroup>-->
+          </select>
+        </div>
+      </div>
+    
+      <!--
+        *******************************************************
+        ************Indicators' List*********************
+        *******************************************************
+      -->
+    
+      <!--*******************************************    
+        ************ Challenges *********************
+        *********************************************
+      -->
+      <div id="Challenges">
+        <!------------->
+        <!-- Urgency -->
+        <!------------->
+        <div data-lorem="p">
+          <div class="text-toogle" aria-expanded="false" data-toggle="collapse"  href="#collapseUrgency"><span class="collapseSymbol text-collapsed">+</span><span class="collapseSymbol text-expanded">-</span><span class="dimTitle" id="UrgencyTitle" >Urgency </span><span class="dimDef">How pressing is the need to update the adult learning system?</span></div>
+          <div class="introChart">
+            <div id="title_Urgency" class="indicTitle">
+            </div>
+            <div id="chart_Urgency" class="indicChart">
+            </div>
+          </div>
+          <div id="collapseUrgency" class="panel-collapse collapse">
+            <div class="indicatorPres">
+              <div id="title_1_1_1" class="indicTitle">
+              </div>
+              <div id="chart_1_1_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_1_1_2" class="indicTitle">
+              </div>
+              <div id="chart_1_1_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_1_2_1" class="indicTitle">
+              </div>
+              <div id="chart_1_2_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_1_2_2" class="indicTitle">
+              </div>
+              <div id="chart_1_2_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_1_3_1" class="indicTitle">
+              </div>
+              <div id="chart_1_3_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_1_3_2" class="indicTitle">
+              </div>
+              <div id="chart_1_3_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_1_4_1" class="indicTitle">
+              </div>
+              <div id="chart_1_4_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_1_4_2" class="indicTitle">
+              </div>
+              <div id="chart_1_4_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_1_4_3" class="indicTitle">
+              </div>
+              <div id="chart_1_4_3" class="indicChart">
+              </div>
+            </div>
+          </div>
+          <div class="sticky_sentinel sticky_sentinel--top"></div>
+          <div class="sticky_sentinel sticky_sentinel--bottom"></div>
+        </div>
+        <!------------------->
+        <!-- Participation -->
+        <!------------------->
+        <div data-lorem="p">
+          <div class="text-toogle" aria-expanded="false" data-toggle="collapse"  href="#collapseCoverage"><span class="collapseSymbol text-collapsed">+</span><span class="collapseSymbol text-expanded">-</span><span class="dimTitle" id="CoverageTitle" >Coverage </span><span class="dimDef">To what extent are people and firms engaged in learning?</span></div>
+          <div class="introChart">
+            <div id="title_Coverage" class="indicTitle">
+            </div>
+            <div id="chart_Coverage" class="indicChart">
+            </div>
+          </div>
+          <div id="collapseCoverage" class="panel-collapse collapse">
+            <div class="indicatorPres">
+              <div id="title_3_1_1" class="indicTitle">
+              </div>
+              <div id="chart_3_1_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_3_1_2" class="indicTitle">
+              </div>
+              <div id="chart_3_1_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_3_1_3" class="indicTitle">
+              </div>
+              <div id="chart_3_1_3" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_3_2_1" class="indicTitle">
+              </div>
+              <div id="chart_3_2_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_3_2_2" class="indicTitle">
+              </div>
+              <div id="chart_3_2_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_3_3_3" class="indicTitle">
+              </div>
+              <div id="chart_3_3_3" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_3_4_3" class="indicTitle">
+              </div>
+              <div id="chart_3_4_3" class="indicChart">
+              </div>
+            </div>
+          </div>
+
+          <div class="sticky_sentinel sticky_sentinel--top"></div>
+          <div class="sticky_sentinel sticky_sentinel--bottom"></div>
+        </div>
+        <!------------------->
+        <!-- Inclusiveness -->
+        <!------------------->
+        <div data-lorem="p">
+          <div class="text-toogle" aria-expanded="false" data-toggle="collapse"  href="#collapseInclusiveness"><span class="collapseSymbol text-collapsed">+</span><span class="collapseSymbol text-expanded">-</span><span class="dimTitle" id="InclusivenessTitle" >Inclusiveness </span><span class="dimDef">Does everyone have the same access to adult learning opportunities? </span></div>
+          <div class="introChart">
+            <div id="title_Inclusiveness" class="indicTitle">
+            </div>
+            <div id="chart_Inclusiveness" class="indicChart">
+            </div>
+          </div>
+          <div id="collapseInclusiveness" class="panel-collapse collapse">
+            <div class="indicatorPres">
+              <div id="title_4_1_1" class="indicTitle">
+              </div>
+              <div id="chart_4_1_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_4_1_2" class="indicTitle">
+              </div>
+              <div id="chart_4_1_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_4_1_3" class="indicTitle">
+              </div>
+              <div id="chart_4_1_3" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_4_1_4" class="indicTitle">
+              </div>
+              <div id="chart_4_1_4" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_4_2_1" class="indicTitle">
+              </div>
+              <div id="chart_4_2_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_4_2_2" class="indicTitle">
+              </div>
+              <div id="chart_4_2_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_4_2_3" class="indicTitle">
+              </div>
+              <div id="chart_4_2_3" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_4_2_4" class="indicTitle">
+              </div>
+              <div id="chart_4_2_4" class="indicChart">
+              </div>
+            </div>
+          </div>
+
+          <div class="sticky_sentinel sticky_sentinel--top"></div>
+          <div class="sticky_sentinel sticky_sentinel--bottom"></div>
+        </div>
+      </div>
+      <!--*******************************************    
+        ************ Responses *********************
+        *********************************************
+      -->
+      <div id="Responses">
+
+        <!------------->
+        <!-- Financing -->
+        <!------------->
+        <div data-lorem="p">
+          <div class="text-toogle" aria-expanded="false" data-toggle="collapse"  href="#collapseFinancing"><span class="collapseSymbol text-collapsed">+</span><span class="collapseSymbol text-expanded">-</span><span class="dimTitle" id="FinancingTitle">Financing </span><span class="dimDef">To what extent do governments, firms and individuals allocate funding to the
+            adult learning system? </span></div>
+          <div class="introChart">
+            <div id="title_Financing" class="indicTitle">
+            </div>
+            <div id="chart_Financing" class="indicChart">
+            </div>
+          </div>
+          <div id="collapseFinancing" class="panel-collapse collapse">
+            <div class="indicatorPres">
+              <div id="title_2_1_1" class="indicTitle">
+              </div>
+              <div id="chart_2_1_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_2_1_2" class="indicTitle">
+              </div>
+              <div id="chart_2_1_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_2_2_1" class="indicTitle">
+              </div>
+              <div id="chart_2_2_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_2_2_2" class="indicTitle">
+              </div>
+              <div id="chart_2_2_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_2_2_3" class="indicTitle">
+              </div>
+              <div id="chart_2_2_3" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_2_3_1" class="indicTitle">
+              </div>
+              <div id="chart_2_3_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_2_3_2" class="indicTitle">
+              </div>
+              <div id="chart_2_3_2" class="indicChart">
+              </div>
+            </div>
+          </div>
+
+          <div class="sticky_sentinel sticky_sentinel--top"></div>
+          <div class="sticky_sentinel sticky_sentinel--bottom"></div>
+        </div>
+        <!------------->
+        <!-- Quality -->
+        <!------------->
+        <div data-lorem="p">
+          <div class="text-toogle" aria-expanded="false" data-toggle="collapse"  href="#collapseQuality"><span class="collapseSymbol text-collapsed">+</span><span class="collapseSymbol text-expanded">-</span><span class="dimTitle" id="QualityTitle">Quality </span><span class="dimDef">To what extent is the quality of training assessed and how effective is adult learning?</span></div>
+          <div class="introChart">
+            <div id="title_Quality" class="indicTitle">
+            </div>
+            <div id="chart_Quality" class="indicChart">
+            </div>
+          </div>
+          <div id="collapseQuality" class="panel-collapse collapse">
+            <div class="indicatorPres">
+              <div id="title_5_1_1" class="indicTitle">
+              </div>
+              <div id="chart_5_1_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_5_1_2" class="indicTitle">
+              </div>
+              <div id="chart_5_1_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_5_2_1" class="indicTitle">
+              </div>
+              <div id="chart_5_2_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_5_2_2" class="indicTitle">
+              </div>
+              <div id="chart_5_2_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_5_2_3" class="indicTitle">
+              </div>
+              <div id="chart_5_2_3" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_5_2_4" class="indicTitle">
+              </div>
+              <div id="chart_5_2_4" class="indicChart">
+              </div>
+            </div>
+          </div>
+
+          <div class="sticky_sentinel sticky_sentinel--top"></div>
+          <div class="sticky_sentinel sticky_sentinel--bottom"></div>
+        </div>
+        <!------------->
+        <!-- Alignment -->
+        <!------------->
+        <div data-lorem="p">
+          <div class="text-toogle" aria-expanded="false" data-toggle="collapse"  href="#collapseAlignment"><span class="collapseSymbol text-collapsed">+</span><span class="collapseSymbol text-expanded">-</span><span class="dimTitle" id="AlignmentTitle">Alignment </span><span class="dimDef">Does training provide adults with the skills needed in the labour market?</span></div>
+          <div class="introChart">
+            <div id="title_Alignment" class="indicTitle">
+            </div>
+            <div id="chart_Alignment" class="indicChart">
+            </div>
+          </div>
+          <div id="collapseAlignment" class="panel-collapse collapse">
+            <div class="indicatorPres">
+              <div id="title_6_1_1" class="indicTitle">
+              </div>
+              <div id="chart_6_1_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_6_2_1" class="indicTitle">
+              </div>
+              <div id="chart_6_2_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_6_2_2" class="indicTitle">
+              </div>
+              <div id="chart_6_2_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_6_2_3" class="indicTitle">
+              </div>
+              <div id="chart_6_2_3" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_6_3_1" class="indicTitle">
+              </div>
+              <div id="chart_6_3_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_6_3_2" class="indicTitle">
+              </div>
+              <div id="chart_6_3_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_6_3_3" class="indicTitle">
+              </div>
+              <div id="chart_6_3_3" class="indicChart">
+              </div>
+            </div>
+          </div>
+
+          <div class="sticky_sentinel sticky_sentinel--top"></div>
+          <div class="sticky_sentinel sticky_sentinel--bottom"></div>
+        </div>
+        <!------------------->
+        <!-- Participation -->
+        <!------------------->
+
+        <div data-lorem="p">
+          <div class="text-toogle" aria-expanded="false" data-toggle="collapse"  href="#collapseFlexiquidance"><span class="collapseSymbol text-collapsed">+</span><span class="collapseSymbol text-expanded">-</span><span class="dimTitle" id="FlexiguidanceTitle" >Flexiguidance </span><span class="dimDef">Are adult learning opportunities flexible and is information and guidance readily available?</span></div>
+          <div class="introChart">
+            <div id="title_Flexiguidance" class="indicTitle">
+            </div>
+            <div id="chart_Flexiguidance" class="indicChart">
+            </div>
+          </div>
+          <div id="collapseFlexiquidance" class="panel-collapse collapse">
+            <div class="indicatorPres">
+              <div id="title_7_1_1" class="indicTitle">
+              </div>
+              <div id="chart_7_1_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_7_1_2" class="indicTitle">
+              </div>
+              <div id="chart_7_1_2" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_7_2_1" class="indicTitle">
+              </div>
+              <div id="chart_7_2_1" class="indicChart">
+              </div>
+            </div>
+            <div class="indicatorPres">
+              <div id="title_7_2_2" class="indicTitle">
+              </div>
+              <div id="chart_7_2_2" class="indicChart">
+              </div>
+            </div>
+          </div>
+          <div class="sticky_sentinel sticky_sentinel--top"></div>
+          <div class="sticky_sentinel sticky_sentinel--bottom"></div>
+        </div>
+      </div>
+    </div>
+    <div id="dimensionView" class="tabcontent">
+      <div id="dimTab">
+        <button class="btn" id="Urgency_Desc"><img src="img/urgency.svg" class="img"> Urgency</button>
+        <button class="btn" id="Participation_Desc"><img src="img/coverage.svg" class="img"> Participation</button>
+        <button class="btn" id="Inclusiveness_Desc" ><img src="img/inclusiveness.svg" class="img"> Inclusiveness</button>
+        <button class="btn" id="Financing_Desc"><img src="img/financing.svg" class="img"> Financing</button>
+        <button class="btn" id="Quality_Desc"><img src="img/impact.svg" class="img"> Quality</button>
+        <button class="btn" id="Alignment_Desc"><img src="img/alignment.svg" class="img"> Alignment</button>
+        <button class="btn" id="Flexiguidance_Desc"><img src="img/flexiguidance.svg" class="img"> Flexi-guidance</i></button>
+      </div>
+    <Br/>
+      <div id="titleDesc">Urgency</div>
+      <div id="explainDesc">New technologies, globalisation and population ageing are influencing the quantity and quality of jobs that are
+      available and the skills workers need to do them yet many adults lack strong basic skills to help them access these new
+      opportunities.. The urgency dimension assesses how pressing the need for up- and reskilling is in different countries.</div>
+      <div id="vizDesc"></div>
+    </div>
+    <div id="dashboardView" class="tabcontent">
+      <div id="title"></div>
+      <div id="viz"></div>
+    </div>
+  </body>
+  
+  <script src="js/openTabs.js"></script>
+  <script src="js/pearlchart.js"></script>
+  <script src="js/sortData.js"></script>
+  <script src="js/colorOpacity.js"></script>
+  <script src="js/dimensionchart.js">
+  </script><script src="js/dimDesc.js"></script>
+  <script src="js/init.js"></script>
+</html>
