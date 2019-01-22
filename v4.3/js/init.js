@@ -399,5 +399,5 @@ function render(err,alignment,financing,flexiguidance,inclusiveness,participatio
 			dimDesc(this.id, flexiguidance.filter(function (d) { return d.variable == "Total" }))
 	})
 }
-window.onresize = function(){ location.reload(); }
+//window.onresize = function(){ location.reload(); }
 
