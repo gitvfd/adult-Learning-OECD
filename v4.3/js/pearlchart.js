@@ -117,7 +117,7 @@ function pearlchart(nameIndic, selectedCou,compCou,indicData){
 				if(d.Country==selectedCou)
 					return heightPearl/2+18;
 				else if (d.Country == compCou)
-					return heightPearl / 2 + 30;
+					return heightPearl / 2 + 27;
 				else
 					return heightPearl/2-12;
 			})
