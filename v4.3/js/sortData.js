@@ -1,8 +1,13 @@
 	function sortchartDash(topicSelected){
 
-    	sortItems = function (a, b) {
-            return b[topicSelected] - a[topicSelected];
-        }
+		if(topicSelected=="Country")
+			sortItems = function (a, b) {
+				return a.Country.localeCompare(b.Country);
+			}
+		else
+			sortItems = function (a, b) {
+				return b[topicSelected] - a[topicSelected];
+			}
 	    	//data_sort.sort(function(a, b) { return a[topicSelected] - b[topicSelected]; });
 
 		chartDash.selectAll(".Name")

@@ -1,9 +1,10 @@
 	function dimDesc(indicatorname,data){
-		var ind2display = indicatorname.replace('_Desc', '');
-
+		var ind2display = indicatorname.replace('_Desc', 'Data');
+		
 		dimDef.forEach(function(d){
-			if (d.dim == ind2display){
+			if (d.code.toLowerCase() == ind2display.toLowerCase()){
 				document.getElementById("titleDesc").innerHTML = d.dim;
+				d3.select("#titleDesc").style("color",colorDim(ind2display))
 				document.getElementById("explainDesc").innerHTML = d.longText;
 			}
 		})
@@ -11,7 +12,7 @@
 		var guideStart2display,guideEnd2display;
 
 		dimGuides.forEach(function (d) {
-			if (d.dimGuide == ind2display){
+			if (d.dimGuide.toLowerCase() == ind2display.toLowerCase()){
 				guideStart2display = d.guides[0];
 				guideEnd2display = d.guides[1];
 			}
@@ -19,7 +20,7 @@
 
 		if (screenWidth > 800) {
 
-			var heightChart = 0.75 * window.innerHeight;
+			var heightChart = 0.5 * window.innerHeight;
 			var xScale = d3.scaleBand()
 				.domain(data.filter(function (d) { return d.value != "NA" }).sort(function (a, b) { return parseFloat(a.value) - parseFloat(b.value); }).map(function (d) { return d.Country }))
 				.range([margin, screenWidth - margin / 2])
@@ -40,7 +41,7 @@
 				.append("tspan")
 				.attr("id", "chartGuideDimDesc")
 				.attr("x", margin)
-				.attr("y", heightChart - margin / 5)
+				.attr("y", heightChart - margin / 10)
 				.html(guideStart2display)
 			//.call(wrap,0.25*width);
 
@@ -50,7 +51,7 @@
 				.append("tspan")
 				.attr("id", "chartGuideDimDescEnd")
 				.attr("x", screenWidth - margin / 2)
-				.attr("y", heightChart - margin / 5)
+				.attr("y", heightChart - margin / 10)
 				.html(guideEnd2display)
 				.style("text-anchor", "end")
 
