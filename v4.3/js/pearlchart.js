@@ -68,6 +68,40 @@ function pearlchart(nameIndic, selectedCou,compCou,indicData){
 		else
 			xPearl.domain([minValue,maxValue]) ;
 
+
+
+		var guideStart2display, guideEnd2display;
+
+		dimGuides.forEach(function (d) {
+			var indic2pick;
+			if (nameIndic=="Coverage")
+				indic2pick="participationData"
+			else
+				indic2pick = nameIndic + "Data"
+
+			if (d.dimGuide.toLowerCase() == indic2pick.toLowerCase()) {
+				guideStart2display = d.guides[0];
+				guideEnd2display = d.guides[1];
+			}
+		})
+
+
+		var dimDescGuide = compChart.append("text")
+			.append("tspan")
+			.attr("id", "chartGuidePearl")
+			.attr("x", 5).attr("y", 9)
+			//.attr("y", heightPearl -3)
+			.html(guideStart2display)
+		//.call(wrap,0.25*width);
+
+		var dimDescGuideEnd = compChart.append("text")
+			.append("tspan")
+			.attr("id", "chartGuidePearlEnd")
+			.attr("x", overallwidth - 5).attr("y",  9)
+			//.attr("y", heightPearl -3)
+			.html(guideEnd2display)
+			.style("text-anchor", "end")
+
 		compChart.append("line")
 			.attr("x1",xPearl(minValue))
 			.attr("y1",heightPearl/2)
@@ -119,7 +153,7 @@ function pearlchart(nameIndic, selectedCou,compCou,indicData){
 				else if (d.Country == compCou)
 					return heightPearl / 2 + 27;
 				else
-					return heightPearl/2-12;
+					return heightPearl/2-10;
 			})
 			.style("text-anchor","middle")
 			.text(function(d){
@@ -130,9 +164,22 @@ function pearlchart(nameIndic, selectedCou,compCou,indicData){
 	              return  d.Country+ " (" + format(d.value) + "%"+")";
 	            else
 	              return  d.Country+ " (" + format(d.value) + ""+")";
-	      })
+		  })
+
+		var dispCou = false;
+		data.forEach(function (k) {
+			if (k.Country == selectedCou)
+				dispCou = true;
+		})
 
 
+		if (!dispCou) {
+			compChart.append("text")
+				.attr("class", "noDataAvailable")
+				.attr('x', 1/4*overallwidth)
+				.attr('y', 15)
+				.text('data unavailable for the selected country ')
+		}
 
 		compChart.selectAll("circle")
 			.on("mouseover", function(d) {
@@ -141,6 +188,8 @@ function pearlchart(nameIndic, selectedCou,compCou,indicData){
 		      })
 		    .on("mousemove", mousemove)
 		   	.on("mouseout", mouseout);
+
+
 
 
 
@@ -226,8 +275,9 @@ function barchart(nameIndic, selectedCou, compCou,indicData){
 			.attr("class","noDataAvailable")
 			.attr('x',15)
 			.attr('y',15)
-			.text('unavailable data  for the selected country ')
+			.text('data unavailable for the selected country ')
 		}
+
 		compChart.selectAll(".bar")
 		.on("mouseover", function(d) {
 		              tooltip.html(d.Country + "<br>" + d3.format(".2")(d.value));

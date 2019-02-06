@@ -108,7 +108,7 @@ function createDashboard(urgencyData, participationData, inclusivenessData, fina
         .attr("fill", selCounColor)
         .attr("opacity", 0.75)
         .attr("visibility", "hidden");
-
+        
     var barDash = chartDash.selectAll("bar")
         .data(dataDash)
         .enter();
@@ -190,74 +190,8 @@ function createDashboard(urgencyData, participationData, inclusivenessData, fina
         });
 
     barDash.append("rect")
-        .attr("class", function (d) { return "FinancingDash" + " " + d.Country.replace(/\s+/g, ''); }) //remove space fro name to facilitate selection
-        .attr("x", 4 * widthDash)
-        .attr("y", function (d, i) { return i * barHeightDash; })
-        .attr("width", function (d) {
-            if (d.financingData != "NA")
-                return xFinancing(parseFloat(d.financingData));
-            else
-                return 0;
-        })
-        .attr("height", barHeightDash - 1)
-        .attr("fill", function (d) {
-            if (d.Country == "OECD") {
-                return "#0B1E2D"
-            } else {
-                return colorDim("Financing");
-            }
-        })
-        .attr("opacity", function (d) {
-            //return opacityIndicator(d.Emp, d.Country, "Emp");
-        });
-
-    barDash.append("rect")
-        .attr("class", function (d) { return "QualityDash" + " " + d.Country.replace(/\s+/g, ''); }) //remove space fro name to facilitate selection
-        .attr("x", 5 * widthDash)
-        .attr("y", function (d, i) { return i * barHeightDash; })
-        .attr("width", function (d) {
-            if (d.qualityData != "NA")
-                return xAlignment(parseFloat(d.qualityData));
-            else
-                return 0;
-        })
-        .attr("height", barHeightDash - 1)
-        .attr("fill", function (d) {
-            if (d.Country == "OECD") {
-                return "#0B1E2D"
-            } else {
-                return colorDim("Quality");
-            }
-        })
-        .attr("opacity", function (d) {
-            //return opacityIndicator(d.Emp, d.Country, "Emp");
-        });
-
-    barDash.append("rect")
-        .attr("class", function (d) { return "AligmentDash" + " " + d.Country.replace(/\s+/g, ''); }) //remove space fro name to facilitate selection
-        .attr("x", 6 * widthDash)
-        .attr("y", function (d, i) { return i * barHeightDash; })
-        .attr("width", function (d) {
-            if (d.alignmentData != "NA")
-                return xAlignment(parseFloat(d.alignmentData));
-            else
-                return 0;
-        })
-        .attr("height", barHeightDash - 1)
-        .attr("fill", function (d) {
-            if (d.Country == "OECD") {
-                return "#0B1E2D"
-            } else {
-                return colorDim("Alignment");
-            }
-        })
-        .attr("opacity", function (d) {
-            //return opacityIndicator(d.Emp, d.Country, "Emp");
-        });
-
-    barDash.append("rect")
         .attr("class", function (d) { return "FlexiguidanceDash" + " " + d.Country.replace(/\s+/g, ''); }) //remove space fro name to facilitate selection
-        .attr("x", 7 * widthDash)
+        .attr("x", 4 * widthDash)
         .attr("y", function (d, i) { return i * barHeightDash; })
         .attr("width", function (d) {
             if (d.flexiguidanceData != "NA")
@@ -277,8 +211,77 @@ function createDashboard(urgencyData, participationData, inclusivenessData, fina
             //return opacityIndicator(d.Emp, d.Country, "Emp");
         });
 
+
+    barDash.append("rect")
+        .attr("class", function (d) { return "AligmentDash" + " " + d.Country.replace(/\s+/g, ''); }) //remove space fro name to facilitate selection
+        .attr("x", 5 * widthDash)
+        .attr("y", function (d, i) { return i * barHeightDash; })
+        .attr("width", function (d) {
+            if (d.alignmentData != "NA")
+                return xAlignment(parseFloat(d.alignmentData));
+            else
+                return 0;
+        })
+        .attr("height", barHeightDash - 1)
+        .attr("fill", function (d) {
+            if (d.Country == "OECD") {
+                return "#0B1E2D"
+            } else {
+                return colorDim("Alignment");
+            }
+        })
+        .attr("opacity", function (d) {
+            //return opacityIndicator(d.Emp, d.Country, "Emp");
+        });
+        
+    barDash.append("rect")
+        .attr("class", function (d) { return "QualityDash" + " " + d.Country.replace(/\s+/g, ''); }) //remove space fro name to facilitate selection
+        .attr("x", 6 * widthDash)
+        .attr("y", function (d, i) { return i * barHeightDash; })
+        .attr("width", function (d) {
+            if (d.qualityData != "NA")
+                return xAlignment(parseFloat(d.qualityData));
+            else
+                return 0;
+        })
+        .attr("height", barHeightDash - 1)
+        .attr("fill", function (d) {
+            if (d.Country == "OECD") {
+                return "#0B1E2D"
+            } else {
+                return colorDim("Quality");
+            }
+        })
+        .attr("opacity", function (d) {
+            //return opacityIndicator(d.Emp, d.Country, "Emp");
+        });
+
+
+    barDash.append("rect")
+        .attr("class", function (d) { return "FinancingDash" + " " + d.Country.replace(/\s+/g, ''); }) //remove space fro name to facilitate selection
+        .attr("x", 7 * widthDash)
+        .attr("y", function (d, i) { return i * barHeightDash; })
+        .attr("width", function (d) {
+            if (d.financingData != "NA")
+                return xFinancing(parseFloat(d.financingData));
+            else
+                return 0;
+        })
+        .attr("height", barHeightDash - 1)
+        .attr("fill", function (d) {
+            if (d.Country == "OECD") {
+                return "#0B1E2D"
+            } else {
+                return colorDim("Financing");
+            }
+        })
+        .attr("opacity", function (d) {
+            //return opacityIndicator(d.Emp, d.Country, "Emp");
+        });
+
+
     addTitle(); // add the indicators title
-    sortchartDash("alignmentData"); //Start with
+    sortchartDash("Country"); //Start with
 
 
     barDash.selectAll("rect")

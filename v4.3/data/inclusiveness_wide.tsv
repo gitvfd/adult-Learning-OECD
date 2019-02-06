@@ -883,71 +883,71 @@
 "Sweden"	"EC"	0.474686769
 "Turkey"	"EC"	0.449611675
 "United States"	"EC"	0.635986506
-"Australia"	"Total"	0.46700259
-"Austria"	"Total"	0.384104934
-"Belgium"	"Total"	0.511717489
-"Canada"	"Total"	0.545070874
+"Australia"	"Total"	0.53299741
+"Austria"	"Total"	0.615895066
+"Belgium"	"Total"	0.488282511
+"Canada"	"Total"	0.454929126
 "Switzerland"	"Total"	NA
-"Chile"	"Total"	0.654230345
-"Czech Republic"	"Total"	0.594078426
-"Germany"	"Total"	0.624782351
-"Denmark"	"Total"	0.371568092
-"Spain"	"Total"	0.573710157
-"Estonia"	"Total"	0.549528507
-"Finland"	"Total"	0.600680196
-"France"	"Total"	0.449314098
-"United Kingdom"	"Total"	0.515800068
-"Greece"	"Total"	0.176393271
+"Chile"	"Total"	0.345769655
+"Czech Republic"	"Total"	0.405921574
+"Germany"	"Total"	0.375217649
+"Denmark"	"Total"	0.628431908
+"Spain"	"Total"	0.426289843
+"Estonia"	"Total"	0.450471493
+"Finland"	"Total"	0.399319804
+"France"	"Total"	0.550685902
+"United Kingdom"	"Total"	0.484199932
+"Greece"	"Total"	0.823606729
 "Hungary"	"Total"	NA
-"Ireland"	"Total"	0.512309659
-"Israel"	"Total"	0.414383009
-"Italy"	"Total"	0.406157941
-"Japan"	"Total"	0.560042102
-"Korea"	"Total"	0.584017985
-"Lithuania"	"Total"	0.429197208
+"Ireland"	"Total"	0.487690341
+"Israel"	"Total"	0.585616991
+"Italy"	"Total"	0.593842059
+"Japan"	"Total"	0.439957898
+"Korea"	"Total"	0.415982015
+"Lithuania"	"Total"	0.570802792
 "Luxembourg"	"Total"	NA
 "Latvia"	"Total"	NA
-"Netherlands"	"Total"	0.680295123
-"Norway"	"Total"	0.415027225
-"New Zealand"	"Total"	0.391098825
-"Poland"	"Total"	0.545400011
+"Netherlands"	"Total"	0.319704877
+"Norway"	"Total"	0.584972775
+"New Zealand"	"Total"	0.608901175
+"Poland"	"Total"	0.454599989
 "Portugal"	"Total"	NA
-"Slovak Republic"	"Total"	0.673939307
-"Slovenia"	"Total"	0.351068348
-"Sweden"	"Total"	0.407470672
-"Turkey"	"Total"	0.449053912
-"United States"	"Total"	0.52265882
-"Australia"	"Ranking"	13
-"Austria"	"Ranking"	4
-"Belgium"	"Ranking"	14
-"Canada"	"Ranking"	18
-"Switzerland"	"Ranking"	NA
-"Chile"	"Ranking"	27
-"Czech Republic"	"Ranking"	24
-"Germany"	"Ranking"	26
-"Denmark"	"Ranking"	3
-"Spain"	"Ranking"	22
-"Estonia"	"Ranking"	20
-"Finland"	"Ranking"	25
-"France"	"Ranking"	12
-"United Kingdom"	"Ranking"	16
-"Greece"	"Ranking"	1
-"Hungary"	"Ranking"	NA
-"Ireland"	"Ranking"	15
-"Israel"	"Ranking"	8
-"Italy"	"Ranking"	6
-"Japan"	"Ranking"	21
-"Korea"	"Ranking"	23
-"Lithuania"	"Ranking"	10
-"Luxembourg"	"Ranking"	NA
-"Latvia"	"Ranking"	NA
-"Netherlands"	"Ranking"	29
-"Norway"	"Ranking"	9
-"New Zealand"	"Ranking"	5
-"Poland"	"Ranking"	19
-"Portugal"	"Ranking"	NA
-"Slovak Republic"	"Ranking"	28
-"Slovenia"	"Ranking"	2
-"Sweden"	"Ranking"	7
-"Turkey"	"Ranking"	11
-"United States"	"Ranking"	17
+"Slovak Republic"	"Total"	0.326060693
+"Slovenia"	"Total"	0.648931652
+"Sweden"	"Total"	0.592529328
+"Turkey"	"Total"	0.550946088
+"United States"	"Total"	0.47734118
+"Australia"	"Inclusiveness_Ranking"	13
+"Austria"	"Inclusiveness_Ranking"	4
+"Belgium"	"Inclusiveness_Ranking"	14
+"Canada"	"Inclusiveness_Ranking"	18
+"Switzerland"	"Inclusiveness_Ranking"	NA
+"Chile"	"Inclusiveness_Ranking"	27
+"Czech Republic"	"Inclusiveness_Ranking"	24
+"Germany"	"Inclusiveness_Ranking"	26
+"Denmark"	"Inclusiveness_Ranking"	3
+"Spain"	"Inclusiveness_Ranking"	22
+"Estonia"	"Inclusiveness_Ranking"	20
+"Finland"	"Inclusiveness_Ranking"	25
+"France"	"Inclusiveness_Ranking"	12
+"United Kingdom"	"Inclusiveness_Ranking"	16
+"Greece"	"Inclusiveness_Ranking"	1
+"Hungary"	"Inclusiveness_Ranking"	NA
+"Ireland"	"Inclusiveness_Ranking"	15
+"Israel"	"Inclusiveness_Ranking"	8
+"Italy"	"Inclusiveness_Ranking"	6
+"Japan"	"Inclusiveness_Ranking"	21
+"Korea"	"Inclusiveness_Ranking"	23
+"Lithuania"	"Inclusiveness_Ranking"	10
+"Luxembourg"	"Inclusiveness_Ranking"	NA
+"Latvia"	"Inclusiveness_Ranking"	NA
+"Netherlands"	"Inclusiveness_Ranking"	29
+"Norway"	"Inclusiveness_Ranking"	9
+"New Zealand"	"Inclusiveness_Ranking"	5
+"Poland"	"Inclusiveness_Ranking"	19
+"Portugal"	"Inclusiveness_Ranking"	NA
+"Slovak Republic"	"Inclusiveness_Ranking"	28
+"Slovenia"	"Inclusiveness_Ranking"	2
+"Sweden"	"Inclusiveness_Ranking"	7
+"Turkey"	"Inclusiveness_Ranking"	11
+"United States"	"Inclusiveness_Ranking"	17
