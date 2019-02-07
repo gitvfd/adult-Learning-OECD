@@ -22,7 +22,6 @@ var padding = 0;
 var height = 150;
 var colorDim = d3.scaleOrdinal()
 	.domain(["Urgency", "Coverage", "Participation", "Inclusiveness", "Alignment", "Financing", "Flexiguidance", "Flexibility & Guidance", "Quality", "Perceived Impact",  "Impact"])
-	//.domain(["Urgency", "Coverage", "Inclusiveness", "Alignment", "Financing", "Flexiguidance", "Quality", "Participation", "Impact"])
 	.range(["rgb(89, 89, 89)", "rgb(102, 45, 145)", "rgb(102, 45, 145)", "rgb(161, 138, 186)", "rgb(57, 181, 74)", "rgb(0, 104, 56)", "rgb(0, 167, 157)", "rgb(0, 167, 157)", "rgb(43, 182, 115)", "rgb(43, 182, 115)","rgb(43, 182, 115)"])
 
 var selCounColor ="rgb(251,176,64)"//"#EF8083";
@@ -132,7 +131,7 @@ function returnSource(topicSelected) {
 	var name;
 	indicators_metadata.forEach(function (d) {
 		if (d.Indicator_code == topicSelected) {
-			name = d.source;
+			name = d.Source;
 		}
 	})
 	return name;
@@ -218,12 +217,12 @@ d3.json("data/def.json", function (data) {
 })
 
 
-var dimGuides = [{ "dimGuide": "urgencyData", "guides": ["← less urgent", "more urgent  →"] },
+var dimGuides = [{ "dimGuide": "urgencyData", "guides": ["← least urgent", "most urgent  →"] },
 { "dimGuide": "participationData", "guides": ["← lowest coverage", "highest coverage →"] },
 { "dimGuide": "inclusivenessData", "guides": ["← least inclusive", "most inclusive →"] },
-	{ "dimGuide": "financingData", "guides": ["← poorer financing arrangements", "better financing arrangements →"] },
+	{ "dimGuide": "financingData", "guides": ["← weakest financing arrangements", "strongest financing arrangements →"] },
 { "dimGuide": "alignmentData", "guides": ["← least aligned", "most aligned →"] },
-{ "dimGuide": "qualityData", "guides": ["← lowest quality", "highest quality →"] },
+{ "dimGuide": "qualityData", "guides": ["← lowest perceived impact", "highest perceived impact →"] },
 	{ "dimGuide": "flexiguidanceData", "guides": ["← weakest flexibility and guidance", "strongest flexibility and guidance →"] }]
 
 
