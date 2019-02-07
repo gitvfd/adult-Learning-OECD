@@ -1,8 +1,12 @@
 	function dimDesc(indicatorname,data){
-		var ind2display = indicatorname.replace('_Desc', 'Data');
+		var ind2display = indicatorname.replace('_Desc', '');
+
+		var ind2check = indicatorname.replace('_Desc', 'Data');
 		
 		dimDef.forEach(function(d){
-			if (d.code.toLowerCase() == ind2display.toLowerCase()){
+			if (d.code.toLowerCase() == ind2check.toLowerCase()){
+				console.log(ind2display)
+				console.log(colorDim(ind2display))
 				document.getElementById("titleDesc").innerHTML = d.dim;
 				d3.select("#titleDesc").style("color",colorDim(ind2display))
 				document.getElementById("explainDesc").innerHTML = d.longText;
@@ -12,7 +16,7 @@
 		var guideStart2display,guideEnd2display;
 
 		dimGuides.forEach(function (d) {
-			if (d.dimGuide.toLowerCase() == ind2display.toLowerCase()){
+			if (d.dimGuide.toLowerCase() == ind2check.toLowerCase()){
 				guideStart2display = d.guides[0];
 				guideEnd2display = d.guides[1];
 			}
