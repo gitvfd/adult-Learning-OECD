@@ -87,7 +87,7 @@
 			})
 			.attr("fill", colorDim(ind2display))
 			.on("mouseover", function (d) {
-				tooltip.html(d.Country + "<br><br> score: " + d3.format(".2")(d.value));
+				tooltip.html(d.Country + "<br><br> score: " + d3.format(".2f")(d.value));
 				tooltip.style("visibility", "visible");
 			})
 			.on("mousemove", mousemove)
@@ -118,7 +118,7 @@
 			.attr("text-anchor", "end")
 			.attr("fill", colorDim(ind2display))
 			.on("mouseover", function (d) {
-				tooltip.html(d.Country + "<br><br> score: " + d3.format(".2")(d.value));
+				tooltip.html(d.Country + "<br><br> score: " + d3.format(".2f")(d.value));
 				tooltip.style("visibility", "visible");
 			})
 			.on("mousemove", mousemove)
@@ -155,7 +155,7 @@
 			.attr("stroke", colorDim(ind2display))
 			.attr("stroke-width", "1")
 			.on("mouseover", function (d) {
-				tooltip.html(d.Country + "<br><br> score: " + d3.format(".2")(d.value));
+				tooltip.html(d.Country + "<br><br> score: " + d3.format(".2f")(d.value));
 				tooltip.style("visibility", "visible");
 			})
 			.on("mousemove", mousemove)
@@ -231,7 +231,7 @@
 				})
 				.attr("fill", colorDim(ind2display))
 				.on("mouseover", function (d) {
-					tooltip.html(d.Country + "<br><br> score: " + d3.format(".2")(d.value));
+					tooltip.html(d.Country + "<br><br> score: " + d3.format(".2f")(d.value));
 					tooltip.style("visibility", "visible");
 				})
 				.on("mousemove", mousemove)
@@ -262,7 +262,7 @@
 				.attr("text-anchor", "end")
 				.attr("fill", colorDim(ind2display))
 				.on("mouseover", function (d) {
-					tooltip.html(d.Country + "<br><br> score: " + d3.format(".2")(d.value));
+					tooltip.html(d.Country + "<br><br> score: " + d3.format(".2f")(d.value));
 					tooltip.style("visibility", "visible");
 				})
 				.on("mousemove", mousemove)
@@ -299,7 +299,7 @@
 				.attr("stroke", colorDim(ind2display))
 				.attr("stroke-width", "1")
 				.on("mouseover", function (d) {
-					tooltip.html(d.Country + "<br><br> score: " + d3.format(".2")(d.value));
+					tooltip.html(d.Country + "<br><br> score: " + d3.format(".2f")(d.value));
 					tooltip.style("visibility", "visible");
 				})
 				.on("mousemove", mousemove)
