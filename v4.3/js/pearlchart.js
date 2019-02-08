@@ -183,7 +183,7 @@ function pearlchart(nameIndic, selectedCou,compCou,indicData){
 
 		compChart.selectAll("circle")
 			.on("mouseover", function(d) {
-				tooltip.html(d.Country + "<br> score: " + d3.format(".2")(d.value)+"<br> rank: " + d.ranking + "/" + rankArray.length);
+				tooltip.html(d.Country + "<br> score: " + d3.format(".2f")(d.value)+"<br> rank: " + d.ranking + "/" + rankArray.length);
 		              tooltip.style("visibility", "visible");
 		      })
 		    .on("mousemove", mousemove)
@@ -280,7 +280,7 @@ function barchart(nameIndic, selectedCou, compCou,indicData){
 
 		compChart.selectAll(".bar")
 		.on("mouseover", function(d) {
-		              tooltip.html(d.Country + "<br>" + d3.format(".2")(d.value));
+		              tooltip.html(d.Country + "<br>" + d3.format(".2f")(d.value));
 		              tooltip.style("visibility", "visible");
 		      })
 		    .on("mousemove", mousemove)
