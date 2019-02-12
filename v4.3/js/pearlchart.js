@@ -239,36 +239,34 @@ function barchart(nameIndic, selectedCou, compCou,indicData){
 	    	.attr("transform", "translate(" + 0 + "," + 0 + ")");
 
 
-		var minValue = d3.min(data, function(d) { return parseFloat(d.value); });
-		var maxValue = d3.max(data, function(d) { return parseFloat(d.value); });
+		var minValue = d3.min(data, function(d) { return parseFloat(d.value); })-5;
+		var maxValue = d3.max(data, function(d) { return parseFloat(d.value); })+5;
 
 
-  		xBar.domain(data.map(function(d) { return d.Country; }));
+  	xBar.domain(data.map(function(d) { return d.Country; }));
+		if (minValue <= 0) {
+			yBar.domain([parseFloat(minValue), parseFloat(maxValue)]);
+		}else {
+				yBar.domain([0, parseFloat(maxValue)]);
 
-		if(nameIndic=="???" || nameIndic=="???" )
-			yBar.domain([minValue,maxValue]) ;
-		else
-			yBar.domain([minValue,maxValue]) ;
-
+		}
 
       compChart.selectAll(".bar")
       	.data(data)
     	.enter().append("rect")
       	.attr("class", "bar")
-      	.attr("x", function(d) { return xBar(d.Country); })
-      	.attr("width", xBar.bandwidth())
-      	.attr("y", function(d) { return yBar(d.value); })
-      	.attr("height", function(d) { return heightBar-marginBar - yBar(d.value); })
+				.attr("y", function (d) { return yBar(Math.max(0, parseFloat(d.value))); })
+				.attr("x", function (d) { return xBar(d.Country); })
+				.attr("height", function (d) { return Math.abs(yBar(parseFloat(d.value))-yBar(0) ); })
+				.attr("width", xBar.bandwidth())
       	.attr("fill",function(d){
       		if(d.Country==selectedCou)
-					return selCounColor;
-			else if (d.Country == compCou)
-					return selCompCounColor;
+						return selCounColor;
+					else if (d.Country == compCou)
+						return selCompCounColor;
       		else
-      				return"#8EA4B1"
+      			return"#8EA4B1"
       	});
-
-		
 
 		if (!dispCou){
 			compChart.append("text")
