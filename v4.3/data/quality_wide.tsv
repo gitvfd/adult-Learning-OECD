@@ -33,6 +33,7 @@
 "Sweden"	"5_1_1"	40.9
 "Turkey"	"5_1_1"	47.3
 "United States"	"5_1_1"	61.2
+"OECD"	"5_1_1"	52.4
 "Australia"	"5_1_2"	86
 "Austria"	"5_1_2"	85.2
 "Belgium"	"5_1_2"	77.1
@@ -67,6 +68,7 @@
 "Sweden"	"5_1_2"	79.9
 "Turkey"	"5_1_2"	91.6
 "United States"	"5_1_2"	NA
+"OECD"	"5_1_2"	86.8
 "Australia"	"5_1_3"	NA
 "Austria"	"5_1_3"	68.7
 "Belgium"	"5_1_3"	74.6
@@ -101,6 +103,7 @@
 "Sweden"	"5_1_3"	57.9
 "Turkey"	"5_1_3"	49.5
 "United States"	"5_1_3"	NA
+"OECD"	"5_1_3"	67
 "Australia"	"5_1_4"	7.27
 "Austria"	"5_1_4"	4.1
 "Belgium"	"5_1_4"	6.96
@@ -135,6 +138,7 @@
 "Sweden"	"5_1_4"	5.71
 "Turkey"	"5_1_4"	9.92
 "United States"	"5_1_4"	8.17
+"OECD"	"5_1_4"	8.5
 "Australia"	"5_1_1_adj"	61.8
 "Austria"	"5_1_1_adj"	55.5
 "Belgium"	"5_1_1_adj"	59.4
@@ -475,6 +479,7 @@
 "Sweden"	"Total"	0.309383964
 "Turkey"	"Total"	0.480525487
 "United States"	"Total"	0.493207354
+"OECD"	"Total"	0.51574
 "Australia"	"Quality_Ranking"	19
 "Austria"	"Quality_Ranking"	26
 "Belgium"	"Quality_Ranking"	27
