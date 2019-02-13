@@ -33,6 +33,7 @@
 "Sweden"	"6_1_1"	34.55
 "Turkey"	"6_1_1"	23.33
 "United States"	"6_1_1"	22.86
+"OECD"	"6_1_1"	34.27
 "Australia"	"6_1_2"	34
 "Austria"	"6_1_2"	46
 "Belgium"	"6_1_2"	35
@@ -67,6 +68,7 @@
 "Sweden"	"6_1_2"	42
 "Turkey"	"6_1_2"	66
 "United States"	"6_1_2"	46
+"OECD"	"6_1_2"	42.07
 "Australia"	"6_1_3"	NA
 "Austria"	"6_1_3"	50.43
 "Belgium"	"6_1_3"	39.86
@@ -101,6 +103,7 @@
 "Sweden"	"6_1_3"	35.27
 "Turkey"	"6_1_3"	NA
 "United States"	"6_1_3"	NA
+"OECD"	"6_1_3"	39.95
 "Australia"	"6_2_1"	NA
 "Austria"	"6_2_1"	52.4
 "Belgium"	"6_2_1"	75.9
@@ -135,6 +138,7 @@
 "Sweden"	"6_2_1"	72.9
 "Turkey"	"6_2_1"	NA
 "United States"	"6_2_1"	NA
+"OECD"	"6_2_1"	69.4
 "Australia"	"6_3_1"	NA
 "Austria"	"6_3_1"	94.08
 "Belgium"	"6_3_1"	76.87
@@ -169,6 +173,7 @@
 "Sweden"	"6_3_1"	60.01
 "Turkey"	"6_3_1"	NA
 "United States"	"6_3_1"	NA
+"OECD"	"6_3_1"	81.99
 "Australia"	"6_3_2"	NA
 "Austria"	"6_3_2"	82.3
 "Belgium"	"6_3_2"	86.2
@@ -203,6 +208,7 @@
 "Sweden"	"6_3_2"	75.6
 "Turkey"	"6_3_2"	NA
 "United States"	"6_3_2"	NA
+"OECD"	"6_3_2"	79.37
 "Australia"	"6_3_3"	NA
 "Austria"	"6_3_3"	1.3
 "Belgium"	"6_3_3"	1.58
@@ -237,6 +243,7 @@
 "Sweden"	"6_3_3"	NA
 "Turkey"	"6_3_3"	NA
 "United States"	"6_3_3"	NA
+"OECD"	"6_3_3"	1.37
 "Australia"	"6_4_1"	-9.2
 "Austria"	"6_4_1"	12.12
 "Belgium"	"6_4_1"	20.08
@@ -271,6 +278,7 @@
 "Sweden"	"6_4_1"	14.84
 "Turkey"	"6_4_1"	1.44
 "United States"	"6_4_1"	12.83
+"OECD"	"6_4_1"	9.01
 "Australia"	"6_4_2"	NA
 "Austria"	"6_4_2"	19.22
 "Belgium"	"6_4_2"	24.3
@@ -305,6 +313,7 @@
 "Sweden"	"6_4_2"	20.04
 "Turkey"	"6_4_2"	11.81
 "United States"	"6_4_2"	21.08
+"OECD"	"6_4_2"	19.00
 "Australia"	"6_1_1_adj"	24.03
 "Austria"	"6_1_1_adj"	41.23
 "Belgium"	"6_1_1_adj"	22.82
@@ -1087,6 +1096,7 @@
 "Sweden"	"Total"	0.494503459
 "Turkey"	"Total"	0.78832125
 "United States"	"Total"	0.561984844
+"OECD"	"Total"	0.57036
 "Australia"	"Alignment_Ranking"	7
 "Austria"	"Alignment_Ranking"	25
 "Belgium"	"Alignment_Ranking"	20

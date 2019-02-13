@@ -33,6 +33,7 @@
 "Sweden"	"4_1_1"	20.1
 "Turkey"	"4_1_1"	16.8
 "United States"	"4_1_1"	12.4
+"OECD"	"4_1_1"	21.4
 "Australia"	"4_1_2"	5
 "Austria"	"4_1_2"	6.5
 "Belgium"	"4_1_2"	6.3
@@ -67,6 +68,7 @@
 "Sweden"	"4_1_2"	0.8
 "Turkey"	"4_1_2"	13.2
 "United States"	"4_1_2"	6.3
+"OECD"	"4_1_2"	5.5
 "Australia"	"4_1_3"	28.4
 "Austria"	"4_1_3"	23.8
 "Belgium"	"4_1_3"	25.9
@@ -101,6 +103,7 @@
 "Sweden"	"4_1_3"	28.8
 "Turkey"	"4_1_3"	12.8
 "United States"	"4_1_3"	24.9
+"OECD"	"4_1_3"	23.2
 "Australia"	"4_1_4"	18
 "Austria"	"4_1_4"	19.3
 "Belgium"	"4_1_4"	22.8
@@ -135,6 +138,7 @@
 "Sweden"	"4_1_4"	12.1
 "Turkey"	"4_1_4"	22.2
 "United States"	"4_1_4"	21.4
+"OECD"	"4_1_4"	21.5
 "Australia"	"4_2_1"	15.7
 "Austria"	"4_2_1"	7.1
 "Belgium"	"4_2_1"	7
@@ -169,6 +173,7 @@
 "Sweden"	"4_2_1"	23.2
 "Turkey"	"4_2_1"	9.9
 "United States"	"4_2_1"	21
+"OECD"	"4_2_1"	18.6
 "Australia"	"4_2_2"	NA
 "Austria"	"4_2_2"	-3.4
 "Belgium"	"4_2_2"	15.6
@@ -203,6 +208,7 @@
 "Sweden"	"4_2_2"	28.3
 "Turkey"	"4_2_2"	13.1
 "United States"	"4_2_2"	35.7
+"OECD"	"4_2_2"	24.8
 "Australia"	"4_2_3"	6.4
 "Austria"	"4_2_3"	-4.6
 "Belgium"	"4_2_3"	13.5
@@ -237,6 +243,7 @@
 "Sweden"	"4_2_3"	3.2
 "Turkey"	"4_2_3"	5.9
 "United States"	"4_2_3"	-10.5
+"OECD"	"4_2_3"	5.1
 "Australia"	"4_2_4"	17.9
 "Austria"	"4_2_4"	10.4
 "Belgium"	"4_2_4"	10.2
@@ -271,6 +278,7 @@
 "Sweden"	"4_2_4"	11.5
 "Turkey"	"4_2_4"	31.4
 "United States"	"4_2_4"	12
+"OECD"	"4_2_4"	14.7
 "Australia"	"4_1_1_adj"	20.7
 "Austria"	"4_1_1_adj"	32.1
 "Belgium"	"4_1_1_adj"	28.2
@@ -917,6 +925,7 @@
 "Sweden"	"Total"	0.592529328
 "Turkey"	"Total"	0.550946088
 "United States"	"Total"	0.47734118
+"OECD"	"Total"	0.50482
 "Australia"	"Inclusiveness_Ranking"	13
 "Austria"	"Inclusiveness_Ranking"	4
 "Belgium"	"Inclusiveness_Ranking"	14

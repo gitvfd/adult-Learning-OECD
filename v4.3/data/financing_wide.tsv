@@ -33,6 +33,7 @@
 "Sweden"	"2_1_1"	3.77
 "Turkey"	"2_1_1"	NA
 "United States"	"2_1_1"	1.16
+"OECD"	"2_1_1"	3.79
 "Australia"	"2_1_2"	11.96
 "Austria"	"2_1_2"	33.8
 "Belgium"	"2_1_2"	14.03
@@ -67,6 +68,7 @@
 "Sweden"	"2_1_2"	38.46
 "Turkey"	"2_1_2"	NA
 "United States"	"2_1_2"	NA
+"OECD"	"2_1_2"	32.96
 "Australia"	"2_1_3"	NA
 "Austria"	"2_1_3"	9.76
 "Belgium"	"2_1_3"	6.02
@@ -101,6 +103,7 @@
 "Sweden"	"2_1_3"	1.67
 "Turkey"	"2_1_3"	21.54
 "United States"	"2_1_3"	NA
+"OECD"	"2_1_3"	6.78
 "Australia"	"2_1_4"	NA
 "Austria"	"2_1_4"	14.44
 "Belgium"	"2_1_4"	15.36
@@ -135,6 +138,7 @@
 "Sweden"	"2_1_4"	0.06
 "Turkey"	"2_1_4"	NA
 "United States"	"2_1_4"	NA
+"OECD"	"2_1_4"	8.37
 "Australia"	"2_2_1"	3.37
 "Austria"	"2_2_1"	2.63
 "Belgium"	"2_2_1"	1.65
@@ -169,6 +173,7 @@
 "Sweden"	"2_2_1"	2.76
 "Turkey"	"2_2_1"	NA
 "United States"	"2_2_1"	3.12
+"OECD"	"2_2_1"	2.37
 "Australia"	"2_2_2"	78.1
 "Austria"	"2_2_2"	81.9
 "Belgium"	"2_2_2"	86.3
@@ -203,6 +208,7 @@
 "Sweden"	"2_2_2"	81.1
 "Turkey"	"2_2_2"	49
 "United States"	"2_2_2"	70.7
+"OECD"	"2_2_2"	77.21
 "Australia"	"2_2_3"	NA
 "Austria"	"2_2_3"	41.1
 "Belgium"	"2_2_3"	20.9
@@ -237,6 +243,7 @@
 "Sweden"	"2_2_3"	NA
 "Turkey"	"2_2_3"	NA
 "United States"	"2_2_3"	NA
+"OECD"	"2_2_3"	33.56
 "Australia"	"2_2_4"	NA
 "Austria"	"2_2_4"	8.6
 "Belgium"	"2_2_4"	12.4
@@ -271,6 +278,7 @@
 "Sweden"	"2_2_4"	10.8
 "Turkey"	"2_2_4"	NA
 "United States"	"2_2_4"	NA
+"OECD"	"2_2_4"	9.68
 "Australia"	"2_3_1"	16.8
 "Austria"	"2_3_1"	25.5
 "Belgium"	"2_3_1"	21.5
@@ -305,6 +313,7 @@
 "Sweden"	"2_3_1"	11.6
 "Turkey"	"2_3_1"	25.6
 "United States"	"2_3_1"	NA
+"OECD"	"2_3_1"	20.46
 "Australia"	"2_3_2"	18.3
 "Austria"	"2_3_2"	11.5
 "Belgium"	"2_3_2"	5.4
@@ -339,6 +348,7 @@
 "Sweden"	"2_3_2"	12.4
 "Turkey"	"2_3_2"	8.5
 "United States"	"2_3_2"	23.7
+"OECD"	"2_3_2"	15.88
 "Australia"	"2_1_1_adj"	0.31
 "Austria"	"2_1_1_adj"	15.85
 "Belgium"	"2_1_1_adj"	4.28
@@ -1155,6 +1165,7 @@
 "Sweden"	"Total"	0.414634555
 "Turkey"	"Total"	NA
 "United States"	"Total"	0.521061979
+"OECD"	"Total"	0.43643
 "Australia"	"Financing_Ranking"	16
 "Austria"	"Financing_Ranking"	4
 "Belgium"	"Financing_Ranking"	8

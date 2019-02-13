@@ -33,6 +33,7 @@
 "Sweden"	"1_1_1"	31.1
 "Turkey"	"1_1_1"	11.7
 "United States"	"1_1_1"	22.1
+"OECD"	"1_1_1"	26.2
 "Australia"	"1_1_2"	37.2
 "Austria"	"1_1_2"	54.5
 "Belgium"	"1_1_2"	46.3
@@ -67,6 +68,7 @@
 "Sweden"	"1_1_2"	41.3
 "Turkey"	"1_1_2"	32.8
 "United States"	"1_1_2"	36.4
+"OECD"	"1_1_2"	49.8
 "Australia"	"1_2_1"	NA
 "Austria"	"1_2_1"	46.3
 "Belgium"	"1_2_1"	42.5
@@ -101,6 +103,7 @@
 "Sweden"	"1_2_1"	35.4
 "Turkey"	"1_2_1"	59.5
 "United States"	"1_2_1"	37.2
+"OECD"	"1_2_1"	46.4
 "Australia"	"1_2_2"	14.9
 "Austria"	"1_2_2"	13.1
 "Belgium"	"1_2_2"	18.5
@@ -135,6 +138,7 @@
 "Sweden"	"1_2_2"	15.2
 "Turkey"	"1_2_2"	NA
 "United States"	"1_2_2"	9.8
+"OECD"	"1_2_2"	17.1
 "Australia"	"1_3_1"	21.5
 "Austria"	"1_3_1"	19.1
 "Belgium"	"1_3_1"	17.3
@@ -169,6 +173,7 @@
 "Sweden"	"1_3_1"	17.5
 "Turkey"	"1_3_1"	56.9
 "United States"	"1_3_1"	30
+"OECD"	"1_3_1"	26.1
 "Australia"	"1_3_2"	22.4
 "Austria"	"1_3_2"	29.9
 "Belgium"	"1_3_2"	31.6
@@ -203,6 +208,7 @@
 "Sweden"	"1_3_2"	23.4
 "Turkey"	"1_3_2"	73.5
 "United States"	"1_3_2"	30.4
+"OECD"	"1_3_2"	37.0
 "Australia"	"1_4_1"	41.9
 "Austria"	"1_4_1"	101
 "Belgium"	"1_4_1"	164.1
@@ -237,6 +243,7 @@
 "Sweden"	"1_4_1"	84.4
 "Turkey"	"1_4_1"	46.9
 "United States"	"1_4_1"	26.5
+"OECD"	"1_4_1"	105.4
 "Australia"	"1_4_2"	-2.3
 "Austria"	"1_4_2"	0.2
 "Belgium"	"1_4_2"	8.5
@@ -271,6 +278,7 @@
 "Sweden"	"1_4_2"	-5.6
 "Turkey"	"1_4_2"	-0.8
 "United States"	"1_4_2"	-5.4
+"OECD"	"1_4_2"	5.3
 "Australia"	"1_4_3"	20.7
 "Austria"	"1_4_3"	42.5
 "Belgium"	"1_4_3"	47
@@ -305,6 +313,7 @@
 "Sweden"	"1_4_3"	44.4
 "Turkey"	"1_4_3"	23.3
 "United States"	"1_4_3"	14.7
+"OECD"	"1_4_3"	42.2
 "Australia"	"1_4_4"	9.5
 "Austria"	"1_4_4"	-2.1
 "Belgium"	"1_4_4"	-2.3
@@ -339,6 +348,7 @@
 "Sweden"	"1_4_4"	-6.7
 "Turkey"	"1_4_4"	-5.7
 "United States"	"1_4_4"	41.3
+"United States"	"1_4_4"	13.3
 "Australia"	"1_1_1_adj"	22.6
 "Austria"	"1_1_1_adj"	28.1
 "Belgium"	"1_1_1_adj"	28
@@ -1189,6 +1199,7 @@
 "Sweden"	"Total"	0.259984819
 "Turkey"	"Total"	0.492564477
 "United States"	"Total"	0.227062399
+"OECD"	"Total"	0.41794
 "Australia"	"Urgency_Ranking"	32
 "Austria"	"Urgency_Ranking"	24
 "Belgium"	"Urgency_Ranking"	22
